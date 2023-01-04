@@ -18,7 +18,7 @@ export const theme = {
     headerBackdrops: 'rgba(0, 0, 0, 0.65)',
     homePageSectionBackdrop: 'rgba(0, 0, 0, 0.76)',
   },
-  space: [0, 2, 14, 18, 24, 38, 64, 128, 256],
+  space: [0, 20, 14, 18, 24, 38, 42],
   sizes: {
     btnStandartWidth: '236px',
     btnStandartHeight: '48px',

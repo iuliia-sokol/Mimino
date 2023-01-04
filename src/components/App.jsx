@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import { ButtonLarge } from './Buttons/ButtonLarge/ButtonLarge';
+import { ButtonModal } from './Buttons/ButtonModal/ButtonModal';
 
 import { ButtonStandart } from './Buttons/ButtonStandart/ButtonStandart';
 
@@ -18,6 +19,7 @@ export const App = () => {
             StartPage
             <ButtonStandart text="standart"></ButtonStandart>
             <ButtonLarge text="large"></ButtonLarge>
+            <ButtonModal text="modal"></ButtonModal>
           </Text>
         }
       ></Route>

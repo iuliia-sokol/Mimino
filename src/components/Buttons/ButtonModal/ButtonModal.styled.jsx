@@ -4,16 +4,16 @@ export const BtnElement = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: ${p => p.theme.radii.btnStandart};
-  padding-top: ${p => p.theme.space[1]}px;
-  padding-bottom: ${p => p.theme.space[1]}px;
-  padding-left: ${p => p.theme.space[6]}px;
-  padding-right: ${p => p.theme.space[6]}px;
+  border-radius: ${p => p.theme.radii.btnModal};
+  padding-top: ${p => p.theme.space[2]}px;
+  padding-bottom: ${p => p.theme.space[2]}px;
+  padding-left: ${p => p.theme.space[4]}px;
+  padding-right: ${p => p.theme.space[4]}px;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p => p.theme.fontSizes.xxs};
   font-weight: ${p => p.theme.fontWeights[2]};
   text-transform: uppercase;
-  line-height: ${p => p.theme.lineHeights.buttonLarge};
+  line-height: ${p => p.theme.lineHeights.content};
   border: ${p => p.theme.borders.btnLarge};
   background-color: ${p => {
     return p.disabled ? p.theme.colors.btnDisabledBg : p.theme.colors.mainDark;
@@ -37,6 +37,7 @@ export const BtnElement = styled.button`
     padding-right: ${p => p.theme.space[5]}px;
     font-size: ${p => p.theme.fontSizes.xs};
   }
+
   /* & > svg {
     margin-right: 8px;
   } */
