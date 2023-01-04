@@ -17,7 +17,7 @@ export const Footer = () => {
       pl={['15px', '47px', '85px']}
       bg="footerBg"
       display="flex"
-      alignItems="base-line"
+      //   alignItems="base-line"
       // justifyContent="space-between"
     >
       <Box

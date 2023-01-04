@@ -6,14 +6,15 @@ export const SocialMediaLinkListItem = styled.li`
   }
   @media screen and (min-width: 1024px) {
     &:not(:last-child) {
-      margin-bottom: 12px;
-      margin-right: 0;
+      margin-bottom: ${p => (p.location === 'footer' ? '12px' : '0')};
+      margin-right: ${p => (p.location === 'header' ? null : '0')};
     }
   }
 `;
 
 export const SocialMediaLink = styled.a`
   box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,10 +38,14 @@ export const SocialMediaLink = styled.a`
   @media screen and (min-width: 1024px) {
     width: ${p =>
       p.location === 'footer' ? p.theme.sizes.footerLinkWidth : 'fit-content'};
-    padding-top: ${p => p.theme.space[0]}px;
-    padding-bottom: ${p => p.theme.space[0]}px;
-    padding-left: ${p => p.theme.space[9]}px;
-    padding-right: ${p => p.theme.space[9]}px;
+    padding-top: ${p =>
+      p.location === 'footer' ? p.theme.space[0] + 'px' : '0'};
+    padding-bottom: ${p =>
+      p.location === 'footer' ? p.theme.space[0] + 'px' : '0'};
+    padding-left: ${p =>
+      p.location === 'footer' ? p.theme.space[9] + 'px' : '0'};
+    padding-right: ${p =>
+      p.location === 'footer' ? p.theme.space[9] + 'px' : '0'};
     border-radius: ${p => p.theme.radii.btnModal};
     border: ${p =>
       p.location === 'footer' ? p.theme.borders.footerLink : 'none'};

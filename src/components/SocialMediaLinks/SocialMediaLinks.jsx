@@ -9,21 +9,21 @@ import {
 export const SocialMediaLinks = ({ location }) => {
   return (
     <>
-      <SocialMediaLinkListItem>
+      <SocialMediaLinkListItem location={location}>
         <SocialMediaLink href="#" location={location}>
           {location === 'footer' && <span>Telegram</span>}
           <TbBrandTelegram />
         </SocialMediaLink>
       </SocialMediaLinkListItem>
 
-      <SocialMediaLinkListItem>
+      <SocialMediaLinkListItem location={location}>
         <SocialMediaLink href="#" location={location}>
           {location === 'footer' && <span>Facebook</span>}
           <RiFacebookBoxLine />
         </SocialMediaLink>
       </SocialMediaLinkListItem>
 
-      <SocialMediaLinkListItem>
+      <SocialMediaLinkListItem location={location}>
         <SocialMediaLink href="#" location={location}>
           {location === 'footer' && <span>Instagram</span>}
           <FiInstagram />
