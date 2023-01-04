@@ -1,20 +1,14 @@
-import { BtnElement } from './Button.styled';
+import { BtnElement } from './ButtonStandart.styled';
 
-export const Btn = ({
+export const ButtonStandart = ({
   text,
-  status,
   icon: Icon = null,
   disabled = false,
   type = 'button',
   onClick = null,
 }) => {
   return (
-    <BtnElement
-      status={status}
-      type={type}
-      disabled={disabled}
-      onClick={onClick}
-    >
+    <BtnElement type={type} disabled={disabled} onClick={onClick}>
       {Icon && <Icon></Icon>}
       {text}
     </BtnElement>
