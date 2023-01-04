@@ -2,27 +2,36 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from 'components/App';
+import './fonts/FilmP3Bold.ttf';
 import './index.css';
 import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
+    mainDark: '#000000',
+    mainLight: '#FFFFFF',
+    mainAccent: '#F3C653',
+    secondaryAccent: '#C79002',
+
     headersMain: '#494848',
-    subheaderLight: '#B4B4B4',
-    textMainDark: '#000000',
-    textMainLight: '#FFFFFF',
+    supheader: '#B4B4B4',
     textContent: '#7A7A7A',
-    textData: '#E5E5E5',
-    accent: '#F3C653',
-    btnBg: '#000000',
+    textDataHero: '#E5E5E5',
+
     footerBg: '#0E0C07',
     sectionBg1: '#FFFDEE',
     sectionBg2: '#F0ECD6',
+    btnDisabledBg: 'rgba(0, 0, 0, 0.4)',
+
     headerBackdrops: 'rgba(0, 0, 0, 0.65)',
     homePageSectionBackdrop: 'rgba(0, 0, 0, 0.76)',
   },
   space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
-  fonts: {},
+  fonts: {
+    logo: 'Film P3',
+    main: 'Montserrat, sans-serif',
+    secondary: 'Times New Roman',
+  },
   fontSizes: {
     xxl: '128px',
     xl: '64px',
@@ -33,9 +42,29 @@ const theme = {
     xxs: '16px',
     xxxs: '14px',
   },
-  lineHeights: {},
-  borders: {},
-  radii: {},
+  lineHeights: {
+    logo: '1.08',
+    subheader: '1.14',
+    supheader: '1.16',
+    content: '1.25',
+  },
+  letterSpacings: {
+    logo: '0.3em',
+    subheader: '0.05em',
+    content: '0.02em',
+    textDataHero: '0.01em',
+  },
+
+  borders: {
+    btnStandart: '2px solid #FFFFFF',
+    btnStandartActive: '2px solid #F3C653',
+    btnLarge: '1px solid #F3C653',
+    btnLargeActive: '1px solid #F3C653',
+  },
+  radii: {
+    btnStandart: '25px',
+    btnModal: '2px',
+  },
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

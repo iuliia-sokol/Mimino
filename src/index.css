@@ -1,5 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
 
+@font-face {
+  font-family: 'Film P3';
+  src: local('Film P3'), url('./fonts/FilmP3Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
