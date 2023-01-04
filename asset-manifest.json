@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.7acaea2f.css",
-    "main.js": "/Mimino/static/js/main.5548b59e.js",
+    "main.js": "/Mimino/static/js/main.526aef6f.js",
     "index.html": "/Mimino/index.html",
     "main.7acaea2f.css.map": "/Mimino/static/css/main.7acaea2f.css.map",
-    "main.5548b59e.js.map": "/Mimino/static/js/main.5548b59e.js.map"
+    "main.526aef6f.js.map": "/Mimino/static/js/main.526aef6f.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.5548b59e.js"
+    "static/js/main.526aef6f.js"
   ]
 }
