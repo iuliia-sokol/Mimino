@@ -18,7 +18,7 @@ export const theme = {
     headerBackdrops: 'rgba(0, 0, 0, 0.65)',
     homePageSectionBackdrop: 'rgba(0, 0, 0, 0.76)',
   },
-  space: [0, 2, 4, 14, 24, 32, 64, 128, 256],
+  space: [0, 2, 14, 18, 24, 38, 64, 128, 256],
   sizes: {
     btnStandartWidth: '236px',
     btnStandartHeight: '48px',
@@ -36,9 +36,10 @@ export const theme = {
     l: '40px',
     m: '36px',
     s: '32px',
-    xs: '20px',
-    xxs: '16px',
-    xxxs: '14px',
+    xs: '24px',
+    xxs: '20px',
+    xxxs: '16px',
+    xxxxs: '14px',
   },
   fontWeights: [300, 400, 500, 600, 700],
   lineHeights: {
@@ -46,6 +47,7 @@ export const theme = {
     subheader: '1.14',
     supheader: '1.16',
     content: '1.25',
+    buttonLarge: '1.2',
   },
   letterSpacings: {
     logo: '0.3em',
