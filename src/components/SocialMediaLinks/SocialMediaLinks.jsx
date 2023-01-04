@@ -1,4 +1,3 @@
-import { Box } from 'components/Box';
 import { TbBrandTelegram } from 'react-icons/tb';
 import { RiFacebookBoxLine } from 'react-icons/ri';
 import { FiInstagram } from 'react-icons/fi';

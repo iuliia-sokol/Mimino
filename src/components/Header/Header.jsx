@@ -31,13 +31,16 @@ export const Header = () => {
       >
         MIMIHO
       </Box>
-      <Box
-        as="ul"
-        display={['none', 'none', 'flex']}
-        mt={['0px', null, null]}
-        mb={['0px', null, null]}
-      >
-        <SocialMediaLinks location="header" />
+
+      <Box as="nav" display="flex">
+        <Box
+          as="ul"
+          display={['none', 'none', 'flex']}
+          mt={['0px', null, null]}
+          mb={['0px', null, null]}
+        >
+          <SocialMediaLinks location="header" />
+        </Box>
       </Box>
     </Box>
   );
