@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from 'components/App';
 import './fonts/FilmP3Bold.ttf';
-import './index.css';
 import { ThemeProvider } from 'styled-components';
+import './index.css';
 import { theme } from './utils/theme';
 
 ReactDOM.createRoot(document.getElementById('root')).render(

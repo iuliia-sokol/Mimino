@@ -7,6 +7,7 @@ import {
   flexbox,
   background,
   border,
+  typography,
 } from 'styled-system';
 
 export const Box = styled.div`
@@ -17,4 +18,5 @@ export const Box = styled.div`
   ${background}
   ${position}
   ${border}
+  ${typography}
 `;

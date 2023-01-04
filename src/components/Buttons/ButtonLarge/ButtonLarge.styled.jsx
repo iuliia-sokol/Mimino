@@ -30,7 +30,7 @@ export const BtnElement = styled.button`
     border: ${p => p.theme.borders.btnLargeActive};
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 414px) {
     padding-top: ${p => p.theme.space[3]}px;
     padding-bottom: ${p => p.theme.space[3]}px;
     padding-left: ${p => p.theme.space[5]}px;

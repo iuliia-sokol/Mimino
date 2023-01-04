@@ -1,4 +1,5 @@
 export const theme = {
+  breakpoints: ['414px', '1024px', '1280px'],
   colors: {
     mainDark: '#000000',
     mainLight: '#FFFFFF',
@@ -18,12 +19,14 @@ export const theme = {
     headerBackdrops: 'rgba(0, 0, 0, 0.65)',
     homePageSectionBackdrop: 'rgba(0, 0, 0, 0.76)',
   },
-  space: [0, 20, 14, 18, 24, 38, 42],
+  space: [10, 20, 14, 18, 24, 38, 42, 85, 80, 12],
   sizes: {
     btnStandartWidth: '236px',
     btnStandartHeight: '48px',
     btnLargeHeight: '65px',
     btnModalHeight: '64px',
+    footerMaxHeight: '304px',
+    footerLinkWidth: '144px',
   },
   fonts: {
     logo: 'Film P3',
@@ -61,6 +64,7 @@ export const theme = {
     btnStandartActive: '2px solid #F3C653',
     btnLarge: '1px solid #F3C653',
     btnLargeActive: '1px solid #F3C653',
+    footerLink: '0.5px solid #F3C653',
   },
   radii: {
     btnStandart: '25px',
