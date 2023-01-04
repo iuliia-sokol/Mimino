@@ -16,7 +16,14 @@ import { FiInstagram } from 'react-icons/fi';
 export const SharedLayout = () => {
   return (
     <>
-      <Box as="header" width={1} pt={4} pb={4} pr={7} pl={7}>
+      <Box
+        as="header"
+        width={[1, 1, 1]}
+        pt={['40px', '80px', null]}
+        pb={['40px', '80px', null]}
+        pr={['15px', '47px', '85px']}
+        pl={['15px', '47px', '85px']}
+      >
         <nav>
           {/* <Link to="/" end>
             Home
@@ -75,7 +82,7 @@ export const SharedLayout = () => {
           <Box
             as="ul"
             display="flex"
-            flexDirection={['row', 'column', 'column']}
+            flexDirection={['row', 'row', 'column']}
             mt={['32px', '0px', null]}
             mb={['0px', null, null]}
           >

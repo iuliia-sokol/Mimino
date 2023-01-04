@@ -11,7 +11,7 @@ export const FooterSocialMediaLinkListItem = styled.li`
   &:not(:last-child) {
     margin-right: 20px;
   }
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 1024px) {
     &:not(:last-child) {
       margin-bottom: 12px;
       margin-right: 0;
@@ -38,12 +38,12 @@ export const FooterLinksWrapper = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 85px;
-  flex-grow: 2;
+  flex-grow: 1;
 
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     margin-left: 163px;
-
+    flex-grow: 2;
     justify-content: space-between;
   }
 `;
@@ -70,7 +70,7 @@ export const FooterSocialMediaLink = styled.a`
     display: none;
   }
 
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 1024px) {
     width: ${p => p.theme.sizes.footerLinkWidth};
     padding-top: ${p => p.theme.space[0]}px;
     padding-bottom: ${p => p.theme.space[0]}px;
