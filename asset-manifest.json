@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Mimino/static/css/main.7acaea2f.css",
-    "main.js": "/Mimino/static/js/main.526aef6f.js",
+    "main.css": "/Mimino/static/css/main.6df45091.css",
+    "main.js": "/Mimino/static/js/main.ee2a421b.js",
+    "static/media/FilmP3Bold.ttf": "/Mimino/static/media/FilmP3Bold.c488094bc4ac7424e763.ttf",
     "index.html": "/Mimino/index.html",
-    "main.7acaea2f.css.map": "/Mimino/static/css/main.7acaea2f.css.map",
-    "main.526aef6f.js.map": "/Mimino/static/js/main.526aef6f.js.map"
+    "main.6df45091.css.map": "/Mimino/static/css/main.6df45091.css.map",
+    "main.ee2a421b.js.map": "/Mimino/static/js/main.ee2a421b.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.526aef6f.js"
+    "static/css/main.6df45091.css",
+    "static/js/main.ee2a421b.js"
   ]
 }
