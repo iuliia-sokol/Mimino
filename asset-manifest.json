@@ -1,26 +1,28 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.216c2ab6.css",
-    "main.js": "/Mimino/static/js/main.aa1a1ca1.js",
-    "static/js/778.58510fe2.chunk.js": "/Mimino/static/js/778.58510fe2.chunk.js",
+    "main.js": "/Mimino/static/js/main.b4e444e6.js",
+    "static/js/778.bf690286.chunk.js": "/Mimino/static/js/778.bf690286.chunk.js",
     "static/js/205.216f50b9.chunk.js": "/Mimino/static/js/205.216f50b9.chunk.js",
     "static/js/208.35b46ca9.chunk.js": "/Mimino/static/js/208.35b46ca9.chunk.js",
     "static/js/792.a9c086bc.chunk.js": "/Mimino/static/js/792.a9c086bc.chunk.js",
     "static/media/Main-bg-desk-2x.jpg": "/Mimino/static/media/Main-bg-desk-2x.68abc1bc868d18726236.jpg",
     "static/media/main-restaurant-interior-2x.jpg": "/Mimino/static/media/main-restaurant-interior-2x.31049e66f26d703ab6fc.jpg",
+    "static/media/main-restaurant-interior-2-2x.jpg": "/Mimino/static/media/main-restaurant-interior-2-2x.a9816b960792601e7d9c.jpg",
     "static/media/Main-bg-desk-1x.jpg": "/Mimino/static/media/Main-bg-desk-1x.7c59e6625b1004d3a077.jpg",
     "static/media/main-restaurant-interior-1x.jpg": "/Mimino/static/media/main-restaurant-interior-1x.1256c8153657adcc4cbf.jpg",
+    "static/media/main-restaurant-interior-2-1x.jpg": "/Mimino/static/media/main-restaurant-interior-2-1x.a6bd0938820eb420212d.jpg",
     "static/media/FilmP3Bold.ttf": "/Mimino/static/media/FilmP3Bold.c488094bc4ac7424e763.ttf",
     "index.html": "/Mimino/index.html",
     "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
-    "main.aa1a1ca1.js.map": "/Mimino/static/js/main.aa1a1ca1.js.map",
-    "778.58510fe2.chunk.js.map": "/Mimino/static/js/778.58510fe2.chunk.js.map",
+    "main.b4e444e6.js.map": "/Mimino/static/js/main.b4e444e6.js.map",
+    "778.bf690286.chunk.js.map": "/Mimino/static/js/778.bf690286.chunk.js.map",
     "205.216f50b9.chunk.js.map": "/Mimino/static/js/205.216f50b9.chunk.js.map",
     "208.35b46ca9.chunk.js.map": "/Mimino/static/js/208.35b46ca9.chunk.js.map",
     "792.a9c086bc.chunk.js.map": "/Mimino/static/js/792.a9c086bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.216c2ab6.css",
-    "static/js/main.aa1a1ca1.js"
+    "static/js/main.b4e444e6.js"
   ]
 }
