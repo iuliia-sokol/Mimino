@@ -7,10 +7,15 @@ import {
   SubHeader,
   Header,
   Data,
+  BlockWrapperReversed,
+  DataAccented,
+  ImageWrapperReversed,
 } from './Section1.styled';
 
 import Pic1_1x from '../../../images/homepage/desktop/main-restaurant-interior-1x.jpg';
 import Pic1_2x from '../../../images/homepage/desktop/main-restaurant-interior-2x.jpg';
+import Pic2_1x from '../../../images/homepage/desktop/main-restaurant-interior-2-1x.jpg';
+import Pic2_2x from '../../../images/homepage/desktop/main-restaurant-interior-2-2x.jpg';
 
 export const Section1 = () => {
   return (
@@ -35,6 +40,23 @@ export const Section1 = () => {
             />
           </ImageWrapper>
         </BlockWrapper>
+        <BlockWrapperReversed>
+          <DataWrapper>
+            <DataAccented>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </DataAccented>
+          </DataWrapper>
+          <ImageWrapperReversed>
+            <img
+              srcSet={`${Pic2_1x} 1x, ${Pic2_2x} 2x`}
+              src={Pic2_1x}
+              alt="interrior"
+              loading="lazy"
+            />
+          </ImageWrapperReversed>
+        </BlockWrapperReversed>
       </Box>
     </Section1Wrapper>
   );
