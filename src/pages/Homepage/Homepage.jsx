@@ -1,4 +1,5 @@
 import { Box } from 'components/Box';
+import { Hero } from 'components/HomepageComponents/Hero/Hero';
 
 const Homepage = () => {
   return (
@@ -11,9 +12,7 @@ const Homepage = () => {
       //   bg="footerBg"
       //   display="flex"
     >
-      <Box pr={['15px', '47px', '85px']} pl={['15px', '47px', '85px']}>
-        <h1>Homepage</h1>
-      </Box>
+      <Hero />
     </Box>
   );
 };

@@ -34,7 +34,8 @@ export const theme = {
     secondary: 'Times New Roman',
   },
   fontSizes: {
-    xxl: '128px',
+    xxxl: '128px',
+    xxl: '96px',
     xl: '64px',
     l: '40px',
     m: '36px',
@@ -43,6 +44,7 @@ export const theme = {
     xxs: '20px',
     xxxs: '16px',
     xxxxs: '14px',
+    xxxxxs: '12px',
   },
   fontWeights: [300, 400, 500, 600, 700],
   lineHeights: {
