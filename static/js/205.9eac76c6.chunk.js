@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmimino=self.webpackChunkmimino||[]).push([[205],{6205:function(n,e,i){i.r(e);var s=i(9457),u=i(184);e.default=function(){return(0,u.jsx)(s.x,{as:"main",children:(0,u.jsx)("h1",{children:"Hotel"})})}}}]);
+//# sourceMappingURL=205.9eac76c6.chunk.js.map
