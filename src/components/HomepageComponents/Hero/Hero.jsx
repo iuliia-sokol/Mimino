@@ -10,6 +10,7 @@ import {
   HeroLocationBanner,
   HeroBtnsWrapper,
   HeroContentWrapper,
+  HeroSocialMediaLinksWrapper,
 } from './Hero.styled';
 
 export const Hero = () => {
@@ -41,18 +42,18 @@ export const Hero = () => {
           </HeroBtnsWrapper>
         </HeroContentWrapper>
 
-        <Box
-          as="ul"
-          position="absolute"
-          bottom="-10%"
-          left="6%"
-          display={['flex', 'flex', 'flex']}
-          p="0px"
-          mt={['0px', null, null]}
-          mb={['0px', null, null]}
+        <HeroSocialMediaLinksWrapper
+        //   as="ul"
+        //   position="absolute"
+        //   bottom="-10%"
+        //   left="6%"
+        //   display={['flex', 'flex', 'flex']}
+        //   p="0px"
+        //   mt={['0px', null, null]}
+        //   mb={['0px', null, null]}
         >
           <SocialMediaLinks location="header" />
-        </Box>
+        </HeroSocialMediaLinksWrapper>
       </Box>
     </HeroWrapper>
   );

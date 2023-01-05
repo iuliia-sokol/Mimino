@@ -114,7 +114,7 @@ export const HeaderLocationBanner = styled.div`
   display: flex;
   position: absolute;
   top: 100%;
-  right: 5%;
+  right: 6%;
 
   @media screen and (min-width: 1024px) {
     display: none;
@@ -129,8 +129,4 @@ export const HeaderSocialMediaLinksWrapper = styled.ul`
   @media screen and (min-width: 1280px) {
     display: flex;
   }
-  /* 
-   as="ul" display={['none', 'none', 'flex']}
-              p="0px" mt={['0px', null, null]}
-              mb={['0px', null, null]} */
 `;

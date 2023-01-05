@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import HeroBgImage1x from '../../../images/homepage/desktop/Main-bg-desk-1x.jpg';
 
 export const HeroWrapper = styled.section`
-  /* position: relative; */
   width: 100%;
   padding-top: 181px;
   padding-bottom: 102px;
@@ -108,10 +107,25 @@ export const HeroBtnsWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
-    /* flex-grow: 1; */
   }
   @media screen and (min-width: 1280px) {
     gap: 60px;
-    /* flex-grow: 1; */
+  }
+`;
+
+export const HeroSocialMediaLinksWrapper = styled.ul`
+  display: flex;
+  position: absolute;
+  bottom: -15%;
+  left: 6%;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 1024px) {
+    bottom: -10%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 `;
