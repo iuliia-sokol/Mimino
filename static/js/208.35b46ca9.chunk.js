@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmimino=self.webpackChunkmimino||[]).push([[208],{208:function(n,e,i){i.r(e);var s=i(457),u=i(184);e.default=function(){return(0,u.jsx)(s.x,{as:"main",children:(0,u.jsx)("h1",{children:"Restaurant"})})}}}]);
+//# sourceMappingURL=208.35b46ca9.chunk.js.map
