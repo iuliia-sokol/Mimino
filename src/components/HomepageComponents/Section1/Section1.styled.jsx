@@ -9,29 +9,19 @@ export const Section1Wrapper = styled.section`
   @media screen and (min-width: 1024px) {
     padding-top: 120px;
     padding-bottom: 32px;
-    /* padding-top: 225px;
-    padding-bottom: 65px; */
   }
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 50px;
   }
-
-  /* @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    
-  } */
 `;
 
 export const DataWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 258px;
 
   @media screen and (min-width: 1024px) {
-    max-width: fit-content;
   }
 `;
 
@@ -53,7 +43,7 @@ export const ImageWrapper = styled.div`
       height: 524px;
       margin-top: 0;
       box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-      transform: translateY(-153px);
+      transform: translate(-65px, -153px);
     }
   }
 
@@ -61,6 +51,7 @@ export const ImageWrapper = styled.div`
     & > img {
       width: 460px;
       height: 574px;
+      transform: translate(-95px, -153px);
     }
   }
 `;
@@ -70,6 +61,7 @@ export const BlockWrapper = styled.div`
   flex-direction: column;
 
   @media screen and (min-width: 1024px) {
+    justify-content: space-between;
     flex-direction: row;
     gap: 35px;
   }
@@ -105,14 +97,20 @@ export const Header = styled.h2`
 `;
 
 export const Data = styled.p`
+  display: block;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p => p.theme.fontSizes.xxxxxs};
   font-weight: ${p => p.theme.fontWeights[3]};
   line-height: ${p => p.theme.lineHeights.content};
   letter-spacing: ${p => p.theme.letterSpacings.content};
   color: ${p => p.theme.colors.textContentSecondary};
+  max-width: 258px;
 
   @media screen and (min-width: 1024px) {
     font-size: ${p => p.theme.fontSizes.xxxs};
+    max-width: 439px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 518px;
   }
 `;
