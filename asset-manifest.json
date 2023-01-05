@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.216c2ab6.css",
-    "main.js": "/Mimino/static/js/main.c13c0a02.js",
-    "static/css/962.15d15e88.chunk.css": "/Mimino/static/css/962.15d15e88.chunk.css",
-    "static/js/962.5c2992aa.chunk.js": "/Mimino/static/js/962.5c2992aa.chunk.js",
+    "main.js": "/Mimino/static/js/main.175a265c.js",
+    "static/css/50.8ac54c4e.chunk.css": "/Mimino/static/css/50.8ac54c4e.chunk.css",
+    "static/js/50.052d487f.chunk.js": "/Mimino/static/js/50.052d487f.chunk.js",
     "static/js/205.9eac76c6.chunk.js": "/Mimino/static/js/205.9eac76c6.chunk.js",
     "static/js/208.4f86186f.chunk.js": "/Mimino/static/js/208.4f86186f.chunk.js",
     "static/js/792.ee39d86b.chunk.js": "/Mimino/static/js/792.ee39d86b.chunk.js",
@@ -17,19 +17,21 @@
     "static/media/main-restaurant-interior-4-2x.jpg": "/Mimino/static/media/main-restaurant-interior-4-2x.4f9977a70a266fdf7836.jpg",
     "static/media/main-restaurant-interior-6-2x.jpg": "/Mimino/static/media/main-restaurant-interior-6-2x.7c6949cb48d538ae7143.jpg",
     "static/media/main-restaurant-interior-5-2x.jpg": "/Mimino/static/media/main-restaurant-interior-5-2x.9294c2430937a79e208c.jpg",
+    "static/media/main-restaurant-interior-7-2x.jpg": "/Mimino/static/media/main-restaurant-interior-7-2x.27cc5b1e569faefc3e47.jpg",
     "static/media/main-restaurant-interior-3-2x.jpg": "/Mimino/static/media/main-restaurant-interior-3-2x.3f8b6b43c84c4b2fc3f5.jpg",
     "static/media/main-restaurant-interior-4-1x.jpg": "/Mimino/static/media/main-restaurant-interior-4-1x.06d43f7f5be9080b5d15.jpg",
     "static/media/main-restaurant-interior-6-1x.jpg": "/Mimino/static/media/main-restaurant-interior-6-1x.cf0e96c77b403f325295.jpg",
     "static/media/main-restaurant-interior-5-1x.jpg": "/Mimino/static/media/main-restaurant-interior-5-1x.89bba0e5e4eabd2886ab.jpg",
+    "static/media/main-restaurant-interior-7-1x.jpg": "/Mimino/static/media/main-restaurant-interior-7-1x.d4e9230cadf6c382106c.jpg",
     "static/media/main-restaurant-interior-3-1x.jpg": "/Mimino/static/media/main-restaurant-interior-3-1x.3102c195732def8e42f8.jpg",
     "static/media/FilmP3Bold.ttf": "/Mimino/static/media/FilmP3Bold.c488094bc4ac7424e763.ttf",
     "index.html": "/Mimino/index.html",
     "static/media/arrow-left.svg": "/Mimino/static/media/arrow-left.674a1b08529b6bf90763c19c7dde5140.svg",
     "static/media/arrow-right.svg": "/Mimino/static/media/arrow-right.fb4df32136488fade0a90fb59321f95f.svg",
     "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
-    "main.c13c0a02.js.map": "/Mimino/static/js/main.c13c0a02.js.map",
-    "962.15d15e88.chunk.css.map": "/Mimino/static/css/962.15d15e88.chunk.css.map",
-    "962.5c2992aa.chunk.js.map": "/Mimino/static/js/962.5c2992aa.chunk.js.map",
+    "main.175a265c.js.map": "/Mimino/static/js/main.175a265c.js.map",
+    "50.8ac54c4e.chunk.css.map": "/Mimino/static/css/50.8ac54c4e.chunk.css.map",
+    "50.052d487f.chunk.js.map": "/Mimino/static/js/50.052d487f.chunk.js.map",
     "205.9eac76c6.chunk.js.map": "/Mimino/static/js/205.9eac76c6.chunk.js.map",
     "208.4f86186f.chunk.js.map": "/Mimino/static/js/208.4f86186f.chunk.js.map",
     "792.ee39d86b.chunk.js.map": "/Mimino/static/js/792.ee39d86b.chunk.js.map",
@@ -37,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.216c2ab6.css",
-    "static/js/main.c13c0a02.js"
+    "static/js/main.175a265c.js"
   ]
 }
