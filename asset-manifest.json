@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.216c2ab6.css",
-    "main.js": "/Mimino/static/js/main.060efb98.js",
-    "static/js/318.8ea65960.chunk.js": "/Mimino/static/js/318.8ea65960.chunk.js",
+    "main.js": "/Mimino/static/js/main.fc6a8e0a.js",
+    "static/js/318.740bc596.chunk.js": "/Mimino/static/js/318.740bc596.chunk.js",
     "static/js/205.216f50b9.chunk.js": "/Mimino/static/js/205.216f50b9.chunk.js",
     "static/js/208.35b46ca9.chunk.js": "/Mimino/static/js/208.35b46ca9.chunk.js",
     "static/js/792.a9c086bc.chunk.js": "/Mimino/static/js/792.a9c086bc.chunk.js",
@@ -10,14 +10,14 @@
     "static/media/FilmP3Bold.ttf": "/Mimino/static/media/FilmP3Bold.c488094bc4ac7424e763.ttf",
     "index.html": "/Mimino/index.html",
     "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
-    "main.060efb98.js.map": "/Mimino/static/js/main.060efb98.js.map",
-    "318.8ea65960.chunk.js.map": "/Mimino/static/js/318.8ea65960.chunk.js.map",
+    "main.fc6a8e0a.js.map": "/Mimino/static/js/main.fc6a8e0a.js.map",
+    "318.740bc596.chunk.js.map": "/Mimino/static/js/318.740bc596.chunk.js.map",
     "205.216f50b9.chunk.js.map": "/Mimino/static/js/205.216f50b9.chunk.js.map",
     "208.35b46ca9.chunk.js.map": "/Mimino/static/js/208.35b46ca9.chunk.js.map",
     "792.a9c086bc.chunk.js.map": "/Mimino/static/js/792.a9c086bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.216c2ab6.css",
-    "static/js/main.060efb98.js"
+    "static/js/main.fc6a8e0a.js"
   ]
 }
