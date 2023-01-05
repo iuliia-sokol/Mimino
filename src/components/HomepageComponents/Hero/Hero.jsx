@@ -1,5 +1,6 @@
 import { Box } from 'components/Box';
 import { LocationBanner } from '../../LocationBanner/LocationBanner';
+import { SocialMediaLinks } from '../../SocialMediaLinks/SocialMediaLinks';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 import {
   Title,
@@ -21,6 +22,7 @@ export const Hero = () => {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
+        position="relative"
       >
         <Box>
           <Title>MIMIHO</Title>
@@ -32,11 +34,25 @@ export const Hero = () => {
           <HeroLocationBanner>
             <LocationBanner />
           </HeroLocationBanner>
+
           <HeroBtnsWrapper>
             <ButtonStandart text="Забронювати столик"></ButtonStandart>
             <ButtonStandart text="Забронювати номер"></ButtonStandart>
           </HeroBtnsWrapper>
         </HeroContentWrapper>
+
+        <Box
+          as="ul"
+          position="absolute"
+          bottom="-10%"
+          left="6%"
+          display={['flex', 'flex', 'flex']}
+          p="0px"
+          mt={['0px', null, null]}
+          mb={['0px', null, null]}
+        >
+          <SocialMediaLinks location="header" />
+        </Box>
       </Box>
     </HeroWrapper>
   );

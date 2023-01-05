@@ -48,6 +48,10 @@ export const HeaderLinksItem = styled.li`
     &:not(:first-child) {
       margin-left: 72px;
     }
+
+    &:last-child {
+      margin-left: 0;
+    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -115,4 +119,18 @@ export const HeaderLocationBanner = styled.div`
   @media screen and (min-width: 1024px) {
     display: none;
   }
+`;
+
+export const HeaderSocialMediaLinksWrapper = styled.ul`
+  display: none;
+  padding: 0;
+  margin: 0;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+  /* 
+   as="ul" display={['none', 'none', 'flex']}
+              p="0px" mt={['0px', null, null]}
+              mb={['0px', null, null]} */
 `;

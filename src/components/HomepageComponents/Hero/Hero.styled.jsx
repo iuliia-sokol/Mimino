@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import HeroBgImage1x from '../../../images/homepage/desktop/Main-bg-desk-1x.jpg';
 
 export const HeroWrapper = styled.section`
+  /* position: relative; */
   width: 100%;
   padding-top: 181px;
   padding-bottom: 102px;
@@ -80,6 +81,7 @@ export const DescriptionText = styled.p`
 export const HeroContentWrapper = styled.div`
   display: flex;
   justify-content: center;
+  position: relative;
 
   @media screen and (min-width: 1024px) {
     width: 100%;

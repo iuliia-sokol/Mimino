@@ -1,7 +1,9 @@
 import { Box } from 'components/Box';
+import { VscDeviceMobile } from 'react-icons/vsc';
+
 import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
 import { LocationBanner } from '../LocationBanner/LocationBanner';
-import { VscDeviceMobile } from 'react-icons/vsc';
+
 import {
   HeaderLinksItem,
   HeaderLinkText,
@@ -10,6 +12,7 @@ import {
   Phone,
   LogoLink,
   HeaderLocationBanner,
+  HeaderSocialMediaLinksWrapper,
 } from './Header.styled';
 
 export const Header = () => {
@@ -52,15 +55,9 @@ export const Header = () => {
             </HeaderLink>
           </HeaderLinksItem>
           <HeaderLinksItem>
-            <Box
-              as="ul"
-              display={['none', 'none', 'flex']}
-              p="0px"
-              mt={['0px', null, null]}
-              mb={['0px', null, null]}
-            >
+            <HeaderSocialMediaLinksWrapper>
               <SocialMediaLinks location="header" />
-            </Box>
+            </HeaderSocialMediaLinksWrapper>
           </HeaderLinksItem>
         </Box>
         <HeaderLocationBanner>
