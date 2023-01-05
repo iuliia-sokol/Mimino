@@ -1,5 +1,6 @@
 import { Box } from 'components/Box';
 import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
+import { LocationBanner } from '../LocationBanner/LocationBanner';
 import { VscDeviceMobile } from 'react-icons/vsc';
 import {
   HeaderLinksItem,
@@ -8,14 +9,15 @@ import {
   HeaderLinkPhoneWrapper,
   Phone,
   LogoLink,
+  HeaderLocationBanner,
 } from './Header.styled';
 
 export const Header = () => {
   return (
     <Box as="header" position="absolute" top="0px" width={[1, 1, 1]}>
       <Box
-        pt={['28px', '30px', null]}
-        pb={['12px', '30px', null]}
+        pt={['16px', '24px', null]}
+        // pb={['12px', '30px', null]}
         pr={['15px', '47px', '85px']}
         pl={['15px', '47px', '85px']}
         display="flex"
@@ -26,7 +28,6 @@ export const Header = () => {
         <LogoLink to="/" end>
           MIMIHO
         </LogoLink>
-
         <Box
           as="ul"
           display="flex"
@@ -62,6 +63,9 @@ export const Header = () => {
             </Box>
           </HeaderLinksItem>
         </Box>
+        <HeaderLocationBanner>
+          <LocationBanner />
+        </HeaderLocationBanner>
       </Box>
     </Box>
   );

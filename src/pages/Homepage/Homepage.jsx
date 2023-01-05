@@ -6,6 +6,7 @@ const Homepage = () => {
     <Box
       as="main"
       width={[1, 1, 1]}
+
       //   pt={['40px', '80px', null]}
       //   pb={['40px', '80px', null]}
 

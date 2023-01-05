@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import HeroBgImage1x from '../../../images/homepage/desktop/Main-bg-desk-1x.jpg';
-console.log({ HeroBgImage1x });
 
 export const HeroWrapper = styled.section`
   width: 100%;
@@ -29,9 +28,6 @@ export const HeroWrapper = styled.section`
 `;
 
 export const Title = styled.h1`
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   font-family: ${p => p.theme.fonts.logo};
   font-size: ${p => p.theme.fontSizes.xxl};
   font-weight: ${p => p.theme.fontWeights[4]};
@@ -81,23 +77,39 @@ export const DescriptionText = styled.p`
   }
 `;
 
-export const LocationText = styled.p`
-  font-family: ${p => p.theme.fonts.main};
-  font-size: ${p => p.theme.fontSizes.xxxxxs};
-  font-weight: ${p => p.theme.fontWeights[1]};
-  line-height: ${p => p.theme.lineHeights.content};
-  letter-spacing: ${p => p.theme.letterSpacings.textDataHero};
-  color: ${p => p.theme.colors.mainLight};
+export const HeroContentWrapper = styled.div`
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 1024px) {
-    font-size: ${p => p.theme.fontSizes.xxxs};
+    width: 100%;
+    justify-content: space-between;
   }
 `;
 
-export const LocationIconWrapper = styled.span`
-  & > svg {
-    color: ${p => p.theme.colors.mainAccent};
-    width: 24px;
-    height: 24px;
+export const HeroLocationBanner = styled.div`
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
+`;
+
+export const HeroBtnsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-self: center;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    /* flex-grow: 1; */
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 60px;
+    /* flex-grow: 1; */
   }
 `;

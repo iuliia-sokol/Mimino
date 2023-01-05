@@ -32,9 +32,9 @@ export const HeaderLinksWrapper = styled.div`
 `;
 
 export const HeaderLinksItem = styled.li`
-  &:not(:last-child) {
+  /* &:not(:last-child) {
     padding: 8px;
-  }
+  } */
 
   &:not(:first-child) {
     margin-left: 20px;
@@ -45,8 +45,6 @@ export const HeaderLinksItem = styled.li`
   }
 
   @media screen and (min-width: 1024px) {
-    /* padding: 8px; */
-
     &:not(:first-child) {
       margin-left: 72px;
     }
@@ -105,5 +103,16 @@ export const Phone = styled.span`
     font-weight: ${p => p.theme.fontWeights[1]};
     letter-spacing: ${p => p.theme.letterSpacings.content};
     color: ${p => p.theme.colors.mainLight};
+  }
+`;
+
+export const HeaderLocationBanner = styled.div`
+  display: flex;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
   }
 `;
