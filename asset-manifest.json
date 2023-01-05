@@ -1,25 +1,23 @@
 {
   "files": {
-    "main.css": "/Mimino/static/css/main.d3d666b0.css",
-    "main.js": "/Mimino/static/js/main.e762b028.js",
-    "static/js/318.8cd5e657.chunk.js": "/Mimino/static/js/318.8cd5e657.chunk.js",
+    "main.css": "/Mimino/static/css/main.216c2ab6.css",
+    "main.js": "/Mimino/static/js/main.dee034f0.js",
+    "static/js/318.38a605a7.chunk.js": "/Mimino/static/js/318.38a605a7.chunk.js",
     "static/js/205.216f50b9.chunk.js": "/Mimino/static/js/205.216f50b9.chunk.js",
     "static/js/208.35b46ca9.chunk.js": "/Mimino/static/js/208.35b46ca9.chunk.js",
     "static/js/792.a9c086bc.chunk.js": "/Mimino/static/js/792.a9c086bc.chunk.js",
-    "static/js/856.be173b09.chunk.js": "/Mimino/static/js/856.be173b09.chunk.js",
     "static/media/Main-bg-desk-1x.jpg": "/Mimino/static/media/Main-bg-desk-1x.7c59e6625b1004d3a077.jpg",
     "static/media/FilmP3Bold.ttf": "/Mimino/static/media/FilmP3Bold.c488094bc4ac7424e763.ttf",
     "index.html": "/Mimino/index.html",
-    "main.d3d666b0.css.map": "/Mimino/static/css/main.d3d666b0.css.map",
-    "main.e762b028.js.map": "/Mimino/static/js/main.e762b028.js.map",
-    "318.8cd5e657.chunk.js.map": "/Mimino/static/js/318.8cd5e657.chunk.js.map",
+    "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
+    "main.dee034f0.js.map": "/Mimino/static/js/main.dee034f0.js.map",
+    "318.38a605a7.chunk.js.map": "/Mimino/static/js/318.38a605a7.chunk.js.map",
     "205.216f50b9.chunk.js.map": "/Mimino/static/js/205.216f50b9.chunk.js.map",
     "208.35b46ca9.chunk.js.map": "/Mimino/static/js/208.35b46ca9.chunk.js.map",
-    "792.a9c086bc.chunk.js.map": "/Mimino/static/js/792.a9c086bc.chunk.js.map",
-    "856.be173b09.chunk.js.map": "/Mimino/static/js/856.be173b09.chunk.js.map"
+    "792.a9c086bc.chunk.js.map": "/Mimino/static/js/792.a9c086bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3d666b0.css",
-    "static/js/main.e762b028.js"
+    "static/css/main.216c2ab6.css",
+    "static/js/main.dee034f0.js"
   ]
 }
