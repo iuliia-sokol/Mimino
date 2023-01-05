@@ -32,12 +32,21 @@ export const HeaderLinksWrapper = styled.div`
 `;
 
 export const HeaderLinksItem = styled.li`
-  padding: 8px;
+  &:not(:last-child) {
+    padding: 8px;
+  }
+
   &:not(:first-child) {
     margin-left: 20px;
   }
 
+  &:last-child {
+    margin-left: 0;
+  }
+
   @media screen and (min-width: 1024px) {
+    /* padding: 8px; */
+
     &:not(:first-child) {
       margin-left: 72px;
     }
