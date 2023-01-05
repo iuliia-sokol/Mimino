@@ -19,7 +19,6 @@ export const Slider = ({ images }) => {
       // onSwiper={swiper => console.log(swiper)}
     >
       {images.map(img => {
-        console.log(img);
         return (
           <SlideStyled key={img.min}>
             <img
@@ -32,8 +31,8 @@ export const Slider = ({ images }) => {
         );
       })}
 
-      <SwiperButtonPrev>Prev</SwiperButtonPrev>
-      <SwiperButtonNext>Next</SwiperButtonNext>
+      <SwiperButtonPrev></SwiperButtonPrev>
+      <SwiperButtonNext></SwiperButtonNext>
     </SwiperStyled>
   );
 };

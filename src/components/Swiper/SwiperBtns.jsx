@@ -8,7 +8,7 @@ import { SwiperBtn } from './SwiperBtns.styled';
 export const SwiperButtonNext = () => {
   const swiper = useSwiper();
   return (
-    <SwiperBtn onClick={() => swiper.slideNext()}>
+    <SwiperBtn type="button" onClick={() => swiper.slideNext()}>
       <ReactSVG src={ArrowRight} />
     </SwiperBtn>
   );
@@ -17,7 +17,7 @@ export const SwiperButtonNext = () => {
 export const SwiperButtonPrev = () => {
   const swiper = useSwiper();
   return (
-    <SwiperBtn onClick={() => swiper.slidePrev()}>
+    <SwiperBtn type="button" onClick={() => swiper.slidePrev()}>
       <ReactSVG src={ArrowLeft} />
     </SwiperBtn>
   );
