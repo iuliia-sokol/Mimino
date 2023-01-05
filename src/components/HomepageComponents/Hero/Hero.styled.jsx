@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import HeroBgImage1x from '../../../images/homepage/desktop/Main-bg-desk-1x.jpg';
+import HeroBgImage2x from '../../../images/homepage/desktop/Main-bg-desk-2x.jpg';
 
 export const HeroWrapper = styled.section`
   width: 100%;
@@ -24,6 +25,17 @@ export const HeroWrapper = styled.section`
 
   @media screen and (min-width: 1280px) {
     padding-top: 164px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.65)
+      ),
+      url(${HeroBgImage2x});
   }
 `;
 

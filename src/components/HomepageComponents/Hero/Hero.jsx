@@ -42,16 +42,7 @@ export const Hero = () => {
           </HeroBtnsWrapper>
         </HeroContentWrapper>
 
-        <HeroSocialMediaLinksWrapper
-        //   as="ul"
-        //   position="absolute"
-        //   bottom="-10%"
-        //   left="6%"
-        //   display={['flex', 'flex', 'flex']}
-        //   p="0px"
-        //   mt={['0px', null, null]}
-        //   mb={['0px', null, null]}
-        >
+        <HeroSocialMediaLinksWrapper>
           <SocialMediaLinks location="header" />
         </HeroSocialMediaLinksWrapper>
       </Box>
