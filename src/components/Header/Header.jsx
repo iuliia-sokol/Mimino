@@ -7,6 +7,7 @@ import {
   HeaderLink,
   HeaderLinkPhoneWrapper,
   Phone,
+  LogoLink,
 } from './Header.styled';
 
 export const Header = () => {
@@ -24,24 +25,9 @@ export const Header = () => {
       justifyContent="space-between"
       alignItems="center"
     >
-      <Box
-        as="p"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        // flexGrow="1"
-        fontFamily="logo"
-        fontSize={['m', 'l', null]}
-        fontWeight={4}
-        letterSpacing="logo"
-        lineHeight="logo"
-        color="mainLight"
-        // ml={['44px', '107px', '131px']}
-        // mt={['58px', '37px', '40px']}
-        // mb={['58px', '37px', '35px']}
-      >
+      <LogoLink to="/" end>
         MIMIHO
-      </Box>
+      </LogoLink>
 
       <Box
         as="ul"

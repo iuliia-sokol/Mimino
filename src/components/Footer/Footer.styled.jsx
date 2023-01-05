@@ -1,6 +1,35 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const LogoLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  font-family: ${p => p.theme.fonts.logo};
+  font-size: ${p => p.theme.fontSizes.l};
+  font-weight: ${p => p.theme.fontWeights[4]};
+  letter-spacing: ${p => p.theme.letterSpacings.logo};
+  line-height: ${p => p.theme.lineHeights.logo};
+  color: ${p => p.theme.colors.mainAccent};
+  margin-left: 44px;
+  margin-top: 58px;
+  margin-bottom: 58px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: ${p => p.theme.fontSizes.xl};
+    margin-left: 107px;
+    margin-top: 37px;
+    margin-bottom: 37px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 131px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+`;
+
 export const FooterLinksWrapper = styled.div`
   display: flex;
   flex-direction: column;

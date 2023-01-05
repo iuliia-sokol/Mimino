@@ -2,6 +2,7 @@ import {
   FooterLink,
   FooterLinkListItem,
   FooterLinksWrapper,
+  LogoLink,
 } from './Footer.styled';
 import { Box } from 'components/Box';
 import { SocialMediaLinks } from 'components/SocialMediaLinks/SocialMediaLinks';
@@ -17,27 +18,11 @@ export const Footer = () => {
       pl={['15px', '47px', '85px']}
       bg="footerBg"
       display="flex"
-      //   alignItems="base-line"
-      // justifyContent="space-between"
     >
-      <Box
-        as="p"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        flexGrow="1"
-        fontFamily="logo"
-        fontSize={['l', 'xl', null]}
-        fontWeight={4}
-        letterSpacing="logo"
-        lineHeight="logo"
-        color="mainAccent"
-        ml={['44px', '107px', '131px']}
-        mt={['58px', '37px', '40px']}
-        mb={['58px', '37px', '35px']}
-      >
+      <LogoLink to="/" end>
         MIMIHO
-      </Box>
+      </LogoLink>
+
       <FooterLinksWrapper>
         <Box as="ul">
           <FooterLinkListItem>
@@ -46,10 +31,10 @@ export const Footer = () => {
             </FooterLink>
           </FooterLinkListItem>
           <FooterLinkListItem>
-            <FooterLink to="/restaurant">Ресторан</FooterLink>
+            <FooterLink to="restaurant">Ресторан</FooterLink>
           </FooterLinkListItem>
           <FooterLinkListItem>
-            <FooterLink to="/hotel">Готель</FooterLink>
+            <FooterLink to="hotel">Готель</FooterLink>
           </FooterLinkListItem>
         </Box>
         <Box
