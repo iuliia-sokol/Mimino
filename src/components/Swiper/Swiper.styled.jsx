@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SwiperStyled = styled(Swiper)`
-  margin-top: 32px;
-  width: 515px;
-
   & > .swiper-wrapper {
     display: flex;
     gap: 25px;
@@ -51,7 +48,8 @@ export const SlideStyled = styled(SwiperSlide)`
 `;
 
 export const SwiperBtnsWrapper = styled.div`
+  /* margin-left: -70px; */
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 32px;
 `;

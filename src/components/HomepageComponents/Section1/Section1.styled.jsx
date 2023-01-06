@@ -176,7 +176,11 @@ export const ImageWrapperReversed = styled(ImageWrapper)`
 `;
 
 export const SliderWrapper = styled.div`
-  width: 100%;
-  margin-left: 70px;
-  margin-top: 87px;
+  /* width: 100%; */
+  /* margin-left: 70px; */
+  transform: translateX(70px);
+  margin-top: 32px;
+  width: 515px;
+
+  /* margin-top: 87px; */
 `;

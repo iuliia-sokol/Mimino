@@ -26,7 +26,11 @@ import { Slider } from 'components/Swiper/Swiper';
 export const Section1 = () => {
   return (
     <Section1Wrapper>
-      <Box pr={['15px', '47px', '85px']} pl={['15px', '47px', '85px']}>
+      <Box
+        pr={['15px', '47px', '85px']}
+        pl={['15px', '47px', '85px']}
+        overflow="hidden"
+      >
         <BlockWrapper>
           <DataWrapper>
             <SubHeader>Amet minim mollit non</SubHeader>
@@ -53,9 +57,6 @@ export const Section1 = () => {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </DataAccented>
-            <SliderWrapper>
-              <Slider images={sectionSlider1} />
-            </SliderWrapper>
           </DataWrapper>
           <ImageWrapperReversed>
             <img
@@ -66,6 +67,9 @@ export const Section1 = () => {
             />
           </ImageWrapperReversed>
         </BlockWrapperReversed>
+        <SliderWrapper>
+          <Slider images={sectionSlider1} />
+        </SliderWrapper>
       </Box>
     </Section1Wrapper>
   );
