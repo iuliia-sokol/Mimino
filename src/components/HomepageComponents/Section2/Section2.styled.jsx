@@ -117,7 +117,7 @@ export const SliderWrapper = styled.div`
 export const SliderButtonWrapper = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-between;
+  justify-content: center;
   gap: 32px;
   @media screen and (min-width: 1024px) {
     flex-direction: row;
@@ -137,7 +137,7 @@ export const BtnsWrapper = styled.div`
 
   @media screen and (min-width: 1024px) {
     align-self: flex-end;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
   }
   @media screen and (min-width: 1280px) {
   }
