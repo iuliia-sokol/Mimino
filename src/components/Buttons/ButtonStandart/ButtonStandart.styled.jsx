@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const BtnElement = styled.button`
+  width: ${p => p.theme.sizes.btnStandartWidth};
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: ${p => p.theme.radii.btnStandart};
   padding-top: ${p => p.theme.space[2]}px;
   padding-bottom: ${p => p.theme.space[2]}px;
-  padding-left: ${p => p.theme.space[4]}px;
-  padding-right: ${p => p.theme.space[4]}px;
+  padding-left: ${p => p.theme.space[3]}px;
+  padding-right: ${p => p.theme.space[3]}px;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p => p.theme.fontSizes.xxxs};
   font-weight: ${p => p.theme.fontWeights[4]};

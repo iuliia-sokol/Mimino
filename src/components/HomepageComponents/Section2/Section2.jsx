@@ -1,4 +1,5 @@
 import { Box } from 'components/Box';
+import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 import { Slider } from 'components/Swiper/Swiper';
 import { sectionSlider2 } from '../../../utils/homepageImages';
 import {
@@ -8,6 +9,8 @@ import {
   Header,
   Data,
   SliderWrapper,
+  SliderButtonWrapper,
+  BtnsWrapper,
 } from './Section2.styled';
 
 export const Section2 = () => {
@@ -27,9 +30,15 @@ export const Section2 = () => {
             sint. Velit officia consequat duis enim velit mollit.
           </Data>
         </DataWrapper>
-        <SliderWrapper>
-          <Slider images={sectionSlider2} background="light" size="large" />
-        </SliderWrapper>
+        <SliderButtonWrapper>
+          <BtnsWrapper>
+            <ButtonStandart text="Забронювати столик"></ButtonStandart>
+            <ButtonStandart text="Переглянути меню"></ButtonStandart>
+          </BtnsWrapper>
+          <SliderWrapper>
+            <Slider images={sectionSlider2} background="light" size="large" />
+          </SliderWrapper>
+        </SliderButtonWrapper>
       </Box>
     </Section2Wrapper>
   );

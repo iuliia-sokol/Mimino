@@ -42,7 +42,6 @@ export const DataWrapper = styled.div`
   align-self: flex-end;
   flex-direction: column;
   align-items: flex-start;
-  /* justify-content: flex-end; */
   overflow-x: hidden;
 
   @media screen and (min-width: 1024px) {
@@ -98,17 +97,51 @@ export const Data = styled.p`
 export const SliderWrapper = styled.div`
   margin-top: 48px;
   width: ${p => p.theme.sizes.sliderWidthMobile[1]};
-  align-self: flex-end;
+  /* align-self: flex-end; */
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
+  margin-left: 25px;
 
   @media screen and (min-width: 1024px) {
     margin-top: 40px;
+    margin-left: 0;
     width: ${p => p.theme.sizes.sliderWidthTablet[1]};
   }
 
   @media screen and (min-width: 1280px) {
     width: ${p => p.theme.sizes.sliderWidthDesktop[1]};
+  }
+`;
+
+export const SliderButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 32px;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 28px;
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 31px;
+  }
+`;
+
+export const BtnsWrapper = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  /* align-self: center; */
+
+  @media screen and (min-width: 1024px) {
+    /* flex-direction: row;
+    justify-content: space-between;
+    gap: 40px; */
+  }
+  @media screen and (min-width: 1280px) {
+    /* gap: 60px; */
   }
 `;

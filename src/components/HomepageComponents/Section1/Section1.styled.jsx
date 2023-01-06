@@ -177,18 +177,18 @@ export const ImageWrapperReversed = styled(ImageWrapper)`
 
 export const SliderWrapper = styled.div`
   margin-top: 32px;
-  width: 245px;
+  width: ${p => p.theme.sizes.sliderWidthMobile[0]};
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
 
   @media screen and (min-width: 1024px) {
-    width: 428px;
+    width: ${p => p.theme.sizes.sliderWidthTablet[0]};
     margin-top: -180px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 548px;
+    width: ${p => p.theme.sizes.sliderWidthDesktop[0]};
   }
 `;
