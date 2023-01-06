@@ -14,9 +14,11 @@ export const Slider = ({ images }) => {
       navigation
       autoplay
       grabCursor={true}
-      //   centeredSlides={true}
-      //   spaceBetween={25}
-      slidesPerView={2}
+      slidesPerView={'auto'}
+      centeredSlides={true}
+      // centeredSlides={true}
+      spaceBetween={25}
+      //   slidesPerView={1}
       rewind={true}
     >
       {images.map(img => {

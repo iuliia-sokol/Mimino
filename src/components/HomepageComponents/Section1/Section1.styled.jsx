@@ -178,9 +178,19 @@ export const ImageWrapperReversed = styled(ImageWrapper)`
 export const SliderWrapper = styled.div`
   /* width: 100%; */
   /* margin-left: 70px; */
-  transform: translateX(70px);
+  /* transform: translateX(70px); */
   margin-top: 32px;
-  width: 515px;
+  /* width: 245px; */
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
 
+  @media screen and (min-width: 1024px) {
+    width: 428px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 548px;
+  }
   /* margin-top: 87px; */
 `;
