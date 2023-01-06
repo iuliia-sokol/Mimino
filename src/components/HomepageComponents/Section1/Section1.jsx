@@ -1,4 +1,3 @@
-import { React } from 'react';
 import { Box } from 'components/Box';
 
 import {
@@ -31,7 +30,6 @@ export const Section1 = () => {
         flexDirection="column"
         pr={['15px', '47px', '85px']}
         pl={['15px', '47px', '85px']}
-        // overflow="hidden"
       >
         <BlockWrapper>
           <DataWrapper>

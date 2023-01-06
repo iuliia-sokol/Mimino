@@ -178,7 +178,6 @@ export const ImageWrapperReversed = styled(ImageWrapper)`
 export const SliderWrapper = styled.div`
   margin-top: 32px;
   width: 245px;
-
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
@@ -186,13 +185,10 @@ export const SliderWrapper = styled.div`
 
   @media screen and (min-width: 1024px) {
     width: 428px;
-
     margin-top: -180px;
-    /* transform: translateX(110%); */
   }
 
   @media screen and (min-width: 1280px) {
     width: 548px;
   }
-  /* margin-top: 87px; */
 `;

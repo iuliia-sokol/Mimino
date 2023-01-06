@@ -5,14 +5,12 @@ export const SwiperStyled = styled(Swiper)`
   width: 245px;
   & > .swiper-wrapper {
     display: flex;
-    /* gap: 25px; */
     margin-bottom: 20px;
   }
 
   @media screen and (min-width: 1024px) {
     width: 428px;
     & > .swiper-wrapper {
-      /* gap: 40px; */
       margin-bottom: 32px;
     }
   }
@@ -52,7 +50,6 @@ export const SlideStyled = styled(SwiperSlide)`
 `;
 
 export const SwiperBtnsWrapper = styled.div`
-  /* margin-left: -70px; */
   display: flex;
   justify-content: flex-end;
   gap: 32px;

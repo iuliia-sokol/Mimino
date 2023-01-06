@@ -9,6 +9,7 @@ export const theme = {
     headersMain: '#494848',
     supheader: '#B4B4B4',
     textContent: '#7A7A7A',
+    textContentSection: '#BABABA',
     textContentSecondary: '#5F5F5F',
     textDataHero: '#E5E5E5',
 

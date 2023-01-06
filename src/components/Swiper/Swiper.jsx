@@ -7,7 +7,7 @@ import { SwiperStyled, SlideStyled, SwiperBtnsWrapper } from './Swiper.styled';
 
 import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
 
-export const Slider = ({ images }) => {
+export const Slider = ({ images, background = 'dark' }) => {
   return (
     <SwiperStyled
       modules={[Navigation, Autoplay]}
@@ -34,8 +34,8 @@ export const Slider = ({ images }) => {
         );
       })}
       <SwiperBtnsWrapper>
-        <SwiperButtonPrev></SwiperButtonPrev>
-        <SwiperButtonNext></SwiperButtonNext>
+        <SwiperButtonPrev background={background}></SwiperButtonPrev>
+        <SwiperButtonNext background={background}></SwiperButtonNext>
       </SwiperBtnsWrapper>
     </SwiperStyled>
   );
