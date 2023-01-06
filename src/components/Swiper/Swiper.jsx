@@ -17,8 +17,8 @@ export const Slider = ({ images }) => {
       slidesPerView={'auto'}
       centeredSlides={true}
       // centeredSlides={true}
-      spaceBetween={25}
-      //   slidesPerView={1}
+      //   spaceBetween={25}
+      breakpoints={{ 414: { spaceBetween: 25 }, 1024: { spaceBetween: 40 } }}
       rewind={true}
     >
       {images.map(img => {

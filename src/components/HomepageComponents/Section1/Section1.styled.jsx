@@ -184,9 +184,13 @@ export const SliderWrapper = styled.div`
   align-self: center;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
 
   @media screen and (min-width: 1024px) {
     width: 428px;
+    align-self: flex-end;
+    margin-top: -180px;
+    transform: translateX(100%);
   }
 
   @media screen and (min-width: 1280px) {

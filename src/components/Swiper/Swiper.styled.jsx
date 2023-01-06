@@ -12,7 +12,7 @@ export const SwiperStyled = styled(Swiper)`
   @media screen and (min-width: 1024px) {
     width: 428px;
     & > .swiper-wrapper {
-      gap: 40px;
+      /* gap: 40px; */
       margin-bottom: 32px;
     }
   }
@@ -40,7 +40,7 @@ export const SlideStyled = styled(SwiperSlide)`
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     & > img {
       width: 254px;
       height: 254px;
