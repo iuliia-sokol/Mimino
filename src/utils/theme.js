@@ -29,6 +29,12 @@ export const theme = {
     btnModalHeight: '64px',
     footerMaxHeight: '304px',
     footerLinkWidth: '144px',
+    slideStandart: ['245px', '194px', '254px'],
+    slideLargeWidth: ['274px', '270px', '270px'],
+    slideLargeHeight: ['270px', '270px', '270px'],
+    sliderWidthMobile: ['245px', '274px'],
+    sliderWidthTablet: ['428px', '662px'],
+    sliderWidthDesktop: ['548px', '875px'],
   },
   fonts: {
     logo: 'Film P3',

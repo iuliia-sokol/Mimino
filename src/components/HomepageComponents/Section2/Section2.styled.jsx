@@ -96,19 +96,19 @@ export const Data = styled.p`
 `;
 
 export const SliderWrapper = styled.div`
-  margin-top: 32px;
-  width: 245px;
+  margin-top: 48px;
+  width: ${p => p.theme.sizes.sliderWidthMobile[1]};
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
 
   @media screen and (min-width: 1024px) {
-    width: 428px;
-    /* margin-top: -180px; */
+    margin-top: 40px;
+    width: ${p => p.theme.sizes.sliderWidthTablet[1]};
   }
 
   @media screen and (min-width: 1280px) {
-    width: 548px;
+    width: ${p => p.theme.sizes.sliderWidthDesktop[1]};
   }
 `;

@@ -2,23 +2,35 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SwiperStyled = styled(Swiper)`
-  width: 245px;
+  width: ${p =>
+    p.size === 'large'
+      ? p.theme.sizes.sliderWidthMobile[1]
+      : p.theme.sizes.sliderWidthMobile[0]};
   & > .swiper-wrapper {
     display: flex;
     margin-bottom: 20px;
+    gap: ${p => (p.size === 'large' ? '0px' : '5px')};
   }
 
   @media screen and (min-width: 1024px) {
-    width: 428px;
+    width: ${p =>
+      p.size === 'large'
+        ? p.theme.sizes.sliderWidthTablet[1]
+        : p.theme.sizes.sliderWidthTablet[0]};
     & > .swiper-wrapper {
       margin-bottom: 32px;
+      gap: ${p => (p.size === 'large' ? '0px' : '6px')};
     }
   }
 
   @media screen and (min-width: 1280px) {
-    width: 548px;
+    width: ${p =>
+      p.size === 'large'
+        ? p.theme.sizes.sliderWidthDesktop[1]
+        : p.theme.sizes.sliderWidthDesktop[0]};
     & > .swiper-wrapper {
       margin-bottom: 36px;
+      gap: ${p => (p.size === 'large' ? '46px' : 'none')};
     }
   }
 `;
@@ -30,27 +42,45 @@ export const SlideStyled = styled(SwiperSlide)`
 
   & > img {
     border-radius: 2px;
-    width: 245px;
-    height: 245px;
+    max-width: ${p =>
+      p.size === 'large'
+        ? p.theme.sizes.slideLargeWidth[0]
+        : p.theme.sizes.slideStandart[0]};
+    height: ${p =>
+      p.size === 'large'
+        ? p.theme.sizes.slideLargeHeight[0]
+        : p.theme.sizes.slideStandart[0]};
   }
 
   @media screen and (min-width: 1024px) {
     & > img {
-      width: 194px;
-      height: 194px;
+      max-width: ${p =>
+        p.size === 'large'
+          ? p.theme.sizes.slideLargeWidth[1]
+          : p.theme.sizes.slideStandart[1]};
+      height: ${p =>
+        p.size === 'large'
+          ? p.theme.sizes.slideLargeHeight[1]
+          : p.theme.sizes.slideStandart[1]};
     }
   }
 
   @media screen and (min-width: 1280px) {
     & > img {
-      width: 254px;
-      height: 254px;
+      max-width: ${p =>
+        p.size === 'large'
+          ? p.theme.sizes.slideLargeWidth[2]
+          : p.theme.sizes.slideStandart[2]};
+      height: ${p =>
+        p.size === 'large'
+          ? p.theme.sizes.slideLargeHeight[2]
+          : p.theme.sizes.slideStandart[2]};
     }
   }
 `;
 
 export const SwiperBtnsWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
+  justify-content: ${p => (p.size === 'large' ? 'flex-start' : 'flex-end')};
   gap: 32px;
 `;

@@ -28,7 +28,7 @@ export const Section2 = () => {
           </Data>
         </DataWrapper>
         <SliderWrapper>
-          <Slider images={sectionSlider2} background="light" />
+          <Slider images={sectionSlider2} background="light" size="large" />
         </SliderWrapper>
       </Box>
     </Section2Wrapper>
