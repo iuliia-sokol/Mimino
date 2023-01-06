@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.216c2ab6.css",
-    "main.js": "/Mimino/static/js/main.5f9e0e4f.js",
-    "static/css/50.8ac54c4e.chunk.css": "/Mimino/static/css/50.8ac54c4e.chunk.css",
-    "static/js/50.0259c6bf.chunk.js": "/Mimino/static/js/50.0259c6bf.chunk.js",
+    "main.js": "/Mimino/static/js/main.5d1ea1ab.js",
+    "static/js/638.34a8c55b.chunk.js": "/Mimino/static/js/638.34a8c55b.chunk.js",
     "static/js/205.9eac76c6.chunk.js": "/Mimino/static/js/205.9eac76c6.chunk.js",
     "static/js/208.4f86186f.chunk.js": "/Mimino/static/js/208.4f86186f.chunk.js",
     "static/js/792.ee39d86b.chunk.js": "/Mimino/static/js/792.ee39d86b.chunk.js",
-    "static/js/966.5bb089c0.chunk.js": "/Mimino/static/js/966.5bb089c0.chunk.js",
+    "static/css/990.31d6cfe0.chunk.css": "/Mimino/static/css/990.31d6cfe0.chunk.css",
+    "static/js/990.15324607.chunk.js": "/Mimino/static/js/990.15324607.chunk.js",
     "static/media/Main-bg-desk-2x.jpg": "/Mimino/static/media/Main-bg-desk-2x.68abc1bc868d18726236.jpg",
     "static/media/main-restaurant-interior-2x.jpg": "/Mimino/static/media/main-restaurant-interior-2x.31049e66f26d703ab6fc.jpg",
     "static/media/main-restaurant-interior-2-2x.jpg": "/Mimino/static/media/main-restaurant-interior-2-2x.a9816b960792601e7d9c.jpg",
@@ -29,16 +29,15 @@
     "static/media/arrow-left.svg": "/Mimino/static/media/arrow-left.674a1b08529b6bf90763c19c7dde5140.svg",
     "static/media/arrow-right.svg": "/Mimino/static/media/arrow-right.fb4df32136488fade0a90fb59321f95f.svg",
     "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
-    "main.5f9e0e4f.js.map": "/Mimino/static/js/main.5f9e0e4f.js.map",
-    "50.8ac54c4e.chunk.css.map": "/Mimino/static/css/50.8ac54c4e.chunk.css.map",
-    "50.0259c6bf.chunk.js.map": "/Mimino/static/js/50.0259c6bf.chunk.js.map",
+    "main.5d1ea1ab.js.map": "/Mimino/static/js/main.5d1ea1ab.js.map",
+    "638.34a8c55b.chunk.js.map": "/Mimino/static/js/638.34a8c55b.chunk.js.map",
     "205.9eac76c6.chunk.js.map": "/Mimino/static/js/205.9eac76c6.chunk.js.map",
     "208.4f86186f.chunk.js.map": "/Mimino/static/js/208.4f86186f.chunk.js.map",
     "792.ee39d86b.chunk.js.map": "/Mimino/static/js/792.ee39d86b.chunk.js.map",
-    "966.5bb089c0.chunk.js.map": "/Mimino/static/js/966.5bb089c0.chunk.js.map"
+    "990.15324607.chunk.js.map": "/Mimino/static/js/990.15324607.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.216c2ab6.css",
-    "static/js/main.5f9e0e4f.js"
+    "static/js/main.5d1ea1ab.js"
   ]
 }
