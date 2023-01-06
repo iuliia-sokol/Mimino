@@ -27,9 +27,11 @@ export const Section1 = () => {
   return (
     <Section1Wrapper>
       <Box
+        display="flex"
+        flexDirection="column"
         pr={['15px', '47px', '85px']}
         pl={['15px', '47px', '85px']}
-        overflow="hidden"
+        // overflow="hidden"
       >
         <BlockWrapper>
           <DataWrapper>

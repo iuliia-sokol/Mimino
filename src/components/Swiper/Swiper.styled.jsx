@@ -26,8 +26,11 @@ export const SwiperStyled = styled(Swiper)`
 `;
 
 export const SlideStyled = styled(SwiperSlide)`
-  & > img {
+  &.swiper-slide-active > img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  & > img {
     border-radius: 2px;
     width: 245px;
     height: 245px;
