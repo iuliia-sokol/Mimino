@@ -36,7 +36,11 @@ export const SwiperStyled = styled(Swiper)`
 `;
 
 export const SlideStyled = styled(SwiperSlide)`
-  margin-left: ${p => (p.size === 'large' ? '20px' : '25px')};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: ${p => (p.size === 'large' ? '10px' : '12.5px')};
+  margin-right: ${p => (p.size === 'large' ? '10px' : '12.5px')};
 
   &.swiper-slide-active > img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -55,7 +59,8 @@ export const SlideStyled = styled(SwiperSlide)`
   }
 
   @media screen and (min-width: 1024px) {
-    margin-left: ${p => (p.size === 'large' ? '34px' : '40px')};
+    margin-right: ${p => (p.size === 'large' ? '17px' : '20px')};
+    margin-left: ${p => (p.size === 'large' ? '17px' : '20px')};
 
     & > img {
       max-width: ${p =>
@@ -70,7 +75,8 @@ export const SlideStyled = styled(SwiperSlide)`
   }
 
   @media screen and (min-width: 1280px) {
-    margin-left: ${p => (p.size === 'large' ? '86px' : '40px')};
+    margin-right: ${p => (p.size === 'large' ? '43px' : '20px')};
+    margin-left: ${p => (p.size === 'large' ? '43px' : '20px')};
 
     & > img {
       max-width: ${p =>
