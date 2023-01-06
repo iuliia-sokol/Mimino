@@ -12,6 +12,7 @@ import {
   BlockWrapperReversed,
   DataAccented,
   ImageWrapperReversed,
+  SliderWrapper,
 } from './Section1.styled';
 
 import Pic1_1x from '../../../images/homepage/desktop/main-restaurant-interior-1x.jpg';
@@ -52,6 +53,9 @@ export const Section1 = () => {
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet.
             </DataAccented>
+            <SliderWrapper>
+              <Slider images={sectionSlider1} />
+            </SliderWrapper>
           </DataWrapper>
           <ImageWrapperReversed>
             <img
@@ -62,9 +66,6 @@ export const Section1 = () => {
             />
           </ImageWrapperReversed>
         </BlockWrapperReversed>
-        <div>
-          <Slider images={sectionSlider1} />
-        </div>
       </Box>
     </Section1Wrapper>
   );

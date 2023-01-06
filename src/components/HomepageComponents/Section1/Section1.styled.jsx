@@ -1,14 +1,4 @@
 import styled from 'styled-components';
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-export const SwiperStyled = styled(Swiper)`
-  margin-top: 32px;
-`;
-
-export const SlideStyled = styled(SwiperSlide)`
-  width: 245px;
-  height: 245px;
-`;
 
 export const Section1Wrapper = styled.section`
   width: 100%;
@@ -30,6 +20,7 @@ export const DataWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow-x: hidden;
 
   @media screen and (min-width: 1024px) {
   }
@@ -182,4 +173,10 @@ export const ImageWrapperReversed = styled(ImageWrapper)`
       height: 574px;
     }
   }
+`;
+
+export const SliderWrapper = styled.div`
+  width: 100%;
+  margin-left: 70px;
+  margin-top: 87px;
 `;

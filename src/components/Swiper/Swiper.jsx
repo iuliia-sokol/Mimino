@@ -1,9 +1,9 @@
 import { Navigation, Autoplay } from 'swiper';
 
-import 'swiper/css';
+// import 'swiper/css';
 import 'swiper/css/autoplay';
 
-import { SwiperStyled, SlideStyled } from './Swiper.styled';
+import { SwiperStyled, SlideStyled, SwiperBtnsWrapper } from './Swiper.styled';
 
 import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
 
@@ -13,10 +13,11 @@ export const Slider = ({ images }) => {
       modules={[Navigation, Autoplay]}
       navigation
       autoplay
-      spaceBetween={25}
-      slidesPerView={1}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={swiper => console.log(swiper)}
+      grabCursor={true}
+      //   centeredSlides={true}
+      //   spaceBetween={25}
+      slidesPerView={2}
+      rewind={true}
     >
       {images.map(img => {
         return (
@@ -30,9 +31,10 @@ export const Slider = ({ images }) => {
           </SlideStyled>
         );
       })}
-
-      <SwiperButtonPrev></SwiperButtonPrev>
-      <SwiperButtonNext></SwiperButtonNext>
+      <SwiperBtnsWrapper>
+        <SwiperButtonPrev></SwiperButtonPrev>
+        <SwiperButtonNext></SwiperButtonNext>
+      </SwiperBtnsWrapper>
     </SwiperStyled>
   );
 };
