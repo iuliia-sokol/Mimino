@@ -17,11 +17,11 @@ export const Slider = ({ images, background = 'dark', size = 'standart' }) => {
       grabCursor={true}
       slidesPerView={'auto'}
       centeredSlides={true}
-      breakpoints={{
-        414: { spaceBetween: 20 },
-        1024: { spaceBetween: 34 },
-        1280: { spaceBetween: 40 },
-      }}
+      // breakpoints={{
+      //   414: { spaceBetween: 20 },
+      //   1024: { spaceBetween: 34 },
+      //   1280: { spaceBetween: 40 },
+      // }}
       rewind={true}
     >
       {images.map(img => {

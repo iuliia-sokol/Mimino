@@ -117,7 +117,7 @@ export const SliderWrapper = styled.div`
 export const SliderButtonWrapper = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  justify-content: center;
+  justify-content: space-between;
   gap: 32px;
   @media screen and (min-width: 1024px) {
     flex-direction: row;
@@ -134,14 +134,11 @@ export const BtnsWrapper = styled.div`
   gap: 16px;
   justify-content: center;
   align-items: center;
-  /* align-self: center; */
 
   @media screen and (min-width: 1024px) {
-    /* flex-direction: row;
-    justify-content: space-between;
-    gap: 40px; */
+    align-self: flex-end;
+    margin-bottom: 68px;
   }
   @media screen and (min-width: 1280px) {
-    /* gap: 60px; */
   }
 `;

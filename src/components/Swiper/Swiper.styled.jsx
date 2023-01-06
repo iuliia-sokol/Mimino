@@ -9,7 +9,7 @@ export const SwiperStyled = styled(Swiper)`
   & > .swiper-wrapper {
     display: flex;
     margin-bottom: 20px;
-    gap: ${p => (p.size === 'large' ? '0px' : '5px')};
+    /* gap: ${p => (p.size === 'large' ? '0px' : '5px')}; */
   }
 
   @media screen and (min-width: 1024px) {
@@ -19,7 +19,7 @@ export const SwiperStyled = styled(Swiper)`
         : p.theme.sizes.sliderWidthTablet[0]};
     & > .swiper-wrapper {
       margin-bottom: 32px;
-      gap: ${p => (p.size === 'large' ? '0px' : '6px')};
+      /* gap: ${p => (p.size === 'large' ? '0px' : '6px')}; */
     }
   }
 
@@ -30,12 +30,14 @@ export const SwiperStyled = styled(Swiper)`
         : p.theme.sizes.sliderWidthDesktop[0]};
     & > .swiper-wrapper {
       margin-bottom: 36px;
-      gap: ${p => (p.size === 'large' ? '46px' : 'none')};
+      /* gap: ${p => (p.size === 'large' ? '46px' : 'none')}; */
     }
   }
 `;
 
 export const SlideStyled = styled(SwiperSlide)`
+  margin-left: ${p => (p.size === 'large' ? '20px' : '25px')};
+
   &.swiper-slide-active > img {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   }
@@ -53,6 +55,8 @@ export const SlideStyled = styled(SwiperSlide)`
   }
 
   @media screen and (min-width: 1024px) {
+    margin-left: ${p => (p.size === 'large' ? '34px' : '40px')};
+
     & > img {
       max-width: ${p =>
         p.size === 'large'
@@ -66,6 +70,8 @@ export const SlideStyled = styled(SwiperSlide)`
   }
 
   @media screen and (min-width: 1280px) {
+    margin-left: ${p => (p.size === 'large' ? '86px' : '40px')};
+
     & > img {
       max-width: ${p =>
         p.size === 'large'
