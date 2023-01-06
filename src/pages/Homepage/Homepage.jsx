@@ -2,6 +2,7 @@ import { Box } from 'components/Box';
 import { Hero } from 'components/HomepageComponents/Hero/Hero';
 import { Section1 } from 'components/HomepageComponents/Section1/Section1';
 import { Section2 } from 'components/HomepageComponents/Section2/Section2';
+import { Section3 } from 'components/HomepageComponents/Section3/Section3';
 
 const Homepage = () => {
   return (
@@ -9,6 +10,7 @@ const Homepage = () => {
       <Hero />
       <Section1 />
       <Section2 />
+      <Section3 />
     </Box>
   );
 };

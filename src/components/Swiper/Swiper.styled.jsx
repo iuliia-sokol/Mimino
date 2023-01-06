@@ -93,6 +93,6 @@ export const SlideStyled = styled(SwiperSlide)`
 
 export const SwiperBtnsWrapper = styled.div`
   display: flex;
-  justify-content: ${p => (p.size === 'large' ? 'flex-start' : 'flex-end')};
+  justify-content: ${p => (p.position === 'left' ? 'flex-start' : 'flex-end')};
   gap: 32px;
 `;

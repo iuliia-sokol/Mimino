@@ -36,7 +36,12 @@ export const Section2 = () => {
             <ButtonStandart text="Переглянути меню"></ButtonStandart>
           </BtnsWrapper>
           <SliderWrapper>
-            <Slider images={sectionSlider2} background="light" size="large" />
+            <Slider
+              images={sectionSlider2}
+              background="light"
+              size="large"
+              position="left"
+            />
           </SliderWrapper>
         </SliderButtonWrapper>
       </Box>

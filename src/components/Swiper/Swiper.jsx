@@ -7,7 +7,12 @@ import { SwiperStyled, SlideStyled, SwiperBtnsWrapper } from './Swiper.styled';
 
 import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
 
-export const Slider = ({ images, background = 'dark', size = 'standart' }) => {
+export const Slider = ({
+  images,
+  background = 'dark',
+  size = 'standart',
+  position = 'right',
+}) => {
   return (
     <SwiperStyled
       size={size}
@@ -36,7 +41,7 @@ export const Slider = ({ images, background = 'dark', size = 'standart' }) => {
           </SlideStyled>
         );
       })}
-      <SwiperBtnsWrapper size={size}>
+      <SwiperBtnsWrapper position={position}>
         <SwiperButtonPrev background={background}></SwiperButtonPrev>
         <SwiperButtonNext background={background}></SwiperButtonNext>
       </SwiperBtnsWrapper>
