@@ -18,11 +18,13 @@ export const Section1Wrapper = styled.section`
 
 export const DataWrapper = styled.div`
   display: flex;
+  align-self: flex-end;
   flex-direction: column;
   align-items: flex-start;
   overflow-x: hidden;
 
   @media screen and (min-width: 1024px) {
+    align-self: flex-start;
   }
 `;
 
@@ -60,6 +62,7 @@ export const ImageWrapper = styled.div`
 export const BlockWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 
   @media screen and (min-width: 1024px) {
     justify-content: center;
