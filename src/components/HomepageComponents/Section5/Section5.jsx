@@ -48,6 +48,7 @@ export const Section5 = () => {
               <LinksList>
                 <LinksItem>
                   <PhoneLink
+                    to="restaurant"
                     href="tel:0955559533"
                     abonent="Ресторан"
                     number="095 555 95 33"
@@ -56,6 +57,7 @@ export const Section5 = () => {
                 </LinksItem>
                 <LinksItem>
                   <PhoneLink
+                    to="hotel"
                     href="tel:0668491089"
                     abonent="Готель"
                     number="066 849 10 89"

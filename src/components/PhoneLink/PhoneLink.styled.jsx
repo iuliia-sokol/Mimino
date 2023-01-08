@@ -1,21 +1,11 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
-export const Link = styled.a`
+export const LinkWrapper = styled.div`
   display: flex;
   justify-content: ${p =>
     p.linkLocation === 'header' ? 'center' : 'space-between'};
   align-items: center;
-  color: ${p => p.theme.colors.secondaryAccent};
-
-  &:hover,
-  &:focus {
-    color: ${p => p.theme.colors.mainAccent};
-  }
-
-  & svg {
-    width: 24px;
-    height: 24px;
-  }
 
   @media screen and (min-width: 1024px) {
     flex-direction: ${p => (p.linkLocation === 'header' ? 'row' : 'column')};
@@ -24,7 +14,7 @@ export const Link = styled.a`
   }
 `;
 
-export const LinkText = styled.span`
+export const LinkText = styled(NavLink)`
   margin-right: 8px;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p =>
@@ -33,6 +23,12 @@ export const LinkText = styled.span`
       : p.theme.fontSizes.xxs};
   font-weight: ${p => p.theme.fontWeights[2]};
   letter-spacing: ${p => p.theme.letterSpacings.content};
+  color: ${p => p.theme.colors.secondaryAccent};
+
+  &:hover,
+  &:focus {
+    color: ${p => p.theme.colors.mainAccent};
+  }
 
   @media screen and (min-width: 1024px) {
     margin-right: 32px;
@@ -55,9 +51,10 @@ export const LinkPhoneWrapper = styled.span`
     p.linkLocation !== 'header' ? p.theme.colors.mainLight : 'transparent'};
 `;
 
-export const Phone = styled.span`
-  display: ${p => (p.linkLocation === 'header' ? 'none' : 'inline-block')};
-  margin-left: 8px;
+export const Phone = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p => p.theme.fontSizes.xxxxs};
   font-weight: ${p => p.theme.fontWeights[1]};
@@ -67,7 +64,28 @@ export const Phone = styled.span`
       ? p.theme.colors.mainLight
       : p.theme.colors.headersMain};
 
+  & span {
+    display: ${p => (p.linkLocation === 'header' ? 'none' : 'inline-block')};
+  }
+  & span:not(:first-child) {
+    margin-right: 8px;
+  }
+
+  & svg {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    color: ${p => p.theme.colors.secondaryAccent};
+
+    &:hover,
+    &:focus {
+      color: ${p => p.theme.colors.mainAccent};
+    }
+  }
+
   @media screen and (min-width: 1024px) {
-    display: inline-block;
+    & span {
+      display: inline-block;
+    }
   }
 `;

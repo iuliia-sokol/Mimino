@@ -1,7 +1,13 @@
 import { VscDeviceMobile } from 'react-icons/vsc';
-import { Link, LinkText, LinkPhoneWrapper, Phone } from './PhoneLink.styled';
+import {
+  LinkWrapper,
+  LinkText,
+  LinkPhoneWrapper,
+  Phone,
+} from './PhoneLink.styled';
 
 export const PhoneLink = ({
+  to,
   href,
   abonent,
   number,
@@ -10,15 +16,20 @@ export const PhoneLink = ({
   linkLocation,
 }) => {
   return (
-    <Link href={href} linkLocation={linkLocation}>
-      <LinkText>{abonent}</LinkText>
+    <LinkWrapper href={href} linkLocation={linkLocation}>
+      <LinkText to={to}>{abonent}</LinkText>
       <LinkPhoneWrapper linkLocation={linkLocation}>
-        <VscDeviceMobile />
-        <Phone linkLocation={linkLocation} textColor={textColor}>
-          {number}{' '}
+        <Phone href={href} linkLocation={linkLocation} textColor={textColor}>
+          <VscDeviceMobile />
+          <span>{number}</span>
         </Phone>
-        {number2 && <Phone textColor={textColor}>{number2} </Phone>}
+        {number2 && (
+          <Phone textColor={textColor}>
+            {' '}
+            <span>{number2}</span>
+          </Phone>
+        )}
       </LinkPhoneWrapper>
-    </Link>
+    </LinkWrapper>
   );
 };

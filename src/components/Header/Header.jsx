@@ -29,6 +29,7 @@ export const Header = () => {
         <Box as="ul" display="flex">
           <HeaderLinksItem>
             <PhoneLink
+              to="restaurant"
               href="tel:0955559533"
               abonent="Ресторан"
               number="095 555 95 33"
@@ -38,13 +39,14 @@ export const Header = () => {
 
           <HeaderLinksItem>
             <PhoneLink
+              to="hotel"
               href="tel:0668491089"
               abonent="Готель"
               number="066 849 10 89"
               linkLocation="header"
             />
           </HeaderLinksItem>
-          
+
           <HeaderLinksItem>
             <HeaderSocialMediaLinksWrapper>
               <SocialMediaLinks location="header" />

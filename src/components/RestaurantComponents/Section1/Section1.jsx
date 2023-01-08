@@ -14,10 +14,10 @@ import {
   SliderWrapper,
 } from './Section1.styled';
 
-import Pic1_1x from '../../../images/homepage/desktop/main-restaurant-interior-1x.jpg';
-import Pic1_2x from '../../../images/homepage/desktop/main-restaurant-interior-2x.jpg';
-import Pic2_1x from '../../../images/homepage/desktop/main-restaurant-interior-2-1x.jpg';
-import Pic2_2x from '../../../images/homepage/desktop/main-restaurant-interior-2-2x.jpg';
+import Pic1_1x from '../../../images/restaurant/rest-sec1-1x.jpg';
+import Pic1_2x from '../../../images/restaurant/rest-sec1-2x.jpg';
+import Pic2_1x from '../../../images/restaurant/rest-sec1-2-1x.jpg';
+import Pic2_2x from '../../../images/restaurant/rest-sec1-2-2x.jpg';
 
 import { sectionSlider1 } from '../../../utils/restImages';
 import { Slider } from 'components/Swiper/Swiper';
