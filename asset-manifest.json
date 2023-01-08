@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.216c2ab6.css",
-    "main.js": "/Mimino/static/js/main.252550c5.js",
-    "static/js/655.87b76f50.chunk.js": "/Mimino/static/js/655.87b76f50.chunk.js",
+    "main.js": "/Mimino/static/js/main.15d66e4f.js",
+    "static/js/655.52b44f04.chunk.js": "/Mimino/static/js/655.52b44f04.chunk.js",
     "static/js/205.9eac76c6.chunk.js": "/Mimino/static/js/205.9eac76c6.chunk.js",
     "static/js/208.4f86186f.chunk.js": "/Mimino/static/js/208.4f86186f.chunk.js",
     "static/js/792.ee39d86b.chunk.js": "/Mimino/static/js/792.ee39d86b.chunk.js",
@@ -51,8 +51,8 @@
     "static/media/arrow-left.svg": "/Mimino/static/media/arrow-left.674a1b08529b6bf90763c19c7dde5140.svg",
     "static/media/arrow-right.svg": "/Mimino/static/media/arrow-right.fb4df32136488fade0a90fb59321f95f.svg",
     "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
-    "main.252550c5.js.map": "/Mimino/static/js/main.252550c5.js.map",
-    "655.87b76f50.chunk.js.map": "/Mimino/static/js/655.87b76f50.chunk.js.map",
+    "main.15d66e4f.js.map": "/Mimino/static/js/main.15d66e4f.js.map",
+    "655.52b44f04.chunk.js.map": "/Mimino/static/js/655.52b44f04.chunk.js.map",
     "205.9eac76c6.chunk.js.map": "/Mimino/static/js/205.9eac76c6.chunk.js.map",
     "208.4f86186f.chunk.js.map": "/Mimino/static/js/208.4f86186f.chunk.js.map",
     "792.ee39d86b.chunk.js.map": "/Mimino/static/js/792.ee39d86b.chunk.js.map",
@@ -60,6 +60,6 @@
   },
   "entrypoints": [
     "static/css/main.216c2ab6.css",
-    "static/js/main.252550c5.js"
+    "static/js/main.15d66e4f.js"
   ]
 }
