@@ -26,7 +26,12 @@ export const Header = () => {
         <LogoLink to="/" end>
           MIMIHO
         </LogoLink>
-        <Box as="ul" display="flex">
+        <Box
+          as="ul"
+          display="flex"
+          alignSelf="flex-end"
+          justifyContent="flex-end"
+        >
           <HeaderLinksItem>
             <PhoneLink
               to="restaurant"

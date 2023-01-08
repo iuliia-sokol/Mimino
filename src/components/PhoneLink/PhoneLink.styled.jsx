@@ -33,7 +33,6 @@ export const LinkText = styled(NavLink)`
   @media screen and (min-width: 1024px) {
     margin-right: 32px;
     margin-bottom: ${p => (p.linkLocation === 'header' ? '0' : '8px')};
-
     font-size: ${p => p.theme.fontSizes.xxs};
   }
 `;
@@ -67,12 +66,12 @@ export const Phone = styled.a`
   & span {
     display: ${p => (p.linkLocation === 'header' ? 'none' : 'inline-block')};
   }
+
   & span:not(:first-child) {
     margin-right: 8px;
   }
 
   & svg {
-    margin-right: 8px;
     width: 24px;
     height: 24px;
     color: ${p => p.theme.colors.secondaryAccent};
@@ -86,6 +85,9 @@ export const Phone = styled.a`
   @media screen and (min-width: 1024px) {
     & span {
       display: inline-block;
+    }
+    & svg {
+      margin-right: 8px;
     }
   }
 `;

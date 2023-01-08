@@ -17,7 +17,9 @@ export const PhoneLink = ({
 }) => {
   return (
     <LinkWrapper href={href} linkLocation={linkLocation}>
-      <LinkText to={to}>{abonent}</LinkText>
+      <LinkText to={to} linkLocation={linkLocation}>
+        {abonent}
+      </LinkText>
       <LinkPhoneWrapper linkLocation={linkLocation}>
         <Phone href={href} linkLocation={linkLocation} textColor={textColor}>
           <VscDeviceMobile />
@@ -25,7 +27,6 @@ export const PhoneLink = ({
         </Phone>
         {number2 && (
           <Phone textColor={textColor}>
-            {' '}
             <span>{number2}</span>
           </Phone>
         )}
