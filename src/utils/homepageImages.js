@@ -44,6 +44,23 @@ import Appartment7_2x from '../images/homepage/desktop/main-apartment-design-7-2
 import Appartment8_1x from '../images/homepage/desktop/main-apartment-design-8-1x.jpg';
 import Appartment8_2x from '../images/homepage/desktop/main-apartment-design-8-2x.jpg';
 
+// Section 4
+
+import Room3_1x from '../images/homepage/desktop/main-room-1x.jpg';
+import Room3_2x from '../images/homepage/desktop/main-room-2x.jpg';
+import Room4_1x from '../images/homepage/desktop/main-room-2-1x.jpg';
+import Room4_2x from '../images/homepage/desktop/main-room-2-2x.jpg';
+import Room5_1x from '../images/homepage/desktop/main-room-3-1x.jpg';
+import Room5_2x from '../images/homepage/desktop/main-room-3-2x.jpg';
+import Room6_1x from '../images/homepage/desktop/main-room-4-1x.jpg';
+import Room6_2x from '../images/homepage/desktop/main-room-4-2x.jpg';
+import Room7_1x from '../images/homepage/desktop/main-room-5-1x.jpg';
+import Room7_2x from '../images/homepage/desktop/main-room-5-2x.jpg';
+import Room8_1x from '../images/homepage/desktop/main-room-6-1x.jpg';
+import Room8_2x from '../images/homepage/desktop/main-room-6-2x.jpg';
+import Room9_1x from '../images/homepage/desktop/main-room-7-1x.jpg';
+import Room9_2x from '../images/homepage/desktop/main-room-7-2x.jpg';
+
 export const sectionSlider1 = [
   {
     min: Pic3_1x,
@@ -145,5 +162,43 @@ export const sectionSlider3 = [
     min: Appartment8_1x,
     max: Appartment8_2x,
     tag: 'appartment',
+  },
+];
+
+export const sectionSlider4 = [
+  {
+    min: Room3_1x,
+    max: Room3_2x,
+    tag: 'room design',
+  },
+  {
+    min: Room4_1x,
+    max: Room4_2x,
+    tag: 'room design',
+  },
+  {
+    min: Room5_1x,
+    max: Room5_2x,
+    tag: 'room design',
+  },
+  {
+    min: Room6_1x,
+    max: Room6_2x,
+    tag: 'room design',
+  },
+  {
+    min: Room7_1x,
+    max: Room7_2x,
+    tag: 'room design',
+  },
+  {
+    min: Room8_1x,
+    max: Room8_2x,
+    tag: 'room design',
+  },
+  {
+    min: Room9_1x,
+    max: Room9_2x,
+    tag: 'room design',
   },
 ];
