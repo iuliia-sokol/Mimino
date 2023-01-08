@@ -57,18 +57,6 @@ export const LinksItem = styled.li`
   }
 `;
 
-export const BlockWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  @media screen and (min-width: 1024px) {
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 35px;
-  }
-`;
-
 export const SubHeader = styled.h3`
   margin-bottom: 24px;
   font-family: ${p => p.theme.fonts.main};
@@ -123,20 +111,33 @@ export const Data = styled.p`
   }
 `;
 
-export const MapWrapper = styled.div`
-  /* margin-top: 32px;
-  width: ${p => p.theme.sizes.sliderWidthMobile[0]};
-  align-self: flex-start;
+export const BlockWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
-  overflow: hidden;
+  flex-direction: column;
+  align-items: flex-start;
 
   @media screen and (min-width: 1024px) {
-    width: ${p => p.theme.sizes.sliderWidthTablet[0]};
-    margin-top: -180px;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 35px;
+  }
+`;
+
+export const MapWrapper = styled.div`
+  width: 100%;
+  height: 220px;
+  margin-top: 32px;
+  box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+  border: 1px solid #bababa;
+  border-radius: ${p => p.theme.radii.btnModal};
+
+  @media screen and (min-width: 1024px) {
+    width: 535px;
+    height: 412px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: ${p => p.theme.sizes.sliderWidthDesktop[0]};
-  } */
+    width: 634px;
+    height: 412px;
+  }
 `;

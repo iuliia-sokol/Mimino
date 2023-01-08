@@ -69,14 +69,13 @@ export const Section5 = () => {
               </BannerWrapper>
             </ContentWrapper>
           </DataWrapper>
-          <MapWrapper style={{ width: 600, height: 400 }}>
+          <MapWrapper>
             <Map
               initialViewState={{
                 latitude: 49.599178222036464,
                 longitude: 34.52594915675903,
-                zoom: 10,
+                zoom: 14,
               }}
-              style={{ width: 600, height: 400 }}
               mapStyle="mapbox://styles/mapbox/satellite-streets-v12"
               mapboxAccessToken={MAPBOX_TOKEN}
             >
