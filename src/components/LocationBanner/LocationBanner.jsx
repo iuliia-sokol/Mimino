@@ -4,13 +4,14 @@ import {
   LocationIconWrapper,
   LocationWrapper,
 } from './LocationBanner.styled';
-export const LocationBanner = () => {
+
+export const LocationBanner = ({ background }) => {
   return (
-    <LocationWrapper>
+    <LocationWrapper background={background}>
       <LocationIconWrapper>
         <MdLocationOn />
       </LocationIconWrapper>
-      <LocationText>
+      <LocationText background={background}>
         Україна, м. Полтава, <br />
         вул. Маршала Бірюзова, 15
       </LocationText>

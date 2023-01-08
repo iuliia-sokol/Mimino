@@ -1,19 +1,14 @@
 import { Box } from 'components/Box';
-import { VscDeviceMobile } from 'react-icons/vsc';
-
 import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
 import { LocationBanner } from '../LocationBanner/LocationBanner';
 
 import {
   HeaderLinksItem,
-  HeaderLinkText,
-  HeaderLink,
-  HeaderLinkPhoneWrapper,
-  Phone,
   LogoLink,
   HeaderLocationBanner,
   HeaderSocialMediaLinksWrapper,
 } from './Header.styled';
+import { PhoneLink } from 'components/PhoneLink/PhoneLink';
 
 export const Header = () => {
   return (
@@ -31,28 +26,22 @@ export const Header = () => {
         <LogoLink to="/" end>
           MIMIHO
         </LogoLink>
-        <Box
-          as="ul"
-          display="flex"
-          //   flexGrow="2"
-        >
+        <Box as="ul" display="flex">
           <HeaderLinksItem>
-            <HeaderLink href="tel:0955559533">
-              <HeaderLinkText>Ресторан</HeaderLinkText>
-              <HeaderLinkPhoneWrapper>
-                <VscDeviceMobile />
-                <Phone>095 555 95 33</Phone>
-              </HeaderLinkPhoneWrapper>
-            </HeaderLink>
+            <PhoneLink
+              href="tel:0955559533"
+              abonent="Ресторан"
+              number="095 555 95 33"
+              linkLocation="header"
+            />
           </HeaderLinksItem>
           <HeaderLinksItem>
-            <HeaderLink href="tel:0668491089">
-              <HeaderLinkText>Готель</HeaderLinkText>
-              <HeaderLinkPhoneWrapper>
-                <VscDeviceMobile />
-                <Phone>066 849 10 89</Phone>
-              </HeaderLinkPhoneWrapper>
-            </HeaderLink>
+            <PhoneLink
+              href="tel:0668491089"
+              abonent="Готель"
+              number="066 849 10 89"
+              linkLocation="header"
+            />
           </HeaderLinksItem>
           <HeaderLinksItem>
             <HeaderSocialMediaLinksWrapper>
