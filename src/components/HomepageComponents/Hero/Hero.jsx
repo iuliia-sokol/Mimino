@@ -25,7 +25,12 @@ export const Hero = () => {
         justifyContent="center"
         position="relative"
       >
-        <Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+        >
           <Title>MIMIHO</Title>
           <DescriptionText>Ресторанно-готельний комплекс</DescriptionText>
           <Slogan>СМАК ЖИТТЯ 24/7</Slogan>

@@ -40,6 +40,7 @@ export const HeroWrapper = styled.section`
 `;
 
 export const Title = styled.h1`
+  margin-left: 0.3em;
   font-family: ${p => p.theme.fonts.logo};
   font-size: ${p => p.theme.fontSizes.xxl};
   font-weight: ${p => p.theme.fontWeights[4]};

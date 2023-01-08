@@ -12,7 +12,7 @@ export const Loader = () => {
         ariaLabel="rotating-triangels-loading"
         wrapperStyle={{ position: 'absolute', top: '30%', left: '43%' }}
         wrapperClass="rotating-triangels-wrapper"
-        colors={['#6e36c4', '#731468', '#f1e46d']}
+        colors={['#c47436', '#733c14', '#f1e46d']}
       />
     </LoaderOverlay>
   );

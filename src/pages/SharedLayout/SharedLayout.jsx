@@ -4,13 +4,13 @@ import { Suspense } from 'react';
 
 import { Footer } from 'components/Footer/Footer';
 import { Header } from 'components/Header/Header';
-// import { Loader } from '../../components/Loader/Loader';
+import { Loader } from 'components/Loader/Loader';
 
 export const SharedLayout = () => {
   return (
     <>
       <Header />
-      <Suspense fallback={<h1>Loading</h1>}>
+      <Suspense fallback={<Loader />}>
         <Outlet />
       </Suspense>
       <Footer />

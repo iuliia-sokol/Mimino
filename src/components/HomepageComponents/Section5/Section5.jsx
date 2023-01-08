@@ -76,7 +76,7 @@ export const Section5 = () => {
                 longitude: 34.52594915675903,
                 zoom: 14,
               }}
-              mapStyle="mapbox://styles/mapbox/navigation-night-v1"
+              mapStyle="mapbox://styles/mapbox/satellite-streets-v12"
               mapboxAccessToken={MAPBOX_TOKEN}
             >
               <Marker
