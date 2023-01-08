@@ -74,10 +74,10 @@ export const Section5 = () => {
               initialViewState={{
                 latitude: 49.599178222036464,
                 longitude: 34.52594915675903,
-                zoom: 14,
+                zoom: 10,
               }}
               style={{ width: 600, height: 400 }}
-              mapStyle="mapbox://styles/mapbox/navigation-night-v1"
+              mapStyle="mapbox://styles/mapbox/satellite-streets-v12"
               mapboxAccessToken={MAPBOX_TOKEN}
             >
               <Marker
