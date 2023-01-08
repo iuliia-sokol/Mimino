@@ -1,7 +1,7 @@
 import { Box } from 'components/Box';
 
 import {
-  Section1Wrapper,
+  Section3Wrapper,
   BlockWrapper,
   DataWrapper,
   ImageWrapper,
@@ -19,12 +19,12 @@ import Pic1_2x from '../../../images/homepage/desktop/main-apartment-design-2x.j
 import Pic2_1x from '../../../images/homepage/desktop/main-apartment-design-2-1x.jpg';
 import Pic2_2x from '../../../images/homepage/desktop/main-apartment-design-2-2x.jpg';
 
-import { sectionSlider1 } from '../../../utils/homepageImages';
+import { sectionSlider3 } from '../../../utils/homepageImages';
 import { Slider } from 'components/Swiper/Swiper';
 
 export const Section3 = () => {
   return (
-    <Section1Wrapper>
+    <Section3Wrapper>
       <Box
         display="flex"
         flexDirection="column"
@@ -68,9 +68,9 @@ export const Section3 = () => {
           </ImageWrapperReversed>
         </BlockWrapperReversed>
         <SliderWrapper>
-          <Slider images={sectionSlider1} position="left" />
+          <Slider images={sectionSlider3} position="left" reverse={true} />
         </SliderWrapper>
       </Box>
-    </Section1Wrapper>
+    </Section3Wrapper>
   );
 };

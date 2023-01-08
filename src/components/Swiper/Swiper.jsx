@@ -12,13 +12,14 @@ export const Slider = ({
   background = 'dark',
   size = 'standart',
   position = 'right',
+  reverse = false,
 }) => {
   return (
     <SwiperStyled
       size={size}
       modules={[Navigation, Autoplay]}
       navigation
-      autoplay
+      autoplay={{ reverseDirection: reverse }}
       grabCursor={true}
       slidesPerView={'auto'}
       centeredSlides={true}

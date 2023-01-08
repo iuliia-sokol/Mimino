@@ -29,6 +29,21 @@ import Food7_2x from '../images/homepage/desktop/main-restaurant-food-7-2x.jpg';
 import Food8_1x from '../images/homepage/desktop/main-restaurant-food-8-1x.jpg';
 import Food8_2x from '../images/homepage/desktop/main-restaurant-food-8-2x.jpg';
 
+// Section 3
+
+import Appartment3_1x from '../images/homepage/desktop/main-apartment-design-3-1x.jpg';
+import Appartment3_2x from '../images/homepage/desktop/main-apartment-design-3-2x.jpg';
+import Appartment4_1x from '../images/homepage/desktop/main-apartment-design-4-1x.jpg';
+import Appartment4_2x from '../images/homepage/desktop/main-apartment-design-4-2x.jpg';
+import Appartment5_1x from '../images/homepage/desktop/main-apartment-design-5-1x.jpg';
+import Appartment5_2x from '../images/homepage/desktop/main-apartment-design-5-2x.jpg';
+import Appartment6_1x from '../images/homepage/desktop/main-apartment-design-6-1x.jpg';
+import Appartment6_2x from '../images/homepage/desktop/main-apartment-design-6-2x.jpg';
+import Appartment7_1x from '../images/homepage/desktop/main-apartment-design-7-1x.jpg';
+import Appartment7_2x from '../images/homepage/desktop/main-apartment-design-7-2x.jpg';
+import Appartment8_1x from '../images/homepage/desktop/main-apartment-design-8-1x.jpg';
+import Appartment8_2x from '../images/homepage/desktop/main-apartment-design-8-2x.jpg';
+
 export const sectionSlider1 = [
   {
     min: Pic3_1x,
@@ -97,5 +112,38 @@ export const sectionSlider2 = [
     min: Food8_1x,
     max: Food8_2x,
     tag: 'food',
+  },
+];
+
+export const sectionSlider3 = [
+  {
+    min: Appartment3_1x,
+    max: Appartment3_2x,
+    tag: 'appartment',
+  },
+  {
+    min: Appartment4_1x,
+    max: Appartment4_2x,
+    tag: 'appartment',
+  },
+  {
+    min: Appartment5_1x,
+    max: Appartment5_2x,
+    tag: 'appartment',
+  },
+  {
+    min: Appartment6_1x,
+    max: Appartment6_2x,
+    tag: 'appartment',
+  },
+  {
+    min: Appartment7_1x,
+    max: Appartment7_2x,
+    tag: 'appartment',
+  },
+  {
+    min: Appartment8_1x,
+    max: Appartment8_2x,
+    tag: 'appartment',
   },
 ];

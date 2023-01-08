@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Section1Wrapper = styled.section`
+export const Section3Wrapper = styled.section`
   width: 100%;
   padding-top: 16px;
   padding-bottom: 20px;
