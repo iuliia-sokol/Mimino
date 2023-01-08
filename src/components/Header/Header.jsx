@@ -35,6 +35,7 @@ export const Header = () => {
               linkLocation="header"
             />
           </HeaderLinksItem>
+
           <HeaderLinksItem>
             <PhoneLink
               href="tel:0668491089"
@@ -43,6 +44,7 @@ export const Header = () => {
               linkLocation="header"
             />
           </HeaderLinksItem>
+          
           <HeaderLinksItem>
             <HeaderSocialMediaLinksWrapper>
               <SocialMediaLinks location="header" />

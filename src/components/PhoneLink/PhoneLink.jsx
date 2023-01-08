@@ -10,7 +10,7 @@ export const PhoneLink = ({
   linkLocation,
 }) => {
   return (
-    <Link href={href}>
+    <Link href={href} linkLocation={linkLocation}>
       <LinkText>{abonent}</LinkText>
       <LinkPhoneWrapper linkLocation={linkLocation}>
         <VscDeviceMobile />
