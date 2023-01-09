@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Mimino/static/css/main.216c2ab6.css",
-    "main.js": "/Mimino/static/js/main.30ace075.js",
+    "main.js": "/Mimino/static/js/main.7056e7e8.js",
     "static/js/530.573bbb6c.chunk.js": "/Mimino/static/js/530.573bbb6c.chunk.js",
-    "static/js/630.b7a17107.chunk.js": "/Mimino/static/js/630.b7a17107.chunk.js",
+    "static/js/609.d773abb5.chunk.js": "/Mimino/static/js/609.d773abb5.chunk.js",
     "static/js/799.f71c84de.chunk.js": "/Mimino/static/js/799.f71c84de.chunk.js",
     "static/js/792.ee39d86b.chunk.js": "/Mimino/static/js/792.ee39d86b.chunk.js",
     "static/js/483.8873ffcf.chunk.js": "/Mimino/static/js/483.8873ffcf.chunk.js",
@@ -27,6 +27,7 @@
     "static/media/Main-bg-desk-3-1x.jpg": "/Mimino/static/media/Main-bg-desk-3-1x.58486630336338398496.jpg",
     "static/media/sec2-1-2x.jpg": "/Mimino/static/media/sec2-1-2x.a6c56fc63150f5223175.jpg",
     "static/media/Main-bg-desk-2-1x.jpg": "/Mimino/static/media/Main-bg-desk-2-1x.f55a270e347fe809e336.jpg",
+    "static/media/sec3-1-2x.jpg": "/Mimino/static/media/sec3-1-2x.c481823dd34075d68e29.jpg",
     "static/media/slider-sec1-2-2x.jpg": "/Mimino/static/media/slider-sec1-2-2x.266ac9c49a65b8c048f0.jpg",
     "static/media/main-restaurant-interior-1x.jpg": "/Mimino/static/media/main-restaurant-interior-1x.1256c8153657adcc4cbf.jpg",
     "static/media/rest-sec1-2-1x.jpg": "/Mimino/static/media/rest-sec1-2-1x.a3a608a9204c3ae5bafd.jpg",
@@ -73,6 +74,7 @@
     "static/media/main-restaurant-food-7-2x.jpg": "/Mimino/static/media/main-restaurant-food-7-2x.a9f85c946abc26df62a5.jpg",
     "static/media/main-room-4-2x.jpg": "/Mimino/static/media/main-room-4-2x.923dd4aa3bcec8e30525.jpg",
     "static/media/sec1-slider-4-2x.jpg": "/Mimino/static/media/sec1-slider-4-2x.923dd4aa3bcec8e30525.jpg",
+    "static/media/sec3-1-1x.jpg": "/Mimino/static/media/sec3-1-1x.0a323c34149f9b813301.jpg",
     "static/media/sec1-slider-1-2x.jpg": "/Mimino/static/media/sec1-slider-1-2x.edb040efe39604825268.jpg",
     "static/media/main-room-5-2x.jpg": "/Mimino/static/media/main-room-5-2x.7c3f4d857c8073e7c4a9.jpg",
     "static/media/sec2-1-1x.jpg": "/Mimino/static/media/sec2-1-1x.fc6461993dd8bb127400.jpg",
@@ -132,9 +134,9 @@
     "static/media/arrow-left.svg": "/Mimino/static/media/arrow-left.674a1b08529b6bf90763c19c7dde5140.svg",
     "static/media/arrow-right.svg": "/Mimino/static/media/arrow-right.fb4df32136488fade0a90fb59321f95f.svg",
     "main.216c2ab6.css.map": "/Mimino/static/css/main.216c2ab6.css.map",
-    "main.30ace075.js.map": "/Mimino/static/js/main.30ace075.js.map",
+    "main.7056e7e8.js.map": "/Mimino/static/js/main.7056e7e8.js.map",
     "530.573bbb6c.chunk.js.map": "/Mimino/static/js/530.573bbb6c.chunk.js.map",
-    "630.b7a17107.chunk.js.map": "/Mimino/static/js/630.b7a17107.chunk.js.map",
+    "609.d773abb5.chunk.js.map": "/Mimino/static/js/609.d773abb5.chunk.js.map",
     "799.f71c84de.chunk.js.map": "/Mimino/static/js/799.f71c84de.chunk.js.map",
     "792.ee39d86b.chunk.js.map": "/Mimino/static/js/792.ee39d86b.chunk.js.map",
     "483.8873ffcf.chunk.js.map": "/Mimino/static/js/483.8873ffcf.chunk.js.map",
@@ -144,6 +146,6 @@
   },
   "entrypoints": [
     "static/css/main.216c2ab6.css",
-    "static/js/main.30ace075.js"
+    "static/js/main.7056e7e8.js"
   ]
 }
