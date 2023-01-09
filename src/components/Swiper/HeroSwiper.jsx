@@ -7,10 +7,10 @@ import 'swiper/css/autoplay';
 import {
   SwiperStyled,
   SlideStyled,
-  SwiperBtnsWrapper,
+  // SwiperBtnsWrapper,
 } from './HeroSwiper.styled';
 
-import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
+// import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
 
 export const HeroSlider = ({
   images,
@@ -39,18 +39,19 @@ export const HeroSlider = ({
         return (
           <SlideStyled key={img.min} size={size}>
             <img
-              srcSet={`${img.min} 1x, ${img.max} 2x`}
-              src={img.min}
+              sizes="(max-width: 1023px) 414px, (min-width: 1024px) 1024px, 1280px"
+              srcSet={`${img.mobMin} 414w, ${img.mobMax} 818w,${img.tabMin} 1024w,${img.tabMax} 2048w, ${img.min} 1280w, ${img.max} 2560w `}
+              src={img.tabMin}
               alt={img.tag}
-              loading="lazy"
+              // loading="lazy"
             />
           </SlideStyled>
         );
       })}
-      <SwiperBtnsWrapper position={position}>
+      {/* <SwiperBtnsWrapper position={position}>
         <SwiperButtonPrev background={background}></SwiperButtonPrev>
         <SwiperButtonNext background={background}></SwiperButtonNext>
-      </SwiperBtnsWrapper>
+      </SwiperBtnsWrapper> */}
     </SwiperStyled>
   );
 };

@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-import HeroBgImage1x from '../../../../images/hotel/hero-bg-1x.jpg';
-import HeroBgImage2x from '../../../../images/hotel/hero-bg-2x.jpg';
-
 export const HeaderLayout = styled.div`
   position: absolute;
   top: 0;
@@ -20,33 +17,17 @@ export const HeaderLayout = styled.div`
 export const HeroWrapper = styled.section`
   position: relative;
   width: 100%;
-
-  /* padding-bottom: 102px; */
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(${HeroBgImage1x});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 
   @media screen and (min-width: 1024px) {
-    /* padding-top: 225px; */
-    /* padding-bottom: 65px; */
+    margin-bottom: -2px;
   }
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.65),
-        rgba(0, 0, 0, 0.65)
-      ),
-      url(${HeroBgImage2x});
+  @media screen and (min-width: 1280px) {
+    margin-bottom: -3px;
   }
 `;
 
@@ -54,15 +35,19 @@ export const DataBlock = styled.div`
   position: absolute;
   top: 0;
   z-index: 10000;
-  padding-top: 181px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
 
   @media screen and (min-width: 1024px) {
-    padding-top: 225px;
-    padding-bottom: 65px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 164px;
   }
 `;
 
@@ -70,50 +55,57 @@ export const SliderWrapper = styled.div`
   z-index: -1;
 `;
 
-export const Title = styled.h1`
-  margin-left: 0.3em;
-  font-family: ${p => p.theme.fonts.logo};
-  font-size: ${p => p.theme.fontSizes.xxl};
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 80%;
+  align-self: flex-start;
+  padding: 0 15px;
+  justify-content: flex-start;
+
+  @media screen and (min-width: 1024px) {
+    width: 45%;
+    align-self: flex-end;
+    padding-bottom: 32px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 50px;
+  }
+`;
+
+export const RoomName = styled.h3`
+  margin-bottom: 16px;
+  font-family: ${p => p.theme.fonts.secondary};
+  font-size: 28px;
   font-weight: ${p => p.theme.fontWeights[4]};
-  letter-spacing: ${p => p.theme.letterSpacings.logo};
-  line-height: ${p => p.theme.lineHeights.logo};
+  line-height: ${p => p.theme.lineHeights.subheader};
+  letter-spacing: ${p => p.theme.letterSpacings.subheader};
   color: ${p => p.theme.colors.mainLight};
 
   @media screen and (min-width: 1024px) {
-    font-size: ${p => p.theme.fontSizes.xxxl};
+    margin-bottom: 24px;
+
+    font-size: ${p => p.theme.fontSizes.m};
   }
 `;
 
 export const DescriptionText = styled.p`
-  margin-bottom: 143px;
-  margin-top: 24px;
   font-family: ${p => p.theme.fonts.main};
-  font-size: ${p => p.theme.fontSizes.xxxs};
-  font-weight: ${p => p.theme.fontWeights[3]};
+  font-size: ${p => p.theme.fontSizes.xxxxxs};
+  font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.content};
   letter-spacing: ${p => p.theme.letterSpacings.content};
   color: ${p => p.theme.colors.mainLight};
 
   @media screen and (min-width: 1024px) {
-    font-size: ${p => p.theme.fontSizes.xxs};
-    margin-bottom: 200px;
-
-    margin-top: 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 64px;
-    margin-top: 32px;
-  }
-`;
-
-export const HeroContentWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  position: relative;
-
-  @media screen and (min-width: 1024px) {
-    width: 100%;
-    justify-content: space-between;
+    width: 75%;
+    font-size: ${p => p.theme.fontSizes.xxxs};
+    margin-bottom: 24px;
   }
 `;
 
@@ -123,6 +115,10 @@ export const HeroLocationBanner = styled.div`
   @media screen and (min-width: 1024px) {
     display: flex;
   }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 `;
 
 export const HeroBtnsWrapper = styled.div`
@@ -131,27 +127,35 @@ export const HeroBtnsWrapper = styled.div`
   gap: 24px;
   justify-content: center;
   align-self: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 1024px) {
+    align-self: flex-end;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
   @media screen and (min-width: 1280px) {
-    gap: 60px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 `;
 
 export const HeroSocialMediaLinksWrapper = styled.ul`
   display: flex;
+  flex-direction: column;
+  gap: 8px;
   position: absolute;
-  bottom: -15%;
+  bottom: 5%;
   left: 6%;
   padding: 0;
   margin: 0;
 
   @media screen and (min-width: 1024px) {
-    bottom: -10%;
+    bottom: 6%;
+    flex-direction: row;
+    left: 40%;
   }
 
   @media screen and (min-width: 1280px) {

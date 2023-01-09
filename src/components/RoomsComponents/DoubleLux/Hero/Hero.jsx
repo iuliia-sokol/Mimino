@@ -3,16 +3,16 @@ import { LocationBanner } from '../../../LocationBanner/LocationBanner';
 import { SocialMediaLinks } from '../../../SocialMediaLinks/SocialMediaLinks';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 import {
-  Title,
+  RoomName,
   DataBlock,
   HeroWrapper,
   DescriptionText,
   HeroLocationBanner,
   HeroBtnsWrapper,
-  HeroContentWrapper,
   HeroSocialMediaLinksWrapper,
   SliderWrapper,
   HeaderLayout,
+  TextWrapper,
 } from './Hero.styled';
 import { HeroSlider } from 'components/Swiper/HeroSwiper';
 import { doubleLux } from '../../../../utils/roomsImages';
@@ -20,44 +20,37 @@ import { doubleLux } from '../../../../utils/roomsImages';
 export const Hero = () => {
   return (
     <HeroWrapper>
+      <HeaderLayout />
       <SliderWrapper>
         <HeroSlider images={doubleLux} />
       </SliderWrapper>
-      <HeaderLayout></HeaderLayout>
+
       <Box
-        pr={['15px', '47px', '85px']}
-        pl={['15px', '47px', '85px']}
         display="flex"
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        // position="relative"
       >
         <DataBlock>
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Title>MIMIHO</Title>
-            <DescriptionText>Готель</DescriptionText>
-          </Box>
-
-          <HeroContentWrapper>
+          <TextWrapper>
+            <RoomName>ДВОМІСНИЙ НОМЕР люкс</RoomName>
+            <DescriptionText>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </DescriptionText>
             <HeroLocationBanner>
               <LocationBanner />
             </HeroLocationBanner>
-
-            <HeroBtnsWrapper>
-              <ButtonStandart text="Забронювати номер"></ButtonStandart>
-              <ButtonStandart text="Переглянути ціни"></ButtonStandart>
-            </HeroBtnsWrapper>
-          </HeroContentWrapper>
+          </TextWrapper>
 
           <HeroSocialMediaLinksWrapper>
             <SocialMediaLinks location="header" />
           </HeroSocialMediaLinksWrapper>
+
+          <HeroBtnsWrapper>
+            <ButtonStandart text="Переглянути ціни"></ButtonStandart>
+          </HeroBtnsWrapper>
         </DataBlock>
       </Box>
     </HeroWrapper>

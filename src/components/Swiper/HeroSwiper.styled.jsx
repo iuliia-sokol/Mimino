@@ -3,23 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SwiperStyled = styled(Swiper)`
   width: 100%;
-
-  & > .swiper-wrapper {
-    display: flex;
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    & > .swiper-wrapper {
-      margin-bottom: 32px;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    & > .swiper-wrapper {
-      margin-bottom: 36px;
-    }
-  }
 `;
 
 export const SlideStyled = styled(SwiperSlide)`
@@ -34,13 +17,6 @@ export const SlideStyled = styled(SwiperSlide)`
   & > img {
     width: 100%;
     height: auto;
-  }
-
-  @media screen and (min-width: 1024px) {
-    & > img {
-    }
-  }
-  @media screen and (min-width: 1280px) {
   }
 `;
 
