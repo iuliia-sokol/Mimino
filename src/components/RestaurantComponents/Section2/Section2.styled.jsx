@@ -25,24 +25,15 @@ export const TableWrapper = styled.div`
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     flex-wrap: wrap;
-    /* column-gap: 90px; */
-  }
-
-  @media screen and (min-width: 1280px) {
-    /* column-gap: 140px; */
+    column-gap: 10%;
   }
 `;
 
 export const Table = styled.table`
   flex-basis: 100%;
 
-  & > tr {
-    display: flex;
-    flex-direction: column;
-  }
-
   @media screen and (min-width: 1024px) {
-    flex-basis: 50%;
+    flex-basis: 45%;
   }
 `;
 
@@ -87,58 +78,52 @@ export const TableSubtitle = styled.tr`
 `;
 
 export const DishName = styled.td`
+  width: 50%;
   text-align: start;
-  flex-grow: 1;
-  flex-shrink: 1;
   color: ${p => p.theme.colors.mainDark};
   font-family: ${p => p.theme.fonts.main};
   font-weight: ${p => p.theme.fontWeights[2]};
   line-height: ${p => p.theme.lineHeights.content};
   font-size: ${p => p.theme.fontSizes.xxxxs};
   letter-spacing: ${p => p.theme.letterSpacings.content};
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 
   @media screen and (min-width: 1280px) {
     font-size: ${p => p.theme.fontSizes.xxxs};
+    padding-bottom: 12px;
   }
 `;
 
 export const DishIngredients = styled.span`
   text-align: start;
-
   color: ${p => p.theme.colors.mainDark};
   font-family: ${p => p.theme.fonts.main};
   font-weight: ${p => p.theme.fontWeights[1]};
   line-height: ${p => p.theme.lineHeights.content};
   letter-spacing: ${p => p.theme.letterSpacings.content};
   font-size: ${p => p.theme.fontSizes.xxxxxxs};
-  /* padding-bottom: 16px; */
 `;
 
 export const DishPortion = styled.td`
-  text-align: start;
-  flex-grow: 2;
-  flex-shrink: 0;
+  text-align: end;
+  width: 25%;
   color: ${p => p.theme.colors.mainDark};
   font-family: ${p => p.theme.fonts.main};
   font-weight: ${p => p.theme.fontWeights[0]};
   line-height: ${p => p.theme.lineHeights.content};
   font-size: ${p => p.theme.fontSizes.xxxxs};
   letter-spacing: ${p => p.theme.letterSpacings.content};
-  /* padding-bottom: 4px; */
 `;
 
 export const DishPrice = styled.td`
-  text-align: start;
-  flex-grow: 2;
-  flex-shrink: 0;
+  text-align: end;
+  width: 25%;
   color: ${p => p.theme.colors.mainDark};
   font-family: ${p => p.theme.fonts.main};
   font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.content};
   font-size: ${p => p.theme.fontSizes.xxxxs};
   letter-spacing: ${p => p.theme.letterSpacings.content};
-  /* padding-bottom: 4px; */
 
   @media screen and (min-width: 1280px) {
     font-size: ${p => p.theme.fontSizes.xxxs};
