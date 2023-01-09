@@ -12,12 +12,11 @@ export const App = () => {
     <Routes>
       <Route path="/" element={<SharedLayout />}>
         <Route index element={<Homepage />} />
-        <Route path="hotel" element={<Hotel />}>
-          <Route path="double-lux" element={<RoomDoubleLux />} />
-          <Route path="triple" element={<h1>Room triple</h1>} />
-          <Route path="double-lux" element={<h1>Room double</h1>} />
-        </Route>
         <Route path="restaurant" element={<Restaurant />} />
+        <Route path="hotel" element={<Hotel />} />
+        <Route path="hotel/double-lux" element={<RoomDoubleLux />} />
+        <Route path="hotel/triple" element={<h1>Room triple</h1>} />
+        <Route path="hotel/double" element={<h1>Room double</h1>} />
       </Route>
     </Routes>
   );

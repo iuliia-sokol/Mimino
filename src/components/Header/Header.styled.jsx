@@ -1,6 +1,19 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const HeaderWrapper = styled.header`
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 10000;
+
+  ${p => (p.background === 'light' ? p.theme.colors.mainLight : 'none')};
+  background-image: ${p =>
+    p.block === 'rooms'
+      ? 'linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%)'
+      : 'none'};
+`;
+
 export const LogoLink = styled(NavLink)`
   display: flex;
   align-items: center;

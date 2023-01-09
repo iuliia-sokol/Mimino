@@ -19,6 +19,7 @@ import Pic1_2x from '../../../images/hotel/sec2-1-2x.jpg';
 
 import { sectionSlider2 } from '../../../utils/hotelImages';
 import { Slider } from 'components/Swiper/Swiper';
+import { ButtonStandartNavLink } from 'components/Buttons/ButtonStandart/ButtonStandartNavLink';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 
 export const Section2 = () => {
@@ -55,7 +56,7 @@ export const Section2 = () => {
             <Slider images={sectionSlider2} />
           </SliderWrapper>
           <BtnsWrapper>
-            <ButtonStandart text="Детальніше" />
+            <ButtonStandartNavLink to="triple" text="Детальніше" />
             <ButtonStandart text="Переглянути ціни" />
           </BtnsWrapper>
         </SliderBtnsWrapper>

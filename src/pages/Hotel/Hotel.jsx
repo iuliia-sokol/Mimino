@@ -1,4 +1,5 @@
 import { Box } from 'components/Box';
+
 import { Hero } from 'components/HotelComponents/Hero/Hero';
 import { Section1 } from 'components/HotelComponents/Section1/Section1';
 import { Section2 } from 'components/HotelComponents/Section2/Section2';

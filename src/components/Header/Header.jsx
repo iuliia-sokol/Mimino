@@ -3,6 +3,7 @@ import { SocialMediaLinks } from '../SocialMediaLinks/SocialMediaLinks';
 import { LocationBanner } from '../LocationBanner/LocationBanner';
 
 import {
+  HeaderWrapper,
   HeaderLinksItem,
   LogoLink,
   HeaderLocationBanner,
@@ -10,9 +11,9 @@ import {
 } from './Header.styled';
 import { PhoneLink } from 'components/PhoneLink/PhoneLink';
 
-export const Header = () => {
+export const Header = ({ block }) => {
   return (
-    <Box as="header" position="absolute" top="0px" width={[1, 1, 1]}>
+    <HeaderWrapper block={block}>
       <Box
         pt={['16px', '24px', null]}
         // pb={['12px', '30px', null]}
@@ -22,6 +23,7 @@ export const Header = () => {
         justifyContent="space-between"
         alignItems="center"
         overflow="hidden"
+        zIndex="1000"
       >
         <LogoLink to="/" end>
           MIMIHO
@@ -62,6 +64,6 @@ export const Header = () => {
           <LocationBanner />
         </HeaderLocationBanner>
       </Box>
-    </Box>
+    </HeaderWrapper>
   );
 };

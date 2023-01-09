@@ -2,10 +2,6 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const LogoLink = styled(NavLink)`
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* flex-grow: 1; */
   font-family: ${p => p.theme.fonts.logo};
   font-size: ${p => p.theme.fontSizes.l};
   font-weight: ${p => p.theme.fontWeights[4]};
@@ -32,8 +28,6 @@ export const LogoLink = styled(NavLink)`
 export const FooterLinksWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  /* margin-left: 85px; */
-  /* flex-grow: 1; */
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
