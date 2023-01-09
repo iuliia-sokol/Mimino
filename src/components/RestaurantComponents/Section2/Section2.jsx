@@ -1,4 +1,5 @@
 import { Box } from 'components/Box';
+import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 
 import { hotDishes, mainDishes, salads, desserts, drinks } from 'utils/menu';
 
@@ -12,6 +13,7 @@ import {
   DishPrice,
   Table,
   TableWrapper,
+  ButtonWrapper,
 } from './Section2.styled';
 
 export const Section2 = () => {
@@ -103,6 +105,9 @@ export const Section2 = () => {
             </tbody>
           </Table>
         </TableWrapper>
+        <ButtonWrapper>
+          <ButtonStandart text="Забронювати столик" />
+        </ButtonWrapper>
       </Box>
     </Section2Wrapper>
   );

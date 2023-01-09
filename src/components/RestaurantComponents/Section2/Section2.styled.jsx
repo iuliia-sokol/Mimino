@@ -21,11 +21,26 @@ export const TableWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 32px;
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 10%;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
+`;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
   }
 `;
 
