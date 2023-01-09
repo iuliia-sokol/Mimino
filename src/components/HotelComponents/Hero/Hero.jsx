@@ -6,7 +6,6 @@ import {
   Title,
   HeroWrapper,
   DescriptionText,
-  Slogan,
   HeroLocationBanner,
   HeroBtnsWrapper,
   HeroContentWrapper,
@@ -32,8 +31,7 @@ export const Hero = () => {
           justifyContent="center"
         >
           <Title>MIMIHO</Title>
-          <DescriptionText>Ресторанно-готельний комплекс</DescriptionText>
-          <Slogan>СМАК ЖИТТЯ 24/7</Slogan>
+          <DescriptionText>Готель</DescriptionText>
         </Box>
 
         <HeroContentWrapper>
@@ -42,8 +40,8 @@ export const Hero = () => {
           </HeroLocationBanner>
 
           <HeroBtnsWrapper>
-            <ButtonStandart text="Забронювати столик"></ButtonStandart>
             <ButtonStandart text="Забронювати номер"></ButtonStandart>
+            <ButtonStandart text="Переглянути ціни"></ButtonStandart>
           </HeroBtnsWrapper>
         </HeroContentWrapper>
 

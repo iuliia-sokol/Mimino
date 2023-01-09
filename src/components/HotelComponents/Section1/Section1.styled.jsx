@@ -116,79 +116,42 @@ export const Data = styled.p`
   }
 `;
 
-export const BlockWrapperReversed = styled(BlockWrapper)`
-  gap: 20px;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (min-width: 1024px) {
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 48px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    gap: 32px;
-  }
-`;
-
-export const DataAccented = styled(Data)`
-  color: ${p => p.theme.colors.secondaryAccent};
-  max-width: 163px;
-
-  @media screen and (min-width: 1024px) {
-    max-width: 312px;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 312px;
-  }
-`;
-
-export const ImageWrapperReversed = styled(ImageWrapper)`
-  display: flex;
-  justify-content: flex-end;
-
-  & > img {
-    width: 200px;
-    height: 278px;
-    margin-top: 32px;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    & > img {
-      width: 350px;
-      height: 500px;
-      margin-top: 0;
-      box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-      transform: translate(0px, -153px);
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    & > img {
-      width: 460px;
-      height: 574px;
-    }
-  }
-`;
-
 export const SliderWrapper = styled.div`
-  margin-top: 32px;
   width: ${p => p.theme.sizes.sliderWidthMobile[0]};
-  align-self: flex-end;
+  align-self: flex-start;
   display: flex;
   justify-content: flex-end;
   overflow: hidden;
 
   @media screen and (min-width: 1024px) {
     width: ${p => p.theme.sizes.sliderWidthTablet[0]};
-    margin-top: -180px;
   }
 
   @media screen and (min-width: 1280px) {
     width: ${p => p.theme.sizes.sliderWidthDesktop[0]};
+  }
+`;
+
+export const BtnsWrapper = styled.div`
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  align-self: center;
+`;
+
+export const SliderBtnsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 32px;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -180px;
   }
 `;

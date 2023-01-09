@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import HeroBgImage1x from '../../../images/homepage/desktop/Main-bg-desk-1x.jpg';
-import HeroBgImage2x from '../../../images/homepage/desktop/Main-bg-desk-2x.jpg';
+import HeroBgImage1x from '../../../images/hotel/hero-bg-1x.jpg';
+import HeroBgImage2x from '../../../images/hotel/hero-bg-2x.jpg';
 
 export const HeroWrapper = styled.section`
   width: 100%;
@@ -53,24 +53,8 @@ export const Title = styled.h1`
   }
 `;
 
-export const Slogan = styled.p`
-  text-transform: uppercase;
-  margin-bottom: 113px;
-  font-family: ${p => p.theme.fonts.secondary};
-  font-size: ${p => p.theme.fontSizes.s};
-  font-weight: ${p => p.theme.fontWeights[4]};
-  line-height: ${p => p.theme.lineHeights.subheader};
-  letter-spacing: ${p => p.theme.letterSpacings.subheader};
-  color: ${p => p.theme.colors.mainLight};
-
-  @media screen and (min-width: 1024px) {
-    font-size: ${p => p.theme.fontSizes.m};
-    margin-bottom: 145px;
-  }
-`;
-
 export const DescriptionText = styled.p`
-  margin-bottom: 40px;
+  margin-bottom: 143px;
   margin-top: 24px;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p => p.theme.fontSizes.xxxs};
@@ -81,7 +65,8 @@ export const DescriptionText = styled.p`
 
   @media screen and (min-width: 1024px) {
     font-size: ${p => p.theme.fontSizes.xxs};
-    margin-bottom: 56px;
+    margin-bottom: 200px;
+
     margin-top: 16px;
   }
   @media screen and (min-width: 1280px) {
