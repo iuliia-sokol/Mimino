@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmimino=self.webpackChunkmimino||[]).push([[792],{1792:function(n,e,i){i.r(e);var u=i(9457),s=i(184);e.default=function(){return(0,s.jsx)(u.x,{as:"main",children:(0,s.jsx)("h1",{children:"RoomDoubleLux"})})}}}]);
-//# sourceMappingURL=792.ee39d86b.chunk.js.map
