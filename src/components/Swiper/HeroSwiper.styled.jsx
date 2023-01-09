@@ -3,20 +3,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SwiperStyled = styled(Swiper)`
   width: 100%;
+  height: 100%;
+  transform: translateY(5px);
 `;
 
 export const SlideStyled = styled(SwiperSlide)`
   width: 100vw;
   display: flex;
+  height: 100%;
   justify-content: center;
-  align-items: center;
-
-  background-position: center;
-  background-size: cover;
+  align-items: stretch;
+  /* background-position: center;
+  background-size: cover; */
 
   & > img {
+    flex-grow: 1;
+    /* display: block; */
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 `;
 

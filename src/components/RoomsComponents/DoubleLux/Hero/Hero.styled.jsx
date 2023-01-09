@@ -20,14 +20,13 @@ export const HeroWrapper = styled.section`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: -2px;
+    /* margin-bottom: -2px; */
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: -3px;
+    /* margin-bottom: -3px; */
   }
 `;
 
@@ -46,13 +45,11 @@ export const DataBlock = styled.div`
     justify-content: space-between;
     align-items: flex-end;
   }
-
-  @media screen and (min-width: 1280px) {
-  }
 `;
 
 export const SliderWrapper = styled.div`
   z-index: -1;
+  height: 100%;
 `;
 
 export const TextWrapper = styled.div`
@@ -147,7 +144,7 @@ export const HeroSocialMediaLinksWrapper = styled.ul`
   flex-direction: column;
   gap: 8px;
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 6%;
   padding: 0;
   margin: 0;

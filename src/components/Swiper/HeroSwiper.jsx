@@ -38,13 +38,32 @@ export const HeroSlider = ({
       {images.map(img => {
         return (
           <SlideStyled key={img.min} size={size}>
-            <img
-              sizes="(max-width: 1023px) 414px, (min-width: 1024px) 1024px, 1280px"
-              srcSet={`${img.mobMin} 414w, ${img.mobMax} 818w,${img.tabMin} 1024w,${img.tabMax} 2048w, ${img.min} 1280w, ${img.max} 2560w `}
-              src={img.mobMin}
-              alt={img.tag}
-              // loading="lazy"
-            />
+            <picture>
+              <source
+                media="(max-width: 414px)"
+                srcSet={`${img.mobMin} 1x, ${img.mobMax} 2x`}
+                sizes="1024px"
+              />
+
+              <source
+                media="(max-width: 1024px)"
+                srcSet={`${img.tabMin} 1x, ${img.tabMax} 2x`}
+                sizes="1024px"
+              />
+
+              <source
+                media="(max-width: 1280px)"
+                srcSet={`${img.min} 1x, ${img.max} 2x`}
+                sizes="1280px"
+              />
+
+              <source
+                srcSet={`${img.min} 1280w, ${img.max} 2560w`}
+                sizes="2560px"
+              />
+
+              <img src={img.max} alt={img.tag} />
+            </picture>
           </SlideStyled>
         );
       })}
