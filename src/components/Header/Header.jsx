@@ -38,7 +38,7 @@ export const Header = () => {
               href="tel:0955559533"
               abonent="Ресторан"
               number="095 555 95 33"
-              linkLocation="header"
+              linklocation="header"
             />
           </HeaderLinksItem>
 
@@ -48,7 +48,7 @@ export const Header = () => {
               href="tel:0668491089"
               abonent="Готель"
               number="066 849 10 89"
-              linkLocation="header"
+              linklocation="header"
             />
           </HeaderLinksItem>
 
