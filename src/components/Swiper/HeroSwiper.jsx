@@ -29,7 +29,7 @@ export const HeroSlider = ({
       speed={3000}
       effect="fade"
       fadeEffect={{
-        crossFade: true, // enables slides to cross fade
+        crossFade: true,
       }}
       slidesPerView={1}
       spaceBetween={0}
@@ -41,7 +41,7 @@ export const HeroSlider = ({
             <img
               sizes="(max-width: 1023px) 414px, (min-width: 1024px) 1024px, 1280px"
               srcSet={`${img.mobMin} 414w, ${img.mobMax} 818w,${img.tabMin} 1024w,${img.tabMax} 2048w, ${img.min} 1280w, ${img.max} 2560w `}
-              src={img.tabMin}
+              src={img.mobMin}
               alt={img.tag}
               // loading="lazy"
             />

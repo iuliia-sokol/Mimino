@@ -34,7 +34,7 @@ export const HeroWrapper = styled.section`
 export const DataBlock = styled.div`
   position: absolute;
   top: 0;
-  z-index: 10000;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   height: 100%;
