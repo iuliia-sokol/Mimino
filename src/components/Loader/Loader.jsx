@@ -1,5 +1,5 @@
 import { RotatingTriangles } from 'react-loader-spinner';
-
+import styled from 'styled-components';
 import { LoaderOverlay } from './Loader.styled';
 
 export const Loader = () => {
@@ -10,7 +10,7 @@ export const Loader = () => {
         height="180"
         width="180"
         ariaLabel="rotating-triangels-loading"
-        wrapperStyle={{ position: 'absolute', top: '30%', left: '43%' }}
+        wrapperStyle={{ position: 'absolute', top: '30%' }}
         wrapperClass="rotating-triangels-wrapper"
         colors={['#c47436', '#733c14', '#f1e46d']}
       />
