@@ -53,6 +53,7 @@ export const theme = {
     xxxs: '16px',
     xxxxs: '14px',
     xxxxxs: '12px',
+    xxxxxxs: '10px',
   },
   fontWeights: [300, 400, 500, 600, 700],
   lineHeights: {

@@ -1,11 +1,17 @@
 import { Box } from 'components/Box';
 
-import { hotDishes, mainDishes, salads } from 'utils/menu';
+import { hotDishes, mainDishes, salads, desserts, drinks } from 'utils/menu';
 
 import {
   Section2Wrapper,
   CaptionStyled,
   TableSubtitle,
+  DishName,
+  DishIngredients,
+  DishPortion,
+  DishPrice,
+  Table,
+  TableWrapper,
 } from './Section2.styled';
 
 export const Section2 = () => {
@@ -17,8 +23,8 @@ export const Section2 = () => {
         pr={['15px', '47px', '85px']}
         pl={['15px', '47px', '85px']}
       >
-        <div>
-          <table>
+        <TableWrapper>
+          <Table>
             <CaptionStyled>МЕНЮ РЕСТОРАНУ</CaptionStyled>
             <tbody>
               <TableSubtitle>
@@ -27,12 +33,12 @@ export const Section2 = () => {
               {hotDishes.map(dish => {
                 return (
                   <tr key={dish.name}>
-                    <td>
+                    <DishName>
                       {dish.name} <br />
-                      <span>{dish.ingredients}</span>
-                    </td>
-                    <td>{dish.portion}</td>
-                    <td>{dish.price}</td>
+                      <DishIngredients>{dish.ingredients}</DishIngredients>
+                    </DishName>
+                    <DishPortion>{dish.portion}</DishPortion>
+                    <DishPrice>{dish.price}</DishPrice>
                   </tr>
                 );
               })}
@@ -42,36 +48,61 @@ export const Section2 = () => {
               {mainDishes.map(dish => {
                 return (
                   <tr key={dish.name}>
-                    <td>
+                    <DishName>
                       {dish.name} <br />
-                      <span>{dish.ingredients}</span>
-                    </td>
-                    <td>{dish.portion}</td>
-                    <td>{dish.price}</td>
+                      <DishIngredients>{dish.ingredients}</DishIngredients>
+                    </DishName>
+                    <DishPortion>{dish.portion}</DishPortion>
+                    <DishPrice>{dish.price}</DishPrice>
                   </tr>
                 );
               })}
+            </tbody>
+          </Table>
+          <Table>
+            <tbody>
               <TableSubtitle>
                 <th colSpan="3">Салати</th>
               </TableSubtitle>
               {salads.map(dish => {
                 return (
                   <tr key={dish.name}>
-                    <td>
+                    <DishName>
                       {dish.name} <br />
-                      <span>{dish.ingredients}</span>
-                    </td>
-                    <td>{dish.portion}</td>
-                    <td>{dish.price}</td>
+                      <DishIngredients>{dish.ingredients}</DishIngredients>
+                    </DishName>
+                    <DishPortion>{dish.portion}</DishPortion>
+                    <DishPrice>{dish.price}</DishPrice>
                   </tr>
                 );
               })}
               <TableSubtitle>
                 <th colSpan="3">Десерти</th>
               </TableSubtitle>
+              {desserts.map(dish => {
+                return (
+                  <tr key={dish.name}>
+                    <DishName>{dish.name}</DishName>
+                    <DishPortion>{dish.portion}</DishPortion>
+                    <DishPrice>{dish.price}</DishPrice>
+                  </tr>
+                );
+              })}
+              <TableSubtitle>
+                <th colSpan="3">Напої</th>
+              </TableSubtitle>
+              {drinks.map(dish => {
+                return (
+                  <tr key={dish.name}>
+                    <DishName>{dish.name}</DishName>
+                    <DishPortion>{dish.portion}</DishPortion>
+                    <DishPrice>{dish.price}</DishPrice>
+                  </tr>
+                );
+              })}
             </tbody>
-          </table>
-        </div>
+          </Table>
+        </TableWrapper>
       </Box>
     </Section2Wrapper>
   );

@@ -104,3 +104,59 @@ export const salads = [
     price: '300 грн',
   },
 ];
+
+export const desserts = [
+  {
+    name: 'Торт наполеон',
+    ingredients: '',
+    portion: '230 г',
+    price: '300 грн',
+  },
+
+  {
+    name: 'Торт маковий',
+    ingredients: '',
+    portion: '230 г',
+    price: '300 грн',
+  },
+  {
+    name: 'Тірамісу',
+    ingredients: '',
+    portion: '120 г',
+    price: '260 грн',
+  },
+];
+
+export const drinks = [
+  {
+    name: 'Чай чорний/зелений',
+    ingredients: '',
+    portion: '500 мл',
+    price: '100 грн',
+  },
+
+  {
+    name: 'Еспресо',
+    ingredients: '',
+    portion: '30 мл',
+    price: '100 грн',
+  },
+  {
+    name: 'Американо',
+    ingredients: '',
+    portion: '150 мл',
+    price: '100 грн',
+  },
+  {
+    name: 'Капучино',
+    ingredients: '',
+    portion: '200 мл',
+    price: '160 грн',
+  },
+  {
+    name: 'Лате',
+    ingredients: '',
+    portion: '200 мл',
+    price: '160 грн',
+  },
+];
