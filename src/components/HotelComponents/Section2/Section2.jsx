@@ -1,7 +1,7 @@
 import { Box } from 'components/Box';
 
 import {
-  Section1Wrapper,
+  Section2Wrapper,
   BlockWrapper,
   DataWrapper,
   ImageWrapper,
@@ -12,18 +12,18 @@ import {
   BtnsWrapper,
   SliderBtnsWrapper,
   RoomName,
-} from './Section1.styled';
+} from './Section2.styled';
 
-import Pic1_1x from '../../../images/hotel/sec1-1-1x.jpg';
-import Pic1_2x from '../../../images/hotel/sec1-1-2x.jpg';
+import Pic1_1x from '../../../images/hotel/sec2-1-1x.jpg';
+import Pic1_2x from '../../../images/hotel/sec2-1-2x.jpg';
 
-import { sectionSlider1 } from '../../../utils/hotelImages';
+import { sectionSlider2 } from '../../../utils/hotelImages';
 import { Slider } from 'components/Swiper/Swiper';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 
-export const Section1 = () => {
+export const Section2 = () => {
   return (
-    <Section1Wrapper>
+    <Section2Wrapper>
       <Box
         display="flex"
         flexDirection="column"
@@ -34,7 +34,7 @@ export const Section1 = () => {
           <DataWrapper>
             <SubHeader>Amet minim mollit non</SubHeader>
             <Header>MIMIHO</Header>
-            <RoomName>ДВОМІСНИЙ НОМЕР люкс</RoomName>
+            <RoomName>ТРЬОХМІСНИЙ НОМЕР</RoomName>
             <Data>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
@@ -52,7 +52,7 @@ export const Section1 = () => {
         </BlockWrapper>
         <SliderBtnsWrapper>
           <SliderWrapper>
-            <Slider images={sectionSlider1} position="left" reverse={true} />
+            <Slider images={sectionSlider2} />
           </SliderWrapper>
           <BtnsWrapper>
             <ButtonStandart text="Детальніше" />
@@ -60,6 +60,6 @@ export const Section1 = () => {
           </BtnsWrapper>
         </SliderBtnsWrapper>
       </Box>
-    </Section1Wrapper>
+    </Section2Wrapper>
   );
 };
