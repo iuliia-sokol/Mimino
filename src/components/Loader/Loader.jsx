@@ -1,5 +1,5 @@
 import { RotatingTriangles } from 'react-loader-spinner';
-import styled from 'styled-components';
+
 import { LoaderOverlay } from './Loader.styled';
 
 export const Loader = () => {
