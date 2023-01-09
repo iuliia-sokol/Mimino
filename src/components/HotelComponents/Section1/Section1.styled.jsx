@@ -68,7 +68,7 @@ export const BlockWrapper = styled.div`
   }
 `;
 
-export const SubHeader = styled.h3`
+export const SubHeader = styled.h4`
   margin-bottom: 12px;
   font-family: ${p => p.theme.fonts.secondary};
   font-size: ${p => p.theme.fontSizes.xxs};
@@ -83,7 +83,7 @@ export const SubHeader = styled.h3`
 `;
 
 export const Header = styled.h2`
-  margin-bottom: 12px;
+  margin-bottom: 32px;
   font-family: ${p => p.theme.fonts.logo};
   font-size: ${p => p.theme.fontSizes.l};
   font-weight: ${p => p.theme.fontWeights[4]};
@@ -92,8 +92,29 @@ export const Header = styled.h2`
   color: ${p => p.theme.colors.headersMain};
 
   @media screen and (min-width: 1024px) {
-    margin-bottom: 24px;
+    margin-bottom: 62px;
     font-size: ${p => p.theme.fontSizes.xl};
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 72px;
+  }
+`;
+
+export const RoomName = styled.h3`
+  margin-bottom: 12px;
+  font-family: ${p => p.theme.fonts.secondary};
+  font-size: ${p => p.theme.fontSizes.xs};
+  font-weight: ${p => p.theme.fontWeights[4]};
+  line-height: ${p => p.theme.lineHeights.subheader};
+  letter-spacing: ${p => p.theme.letterSpacings.subheader};
+  color: ${p => p.theme.colors.mainDark};
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 16px;
+    font-size: ${p => p.theme.fontSizes.s};
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: ${p => p.theme.fontSizes.m};
   }
 `;
 
@@ -152,6 +173,9 @@ export const SliderBtnsWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -180px;
+    margin-top: -100px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -120px;
   }
 `;

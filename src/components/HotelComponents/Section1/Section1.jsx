@@ -11,6 +11,7 @@ import {
   SliderWrapper,
   BtnsWrapper,
   SliderBtnsWrapper,
+  RoomName,
 } from './Section1.styled';
 
 import Pic1_1x from '../../../images/hotel/sec1-1-1x.jpg';
@@ -33,6 +34,7 @@ export const Section1 = () => {
           <DataWrapper>
             <SubHeader>Amet minim mollit non</SubHeader>
             <Header>MIMIHO</Header>
+            <RoomName>ДВОМІСНИЙ НОМЕР люкс</RoomName>
             <Data>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.
