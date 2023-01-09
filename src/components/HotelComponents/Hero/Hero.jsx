@@ -12,7 +12,6 @@ import {
   HeroContentWrapper,
   HeroSocialMediaLinksWrapper,
 } from './Hero.styled';
-import { ButtonStandartLink } from 'components/Buttons/ButtonStandart/ButtonStandartLink';
 
 export const Hero = () => {
   return (
@@ -33,7 +32,7 @@ export const Hero = () => {
           justifyContent="center"
         >
           <Title>MIMIHO</Title>
-          <DescriptionText>Ресторан</DescriptionText>
+          <DescriptionText>Ресторанно-готельний комплекс</DescriptionText>
           <Slogan>СМАК ЖИТТЯ 24/7</Slogan>
         </Box>
 
@@ -44,10 +43,7 @@ export const Hero = () => {
 
           <HeroBtnsWrapper>
             <ButtonStandart text="Забронювати столик"></ButtonStandart>
-            <ButtonStandartLink
-              href="#menu"
-              text="Переглянути меню"
-            ></ButtonStandartLink>
+            <ButtonStandart text="Забронювати номер"></ButtonStandart>
           </HeroBtnsWrapper>
         </HeroContentWrapper>
 

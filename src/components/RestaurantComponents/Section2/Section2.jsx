@@ -18,7 +18,7 @@ import {
 
 export const Section2 = () => {
   return (
-    <Section2Wrapper>
+    <Section2Wrapper id="menu">
       <Box
         display="flex"
         flexDirection="column"
