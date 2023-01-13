@@ -14,6 +14,8 @@ export const Slider = ({
   size = 'standart',
   position = 'right',
   reverse = false,
+  slidesPerView = 'auto',
+  spaceBetween = 0,
 }) => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
@@ -31,13 +33,22 @@ export const Slider = ({
       }}
       autoplay={{ reverseDirection: reverse }}
       grabCursor={true}
-      slidesPerView={2}
+      // slidesPerView={slidesPerView}
       centeredSlides={true}
-      // breakpoints={{
-      //   414: { spaceBetween: 20 },
-      //   1024: { spaceBetween: 34 },
-      //   1280: { spaceBetween: 40 },
-      // }}
+      breakpoints={{
+        414: {
+          spaceBetween: spaceBetween[0],
+          slidesPerView: 'auto',
+        },
+        1024: {
+          spaceBetween: spaceBetween[1],
+          slidesPerView: slidesPerView - 1,
+        },
+        1280: {
+          spaceBetween: spaceBetween[2],
+          slidesPerView: slidesPerView,
+        },
+      }}
       rewind={true}
     >
       {images.map(img => {

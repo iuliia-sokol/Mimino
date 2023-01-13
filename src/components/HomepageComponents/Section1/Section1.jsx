@@ -68,7 +68,11 @@ export const Section1 = () => {
           </ImageWrapperReversed>
         </BlockWrapperReversed>
         <SliderWrapper>
-          <Slider images={sectionSlider1} />
+          <Slider
+            images={sectionSlider1}
+            slidesPerView={2}
+            spaceBetween={[25, 40, 40]}
+          />
         </SliderWrapper>
       </Box>
     </Section1Wrapper>

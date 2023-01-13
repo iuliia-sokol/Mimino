@@ -41,6 +41,8 @@ export const Section4 = () => {
               background="light"
               size="large"
               reverse={true}
+              slidesPerView={3}
+              spaceBetween={[20, 34, 86]}
             />
           </SliderWrapper>
         </SliderButtonWrapper>
