@@ -5,10 +5,11 @@ import ArrowRight from '../../images/icons/arrow-right.svg';
 import ArrowLeft from '../../images/icons/arrow-left.svg';
 import { SwiperBtn } from './SwiperBtns.styled';
 
-export const SwiperButtonNext = ({ background }) => {
+export const SwiperButtonNext = ({ background, refLink }) => {
   const swiper = useSwiper();
   return (
     <SwiperBtn
+      ref={refLink}
       background={background}
       type="button"
       onClick={() => swiper.slideNext()}
@@ -18,10 +19,11 @@ export const SwiperButtonNext = ({ background }) => {
   );
 };
 
-export const SwiperButtonPrev = ({ background }) => {
+export const SwiperButtonPrev = ({ background, refLink }) => {
   const swiper = useSwiper();
   return (
     <SwiperBtn
+      ref={refLink}
       background={background}
       type="button"
       onClick={() => swiper.slidePrev()}

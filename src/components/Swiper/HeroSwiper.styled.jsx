@@ -5,9 +5,14 @@ export const SwiperStyled = styled(Swiper)`
   width: 100%;
   height: 100%;
   transform: translateY(5px);
+
+  & > swiper-wrapper {
+    /* overflow: hidden; */
+  }
 `;
 
 export const SlideStyled = styled(SwiperSlide)`
+  /* position: absolute; */
   width: 100vw;
   display: flex;
   height: 100%;

@@ -1,6 +1,7 @@
-import { Navigation, Autoplay, EffectFade } from 'swiper';
+import SwiperCore, { Navigation, Autoplay, EffectFade } from 'swiper';
 
 import 'swiper/css/effect-fade';
+// import 'swiper/css';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/css/autoplay';
 
@@ -11,6 +12,8 @@ import {
 } from './HeroSwiper.styled';
 
 // import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
+
+SwiperCore.use([Navigation, EffectFade, Autoplay]);
 
 export const HeroSlider = ({
   images,
@@ -23,14 +26,16 @@ export const HeroSlider = ({
     <SwiperStyled
       size={size}
       modules={[Navigation, Autoplay, EffectFade]}
-      navigation
+      // navigation={true}
       autoplay={{ reverseDirection: reverse }}
       grabCursor={true}
       speed={3000}
-      effect="fade"
-      fadeEffect={{
-        crossFade: true,
-      }}
+      effect={'fade'}
+      fadeEffect={
+        {
+          // crossFade: true,
+        }
+      }
       slidesPerView={1}
       spaceBetween={0}
       rewind={true}

@@ -2,7 +2,7 @@
   "name": "mimino",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://iuliia-sokol.github.io/Mimino/",
+  "homepage": "https://iuliia-sokol.github.io/mimino/",
   "dependencies": {
     "@mapbox/mapbox-gl-language": "^1.0.1",
     "@testing-library/jest-dom": "^5.16.3",

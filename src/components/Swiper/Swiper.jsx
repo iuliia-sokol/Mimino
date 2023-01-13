@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { Navigation, Autoplay } from 'swiper';
 
 // import 'swiper/css';
@@ -14,14 +15,23 @@ export const Slider = ({
   position = 'right',
   reverse = false,
 }) => {
+  const navigationPrevRef = useRef(null);
+  const navigationNextRef = useRef(null);
   return (
     <SwiperStyled
       size={size}
       modules={[Navigation, Autoplay]}
-      navigation
+      navigation={{
+        prevEl: navigationPrevRef.current,
+        nextEl: navigationNextRef.current,
+      }}
+      onBeforeInit={swiper => {
+        swiper.params.navigation.prevEl = navigationPrevRef.current;
+        swiper.params.navigation.nextEl = navigationNextRef.current;
+      }}
       autoplay={{ reverseDirection: reverse }}
       grabCursor={true}
-      slidesPerView={'auto'}
+      slidesPerView={2}
       centeredSlides={true}
       // breakpoints={{
       //   414: { spaceBetween: 20 },
@@ -43,8 +53,14 @@ export const Slider = ({
         );
       })}
       <SwiperBtnsWrapper position={position}>
-        <SwiperButtonPrev background={background}></SwiperButtonPrev>
-        <SwiperButtonNext background={background}></SwiperButtonNext>
+        <SwiperButtonPrev
+          refLink={navigationPrevRef}
+          background={background}
+        ></SwiperButtonPrev>
+        <SwiperButtonNext
+          refLink={navigationNextRef}
+          background={background}
+        ></SwiperButtonNext>
       </SwiperBtnsWrapper>
     </SwiperStyled>
   );

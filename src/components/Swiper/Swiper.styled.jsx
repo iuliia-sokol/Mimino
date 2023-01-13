@@ -12,6 +12,10 @@ export const SwiperStyled = styled(Swiper)`
     /* gap: ${p => (p.size === 'large' ? '0px' : '5px')}; */
   }
 
+  & > .swiper-wrapper {
+    height: fit-content;
+  }
+
   @media screen and (min-width: 1024px) {
     width: ${p =>
       p.size === 'large'
