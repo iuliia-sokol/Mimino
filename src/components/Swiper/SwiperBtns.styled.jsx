@@ -9,13 +9,16 @@ export const SwiperBtn = styled.button`
   justify-content: center;
   align-items: center;
   & svg {
-    stroke: ${p => (p.background === "light" ? p.theme.colors.mainLight : 'none')};
+    fill: ${p =>
+      p.background === 'light'
+        ? p.theme.colors.mainLight
+        : p.theme.colors.mainDark};
   }
 
   &:hover,
   &:focus {
     & svg {
-      stroke: ${p => p.theme.colors.mainAccent};
+      fill: ${p => p.theme.colors.mainAccent};
     }
   }
 `;

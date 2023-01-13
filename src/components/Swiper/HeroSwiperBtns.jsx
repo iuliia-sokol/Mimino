@@ -3,7 +3,7 @@ import { ReactSVG } from 'react-svg';
 
 import ArrowRight from '../../images/icons/arrow-right.svg';
 import ArrowLeft from '../../images/icons/arrow-left.svg';
-import { SwiperBtn } from './SwiperBtns.styled';
+import { SwiperBtn } from './HeroSwiperBtns.styled';
 
 export const SwiperButtonNext = ({ background }) => {
   const swiper = useSwiper();

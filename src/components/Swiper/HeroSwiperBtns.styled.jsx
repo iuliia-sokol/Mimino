@@ -8,14 +8,15 @@ export const SwiperBtn = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
   & svg {
-    stroke: ${p => (p.background === "light" ? p.theme.colors.mainLight : 'none')};
+    fill: ${p => p.theme.colors.mainAccent};
   }
 
-  &:hover,
+  /* &:hover,
   &:focus {
     & svg {
       stroke: ${p => p.theme.colors.mainAccent};
     }
-  }
+  } */
 `;

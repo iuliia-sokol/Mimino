@@ -10,6 +10,7 @@ import {
   // SwiperBtnsWrapper,
 } from './HeroSwiper.styled';
 import { useRef } from 'react';
+import { SwiperButtonNext, SwiperButtonPrev } from './HeroSwiperBtns';
 
 // import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
 
@@ -82,10 +83,9 @@ export const HeroSlider = ({
           </SlideStyled>
         );
       })}
-      {/* <SwiperBtnsWrapper position={position}>
-        <SwiperButtonPrev background={background}></SwiperButtonPrev>
-        <SwiperButtonNext background={background}></SwiperButtonNext>
-      </SwiperBtnsWrapper> */}
+
+      <SwiperButtonPrev background={background}></SwiperButtonPrev>
+      <SwiperButtonNext background={background}></SwiperButtonNext>
     </SwiperStyled>
   );
 };
