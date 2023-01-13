@@ -96,7 +96,7 @@ export const Data = styled.p`
 
 export const SliderWrapper = styled.div`
   margin-top: 48px;
-  /* width: ${p => p.theme.sizes.sliderWidthMobile[1]}; */
+  width: ${p => p.theme.sizes.sliderWidthMobile[1]};
   /* align-self: flex-end; */
   display: flex;
   justify-content: flex-end;

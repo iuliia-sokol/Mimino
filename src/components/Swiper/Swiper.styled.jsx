@@ -6,14 +6,13 @@ export const SwiperStyled = styled(Swiper)`
     p.size === 'large'
       ? p.theme.sizes.sliderWidthMobile[1]
       : p.theme.sizes.sliderWidthMobile[0]};
+  overflow: hidden;
+
   & > .swiper-wrapper {
     display: flex;
     margin-bottom: 20px;
-    /* gap: ${p => (p.size === 'large' ? '0px' : '5px')}; */
-  }
-
-  & > .swiper-wrapper {
     height: fit-content;
+    /* gap: ${p => (p.size === 'large' ? '0px' : '5px')}; */
   }
 
   @media screen and (min-width: 1024px) {
