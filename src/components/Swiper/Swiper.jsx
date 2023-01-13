@@ -38,7 +38,7 @@ export const Slider = ({
       breakpoints={{
         414: {
           spaceBetween: spaceBetween[0],
-          slidesPerView: 'auto',
+          slidesPerView: 1,
         },
         1024: {
           spaceBetween: spaceBetween[1],

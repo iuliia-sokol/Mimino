@@ -13,12 +13,9 @@ export const SlideStyled = styled(SwiperSlide)`
   height: 100%;
   justify-content: center;
   align-items: stretch;
-  /* background-position: center;
-  background-size: cover; */
 
   & > img {
     flex-grow: 1;
-    /* display: block; */
     width: 100%;
     height: 100%;
   }
