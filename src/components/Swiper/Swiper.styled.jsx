@@ -43,6 +43,8 @@ export const SlideStyled = styled(SwiperSlide)`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
   /* margin-left: ${p => (p.size === 'large' ? '10px' : '12.5px')};
   margin-right: ${p => (p.size === 'large' ? '10px' : '12.5px')}; */
 

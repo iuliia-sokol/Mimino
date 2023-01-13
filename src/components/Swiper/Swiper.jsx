@@ -33,12 +33,12 @@ export const Slider = ({
       }}
       autoplay={{ reverseDirection: reverse }}
       grabCursor={true}
-      // centeredSlides={true}
+      centeredSlides={true}
       breakpoints={{
         414: {
           spaceBetween: spaceBetween[0],
-          slidesPerView: 1,
-          centeredSlides: false,
+          slidesPerView: 'auto',
+          centeredSlides: true,
         },
         1024: {
           spaceBetween: spaceBetween[1],
