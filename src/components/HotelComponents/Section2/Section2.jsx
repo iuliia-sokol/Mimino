@@ -53,7 +53,11 @@ export const Section2 = () => {
         </BlockWrapper>
         <SliderBtnsWrapper>
           <SliderWrapper>
-            <Slider images={sectionSlider2} />
+            <Slider
+              slidesPerView={2}
+              spaceBetween={[25, 40, 40]}
+              images={sectionSlider2}
+            />
           </SliderWrapper>
           <BtnsWrapper>
             <ButtonStandartNavLink to="triple" text="Детальніше" />
