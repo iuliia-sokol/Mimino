@@ -4,33 +4,16 @@ import 'swiper/css/effect-fade';
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/css/autoplay';
 
-import {
-  SwiperStyled,
-  SlideStyled,
-  // SwiperBtnsWrapper,
-} from './HeroSwiper.styled';
-import { useRef } from 'react';
-import { SwiperButtonNext, SwiperButtonPrev } from './HeroSwiperBtns';
-
-// import { SwiperButtonPrev, SwiperButtonNext } from './SwiperBtns';
+import { SwiperStyled, SlideStyled } from './HeroSwiper.styled';
 
 SwiperCore.use([Navigation, EffectFade, Autoplay]);
 
-export const HeroSlider = ({
-  images,
-  background = 'dark',
-  size = 'standart',
-  position = 'right',
-  reverse = false,
-}) => {
-  const navigationPrevRef = useRef(null);
-  const navigationNextRef = useRef(null);
+export const HeroSlider = ({ images, refLink }) => {
   return (
     <SwiperStyled
-      size={size}
+      ref={refLink}
       modules={[Navigation, Autoplay, EffectFade]}
-      // navigation={true}
-      autoplay={{ reverseDirection: reverse }}
+      autoplay
       grabCursor={true}
       speed={3000}
       effect={'fade'}
@@ -39,21 +22,13 @@ export const HeroSlider = ({
           // crossFade: true,
         }
       }
-      navigation={{
-        prevEl: navigationPrevRef.current,
-        nextEl: navigationNextRef.current,
-      }}
-      onBeforeInit={swiper => {
-        swiper.params.navigation.prevEl = navigationPrevRef.current;
-        swiper.params.navigation.nextEl = navigationNextRef.current;
-      }}
       slidesPerView={1}
       spaceBetween={0}
       rewind={true}
     >
       {images.map(img => {
         return (
-          <SlideStyled key={img.min} size={size}>
+          <SlideStyled key={img.min}>
             <picture>
               <source
                 media="(max-width: 414px)"
@@ -83,9 +58,6 @@ export const HeroSlider = ({
           </SlideStyled>
         );
       })}
-
-      <SwiperButtonPrev background={background}></SwiperButtonPrev>
-      <SwiperButtonNext background={background}></SwiperButtonNext>
     </SwiperStyled>
   );
 };

@@ -159,3 +159,38 @@ export const HeroSocialMediaLinksWrapper = styled.ul`
     display: none;
   }
 `;
+
+export const CustomSliderBtn = styled.button`
+  position: absolute;
+  z-index: 2000000000;
+  top: 50%;
+  left: ${p => (p.position === 'right' ? '15px' : 'null')};
+  right: ${p => (p.position === 'left' ? '15px' : 'null')};
+  width: 41px;
+  height: 41px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+
+  & svg {
+    fill: ${p => p.theme.colors.mainAccent};
+  }
+
+  @media screen and (min-width: 1024px) {
+    left: ${p => (p.position === 'right' ? '47px' : 'null')};
+    right: ${p => (p.position === 'left' ? '47px' : 'null')};
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: ${p => (p.position === 'right' ? '85px' : 'null')};
+    right: ${p => (p.position === 'left' ? '85px' : 'null')};
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+`;

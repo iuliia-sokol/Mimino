@@ -1,4 +1,9 @@
+import { useCallback, useRef } from 'react';
 import { Box } from 'components/Box';
+import { ReactSVG } from 'react-svg';
+
+import ArrowRight from '../../../../images/icons/arrow-right.svg';
+import ArrowLeft from '../../../../images/icons/arrow-left.svg';
 import { LocationBanner } from '../../../LocationBanner/LocationBanner';
 import { SocialMediaLinks } from '../../../SocialMediaLinks/SocialMediaLinks';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
@@ -13,16 +18,29 @@ import {
   SliderWrapper,
   HeaderLayout,
   TextWrapper,
+  CustomSliderBtn,
 } from './Hero.styled';
 import { HeroSlider } from 'components/Swiper/HeroSwiper';
 import { doubleLux } from '../../../../utils/roomsImages';
 
 export const Hero = () => {
+  const sliderRef = useRef(null);
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slideNext();
+  }, []);
+
   return (
     <HeroWrapper>
       <HeaderLayout />
       <SliderWrapper>
-        <HeroSlider images={doubleLux} />
+        <HeroSlider images={doubleLux} refLink={sliderRef} />
       </SliderWrapper>
 
       <Box
@@ -30,6 +48,7 @@ export const Hero = () => {
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
+        zIndex="-1"
       >
         <DataBlock>
           <TextWrapper>
@@ -53,6 +72,12 @@ export const Hero = () => {
           </HeroBtnsWrapper>
         </DataBlock>
       </Box>
+      <CustomSliderBtn type="button" position="right" onClick={handlePrev}>
+        <ReactSVG src={ArrowLeft} />
+      </CustomSliderBtn>
+      <CustomSliderBtn type="button" position="left" onClick={handleNext}>
+        <ReactSVG src={ArrowRight} />
+      </CustomSliderBtn>
     </HeroWrapper>
   );
 };
