@@ -21,7 +21,7 @@ import {
   CustomSliderBtn,
 } from './Hero.styled';
 import { HeroSlider } from 'components/Swiper/HeroSwiper';
-import { doubleLux } from '../../../../utils/roomsImages';
+import { double } from '../../../../utils/roomsImages';
 
 export const Hero = () => {
   const sliderRef = useRef(null);
@@ -40,7 +40,7 @@ export const Hero = () => {
     <HeroWrapper>
       <HeaderLayout />
       <SliderWrapper>
-        <HeroSlider images={doubleLux} refLink={sliderRef} />
+        <HeroSlider images={double} refLink={sliderRef} />
       </SliderWrapper>
 
       <Box
@@ -52,7 +52,7 @@ export const Hero = () => {
       >
         <DataBlock>
           <TextWrapper>
-            <RoomName>ДВОМІСНИЙ НОМЕР люкс</RoomName>
+            <RoomName>ДВОМІСНИЙ НОМЕР</RoomName>
             <DescriptionText>
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do
               amet sint. Velit officia consequat duis enim velit mollit.

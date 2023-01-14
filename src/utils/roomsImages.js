@@ -23,8 +23,8 @@ import Pic3_2x_tab from '../images/rooms/double-lux/slide3-2x-tab.jpg';
 
 // Triple
 
-import Pic4_2x from '../images/rooms/triple/slide1-2x.jpg';
 import Pic4_1x from '../images/rooms/triple/slide1-1x.jpg';
+import Pic4_2x from '../images/rooms/triple/slide1-2x.jpg';
 import Pic4_1x_mob from '../images/rooms/triple/slide1-1x-mob.jpg';
 import Pic4_2x_mob from '../images/rooms/triple/slide1-2x-mob.jpg';
 import Pic4_1x_tab from '../images/rooms/triple/slide1-1x-tab.jpg';
@@ -45,6 +45,27 @@ import Pic6_1x_tab from '../images/rooms/triple/slide2-1x-tab.jpg';
 import Pic6_2x_tab from '../images/rooms/triple/slide2-2x-tab.jpg';
 
 // Double
+
+import Pic7_1x from '../images/rooms/double/slide1-1x.jpg';
+import Pic7_2x from '../images/rooms/double/slide1-2x.jpg';
+import Pic7_1x_mob from '../images/rooms/double/slide1-1x-mob.jpg';
+import Pic7_2x_mob from '../images/rooms/double/slide1-2x-mob.jpg';
+import Pic7_1x_tab from '../images/rooms/double/slide1-1x-tab.jpg';
+import Pic7_2x_tab from '../images/rooms/double/slide1-2x-tab.jpg';
+
+import Pic8_1x from '../images/rooms/double/slide2-1x.jpg';
+import Pic8_2x from '../images/rooms/double/slide2-2x.jpg';
+import Pic8_1x_mob from '../images/rooms/double/slide2-1x-mob.jpg';
+import Pic8_2x_mob from '../images/rooms/double/slide2-2x-mob.jpg';
+import Pic8_1x_tab from '../images/rooms/double/slide2-1x-tab.jpg';
+import Pic8_2x_tab from '../images/rooms/double/slide2-2x-tab.jpg';
+
+import Pic9_1x from '../images/rooms/double/slide3-1x.jpg';
+import Pic9_2x from '../images/rooms/double/slide3-2x.jpg';
+import Pic9_1x_mob from '../images/rooms/double/slide3-1x-mob.jpg';
+import Pic9_2x_mob from '../images/rooms/double/slide3-2x-mob.jpg';
+import Pic9_1x_tab from '../images/rooms/double/slide3-1x-tab.jpg';
+import Pic9_2x_tab from '../images/rooms/double/slide3-2x-tab.jpg';
 
 export const doubleLux = [
   {
@@ -102,6 +123,36 @@ export const triple = [
     mobMax: Pic6_2x_mob,
     tabMin: Pic6_1x_tab,
     tabMax: Pic6_2x_tab,
+    tag: 'interrior',
+  },
+];
+
+export const double = [
+  {
+    min: Pic7_1x,
+    max: Pic7_2x,
+    mobMin: Pic7_1x_mob,
+    mobMax: Pic7_2x_mob,
+    tabMin: Pic7_1x_tab,
+    tabMax: Pic7_2x_tab,
+    tag: 'interrior',
+  },
+  {
+    min: Pic8_1x,
+    max: Pic8_2x,
+    mobMin: Pic8_1x_mob,
+    mobMax: Pic8_2x_mob,
+    tabMin: Pic8_1x_tab,
+    tabMax: Pic8_2x_tab,
+    tag: 'interrior',
+  },
+  {
+    min: Pic9_1x,
+    max: Pic9_2x,
+    mobMin: Pic9_1x_mob,
+    mobMax: Pic9_2x_mob,
+    tabMin: Pic9_1x_tab,
+    tabMax: Pic9_2x_tab,
     tag: 'interrior',
   },
 ];

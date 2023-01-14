@@ -25,13 +25,13 @@ export const Container = styled.div`
   padding-right: 15px;
 
   @media screen and (min-width: 1024px) {
-    padding-top: 47px;
-    padding-bottom: 47px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 85px;
-    padding-bottom: 85px;
+    padding-left: 85px;
+    padding-right: 85px;
   }
 `;
 
@@ -40,7 +40,6 @@ export const ButtonWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-
 
   @media screen and (min-width: 1024px) {
     justify-content: flex-end;
