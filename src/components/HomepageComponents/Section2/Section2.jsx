@@ -1,5 +1,6 @@
 import { Box } from 'components/Box';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
+import { ButtonStandartNavLink } from 'components/Buttons/ButtonStandart/ButtonStandartNavLink';
 import { Slider } from 'components/Swiper/Swiper';
 import { sectionSlider2 } from '../../../utils/homepageImages';
 import {
@@ -32,8 +33,11 @@ export const Section2 = () => {
         </DataWrapper>
         <SliderButtonWrapper>
           <BtnsWrapper>
-            <ButtonStandart text="Забронювати столик"></ButtonStandart>
-            <ButtonStandart text="Переглянути меню"></ButtonStandart>
+            <ButtonStandart text="Забронювати столик" />
+            <ButtonStandartNavLink
+              to="/restaurant#menu"
+              text="Переглянути меню"
+            />
           </BtnsWrapper>
           <SliderWrapper>
             <Slider

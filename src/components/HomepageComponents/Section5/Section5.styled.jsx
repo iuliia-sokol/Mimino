@@ -131,6 +131,11 @@ export const MapWrapper = styled.div`
   border: 1px solid #bababa;
   border-radius: ${p => p.theme.radii.btnModal};
 
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 412px;
+  }
+
   @media screen and (min-width: 1024px) {
     width: 535px;
     height: 412px;
