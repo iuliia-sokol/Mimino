@@ -1,8 +1,8 @@
 import { Box } from 'components/Box';
-import { ReactSVG } from 'react-svg';
 
 import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';
-import ArrowRight from '../../../../images/icons/arrow-right.svg';
+import { GoBackLink } from 'components/GoBackLink/GoBackLink';
+
 import {
   Section1Wrapper,
   ButtonWrapper,
@@ -13,7 +13,6 @@ import {
   ContentBlockWrapper,
   SubHeader,
   ContentWrapper,
-  GoBackLink,
 } from './Section1.styled';
 
 export const Section1 = () => {
@@ -98,10 +97,7 @@ export const Section1 = () => {
         </ContentBlockWrapper>
         <ButtonWrapper>
           <ButtonLarge text="ОФОРМИТИ БРОНЮВАННЯ" />
-          <GoBackLink to="/hotel">
-            <span>Повернутися до перегляду номерів</span>
-            <ReactSVG src={ArrowRight} />
-          </GoBackLink>
+          <GoBackLink to="/hotel" text="Повернутися до перегляду номерів" />
         </ButtonWrapper>
       </Box>
     </Section1Wrapper>
