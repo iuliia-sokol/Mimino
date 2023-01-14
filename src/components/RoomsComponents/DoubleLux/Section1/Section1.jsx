@@ -1,6 +1,8 @@
 import { Box } from 'components/Box';
-import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';
+import { ReactSVG } from 'react-svg';
 
+import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';
+import ArrowRight from '../../../../images/icons/arrow-right.svg';
 import {
   Section1Wrapper,
   ButtonWrapper,
@@ -11,6 +13,7 @@ import {
   ContentBlockWrapper,
   SubHeader,
   ContentWrapper,
+  GoBackLink,
 } from './Section1.styled';
 
 export const Section1 = () => {
@@ -95,6 +98,10 @@ export const Section1 = () => {
         </ContentBlockWrapper>
         <ButtonWrapper>
           <ButtonLarge text="Забронювати столик" />
+          <GoBackLink>
+            <span>Повернутися до перегляду номерів</span>
+            <ReactSVG src={ArrowRight} />
+          </GoBackLink>
         </ButtonWrapper>
       </Box>
     </Section1Wrapper>

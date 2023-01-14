@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Section1Wrapper = styled.section`
@@ -19,10 +20,13 @@ export const Section1Wrapper = styled.section`
 
 export const ButtonWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  gap: 20px;
 
   @media screen and (min-width: 1024px) {
     justify-content: flex-end;
+    align-self: flex-end;
   }
 `;
 
@@ -104,5 +108,39 @@ export const ContentWrapper = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
+  }
+`;
+
+export const GoBackLink = styled(NavLink)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: ${p => p.theme.colors.secondaryAccent};
+  font-family: ${p => p.theme.fonts.main};
+  font-weight: ${p => p.theme.fontWeights[2]};
+  line-height: ${p => p.theme.lineHeights.content};
+  font-size: ${p => p.theme.fontSizes.xxxs};
+  letter-spacing: ${p => p.theme.letterSpacings.content};
+
+  & svg {
+    fill: ${p => p.theme.colors.secondaryAccent};
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover,
+  &:focus {
+    color: ${p => p.theme.colors.mainAccent};
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: ${p => p.theme.colors.mainAccent};
+  }
+
+  @media screen and (min-width: 1024px) {
+    gap: 16px;
+    font-size: ${p => p.theme.fontSizes.xxs};
   }
 `;
