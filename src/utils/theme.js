@@ -12,6 +12,7 @@ export const theme = {
     textContentSection: '#BABABA',
     textContentSecondary: '#5F5F5F',
     textDataHero: '#E5E5E5',
+    modalPlaceholder: '#808080',
 
     footerBg: '#0E0C07',
     sectionBg1: '#FFFDEE',

@@ -1,15 +1,20 @@
-import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';
+import { ButtonModal } from 'components/Buttons/ButtonModal/ButtonModal';
 import { useState } from 'react';
 
 // import Notiflix from 'notiflix';
 // import PropTypes from 'prop-types';
 
 import {
+  FormTitle,
   InputsWrapper,
   Input,
+  InputSelect,
   InputWrapper,
   ModalWrapper,
   ModalForm,
+  InputBlocksWrapper,
+  Hint,
+  BtnsWrapper,
 } from './ModalFormTable.styled';
 
 // import { useDispatch, useSelector } from 'react-redux';
@@ -70,31 +75,64 @@ export const ModalFormTable = ({ closeModal }) => {
 
   return (
     <ModalWrapper>
+      <FormTitle>ЗАБРОНЮВАТИ СТОЛИК</FormTitle>
       <ModalForm onSubmit={handleSubmit}>
-        <InputsWrapper>
-          <InputWrapper>
-            <Input
-              onChange={onInputChange}
-              value={name}
-              name="name"
-              placeholder="Ваше ім’я"
-              pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-            />
-          </InputWrapper>
-          <InputWrapper>
-            <Input
-              onChange={onInputChange}
-              value={number}
-              type="tel"
-              name="number"
-              placeholder="+38 (___) ___-__-__"
-              pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-            />
-          </InputWrapper>
-          <InputWrapper></InputWrapper>
-          <InputWrapper></InputWrapper>
-        </InputsWrapper>
-        <ButtonLarge type="submit" status="update" text="Update contact" />
+        <InputBlocksWrapper>
+          <InputsWrapper>
+            <InputWrapper>
+              <Input
+                onChange={onInputChange}
+                value={name}
+                name="name"
+                placeholder="Ваше ім’я"
+                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+              />
+              <Hint>На кого забронювати столик?</Hint>
+            </InputWrapper>
+            <InputWrapper>
+              <Input
+                onChange={onInputChange}
+                value={number}
+                type="tel"
+                name="number"
+                placeholder="+38 (___) ___-__-__"
+                pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+              />
+              <Hint>Номер телефону</Hint>
+            </InputWrapper>
+          </InputsWrapper>
+          <InputsWrapper>
+            <InputWrapper>
+              <InputSelect
+                onChange={onInputChange}
+                value={persons}
+                name="persons"
+                placeholder="+38 (___) ___-__-__"
+                // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+              </InputSelect>
+              <Hint>Столик на яку кількість осіб?</Hint>
+            </InputWrapper>
+            <InputWrapper>
+              <Input
+                onChange={onInputChange}
+                value={date}
+                type="date"
+                name="date"
+                placeholder="Сьогодні"
+                // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+              />
+              <Hint>На яку дату бронювати?</Hint>
+            </InputWrapper>
+          </InputsWrapper>
+        </InputBlocksWrapper>
+        <BtnsWrapper>
+          <ButtonModal type="submit" status="update" text="Update contact" />
+        </BtnsWrapper>
       </ModalForm>
     </ModalWrapper>
   );

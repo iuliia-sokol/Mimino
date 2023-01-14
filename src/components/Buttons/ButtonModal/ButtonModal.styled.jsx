@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const BtnElement = styled.button`
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,8 +38,4 @@ export const BtnElement = styled.button`
     padding-right: ${p => p.theme.space[5]}px;
     font-size: ${p => p.theme.fontSizes.xs};
   }
-
-  /* & > svg {
-    margin-right: 8px;
-  } */
 `;
