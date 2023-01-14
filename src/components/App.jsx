@@ -6,6 +6,8 @@ const Homepage = lazy(() => import('pages/Homepage/Homepage'));
 const Hotel = lazy(() => import('pages/Hotel/Hotel'));
 const Restaurant = lazy(() => import('pages/Restaurant/Restaurant'));
 const RoomDoubleLux = lazy(() => import('pages/Rooms/RoomDoubleLux'));
+const RoomDouble = lazy(() => import('pages/Rooms/RoomDouble'));
+const RoomTriple = lazy(() => import('pages/Rooms/RoomTriple'));
 
 export const App = () => {
   return (
@@ -15,8 +17,8 @@ export const App = () => {
         <Route path="restaurant" element={<Restaurant />} />
         <Route path="hotel" element={<Hotel />} />
         <Route path="hotel/double-lux" element={<RoomDoubleLux />} />
-        <Route path="hotel/triple" element={<h1>Room triple</h1>} />
-        <Route path="hotel/double" element={<h1>Room double</h1>} />
+        <Route path="hotel/triple" element={<RoomTriple />} />
+        <Route path="hotel/double" element={<RoomDouble />} />
       </Route>
     </Routes>
   );
