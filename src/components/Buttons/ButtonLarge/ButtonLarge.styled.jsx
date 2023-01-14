@@ -7,8 +7,8 @@ export const BtnElement = styled.button`
   border-radius: ${p => p.theme.radii.btnStandart};
   padding-top: ${p => p.theme.space[1]}px;
   padding-bottom: ${p => p.theme.space[1]}px;
-  padding-left: ${p => p.theme.space[6]}px;
-  padding-right: ${p => p.theme.space[6]}px;
+  padding-left: ${p => p.theme.space[2]}px;
+  padding-right: ${p => p.theme.space[2]}px;
   font-family: ${p => p.theme.fonts.main};
   font-size: ${p => p.theme.fontSizes.xxs};
   font-weight: ${p => p.theme.fontWeights[2]};
@@ -30,7 +30,7 @@ export const BtnElement = styled.button`
     border: ${p => p.theme.borders.btnLargeActive};
   }
 
-  @media screen and (min-width: 414px) {
+  @media screen and (min-width: 1024px) {
     padding-top: ${p => p.theme.space[3]}px;
     padding-bottom: ${p => p.theme.space[3]}px;
     padding-left: ${p => p.theme.space[5]}px;

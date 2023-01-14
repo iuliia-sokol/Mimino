@@ -18,6 +18,23 @@ export const Section1Wrapper = styled.section`
   }
 `;
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 47px;
+    padding-bottom: 47px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+`;
+
 export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;

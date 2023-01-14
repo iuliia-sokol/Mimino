@@ -14,17 +14,13 @@ import {
   SubHeader,
   ContentWrapper,
   GoBackLink,
+  Container,
 } from './Section1.styled';
 
 export const Section1 = () => {
   return (
     <Section1Wrapper id="menu">
-      <Box
-        display="flex"
-        flexDirection="column"
-        pr={['15px', '47px', '85px']}
-        pl={['15px', '47px', '85px']}
-      >
+      <Container>
         <HeaderWrapper>
           <Header>ЗРУЧНОСТІ У НОМЕРІ</Header>
           <HeaderText>
@@ -103,7 +99,7 @@ export const Section1 = () => {
             <ReactSVG src={ArrowRight} />
           </GoBackLink>
         </ButtonWrapper>
-      </Box>
+      </Container>
     </Section1Wrapper>
   );
 };
