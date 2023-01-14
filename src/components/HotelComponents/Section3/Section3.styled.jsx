@@ -2,13 +2,13 @@ import styled from 'styled-components';
 
 export const Section3Wrapper = styled.section`
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: ${p => p.theme.colors.sectionBg1};
 
   @media screen and (min-width: 1024px) {
     padding-top: 120px;
-    padding-bottom: 32px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -160,6 +160,7 @@ export const BtnsWrapper = styled.div`
   justify-content: center;
   gap: 16px;
   align-self: center;
+  margin-top: 20px;
 `;
 
 export const SliderBtnsWrapper = styled.div`

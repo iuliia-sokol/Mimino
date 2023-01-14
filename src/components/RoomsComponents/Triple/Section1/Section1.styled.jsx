@@ -84,9 +84,6 @@ export const Text = styled.p`
   @media screen and (min-width: 1024px) {
     width: 45%;
   }
-
-  @media screen and (min-width: 1280px) {
-  }
 `;
 
 export const ContentBlockWrapper = styled.div`

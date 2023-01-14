@@ -47,17 +47,6 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const DishPortion = styled.td`
-  text-align: end;
-  width: 25%;
-  color: ${p => p.theme.colors.mainDark};
-  font-family: ${p => p.theme.fonts.main};
-  font-weight: ${p => p.theme.fontWeights[0]};
-  line-height: ${p => p.theme.lineHeights.content};
-  font-size: ${p => p.theme.fontSizes.xxxxs};
-  letter-spacing: ${p => p.theme.letterSpacings.content};
-`;
-
 export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -94,9 +83,6 @@ export const Text = styled.p`
 
   @media screen and (min-width: 1024px) {
     width: 45%;
-  }
-
-  @media screen and (min-width: 1280px) {
   }
 `;
 
