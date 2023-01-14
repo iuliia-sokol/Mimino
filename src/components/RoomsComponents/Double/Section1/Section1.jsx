@@ -1,4 +1,3 @@
-import { Box } from 'components/Box';
 import { ReactSVG } from 'react-svg';
 import ArrowRight from '../../../../images/icons/arrow-right.svg';
 import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';

@@ -20,6 +20,7 @@ export const SwiperStyled = styled(Swiper)`
       p.size === 'large'
         ? p.theme.sizes.sliderWidthTablet[1]
         : p.theme.sizes.sliderWidthTablet[0]};
+
     & > .swiper-wrapper {
       margin-bottom: 32px;
       /* gap: ${p => (p.size === 'large' ? '0px' : '6px')}; */

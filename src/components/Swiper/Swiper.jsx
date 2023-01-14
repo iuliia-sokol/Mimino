@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { Navigation, Autoplay } from 'swiper';
 
-// import 'swiper/css';
+import 'swiper/css';
 import 'swiper/css/autoplay';
 
 import { SwiperStyled, SlideStyled, SwiperBtnsWrapper } from './Swiper.styled';
@@ -45,12 +45,12 @@ export const Slider = ({
         },
         1024: {
           spaceBetween: spaceBetween[1],
-          slidesPerView: slidesPerView - 1,
+          slidesPerView: slidesPerView[0],
           centeredSlides: true,
         },
         1280: {
           spaceBetween: spaceBetween[2],
-          slidesPerView: slidesPerView,
+          slidesPerView: slidesPerView[1],
           centeredSlides: true,
         },
       }}

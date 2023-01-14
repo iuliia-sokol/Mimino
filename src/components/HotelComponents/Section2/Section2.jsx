@@ -54,7 +54,7 @@ export const Section2 = () => {
         <SliderBtnsWrapper>
           <SliderWrapper>
             <Slider
-              slidesPerView={2}
+              slidesPerView={[2, 2]}
               spaceBetween={[25, 40, 40]}
               images={sectionSlider2}
             />

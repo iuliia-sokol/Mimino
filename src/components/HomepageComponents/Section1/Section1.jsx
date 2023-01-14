@@ -70,7 +70,7 @@ export const Section1 = () => {
         <SliderWrapper>
           <Slider
             images={sectionSlider1}
-            slidesPerView={2}
+            slidesPerView={[2, 2]}
             spaceBetween={[25, 40, 40]}
           />
         </SliderWrapper>

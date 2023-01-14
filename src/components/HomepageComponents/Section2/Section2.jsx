@@ -45,7 +45,7 @@ export const Section2 = () => {
               background="light"
               size="large"
               position="left"
-              slidesPerView={3}
+              slidesPerView={[2, 3]}
               spaceBetween={[20, 34, 86]}
             />
           </SliderWrapper>
