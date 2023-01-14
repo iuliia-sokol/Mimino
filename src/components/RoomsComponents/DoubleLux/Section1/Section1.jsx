@@ -97,8 +97,8 @@ export const Section1 = () => {
           </ContentWrapper>
         </ContentBlockWrapper>
         <ButtonWrapper>
-          <ButtonLarge text="Забронювати столик" />
-          <GoBackLink>
+          <ButtonLarge text="ОФОРМИТИ БРОНЮВАННЯ" />
+          <GoBackLink to="/hotel">
             <span>Повернутися до перегляду номерів</span>
             <ReactSVG src={ArrowRight} />
           </GoBackLink>
