@@ -22,9 +22,7 @@ export function DatePickerComponent({ date, handler }) {
             locale={'uk'}
             placeholderText="Сьогодні"
             popperPlacement="auto"
-            fixedHeight
             todayButton="Сьогодні"
-            closeOnScroll={true}
           />
         </Wrapper>
       </Label>
