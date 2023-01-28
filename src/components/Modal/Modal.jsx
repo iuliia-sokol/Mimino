@@ -33,7 +33,7 @@ export const Modal = ({ id, closeModal, status, name }) => {
   return createPortal(
     <ModalOverlay onClick={onBackdropClick}>
       <ModalWindow>
-        <CloseBtn>
+        <CloseBtn type="button" onClick={closeModal}>
           <TfiClose />
         </CloseBtn>
         {status === 'table' ? (

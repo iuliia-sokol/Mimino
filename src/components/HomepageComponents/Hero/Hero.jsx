@@ -23,12 +23,12 @@ export const Hero = () => {
     setShowModal(!showModal);
     setStatusModal(status);
 
-    if (showModal) {
-      document.body.style.overflow = 'auto';
-    }
-    if (!showModal) {
-      document.body.style.overflow = 'hidden';
-    }
+    // if (showModal) {
+    //   document.body.style.overflow = 'auto';
+    // }
+    // if (!showModal) {
+    //   document.body.style.overflow = 'hidden';
+    // }
   };
 
   return (
