@@ -1,5 +1,6 @@
 import { ButtonModal } from 'components/Buttons/ButtonModal/ButtonModal';
 import { useState } from 'react';
+import { DatePickerComponent } from './DatePickerComponent/DatePickerComponent';
 
 // import Notiflix from 'notiflix';
 // import PropTypes from 'prop-types';
@@ -30,7 +31,7 @@ export const ModalFormTable = ({ closeModal }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [persons, setPersons] = useState('');
-  const [date, setDate] = useState('');
+  const [date, setDate] = useState(new Date());
 
   const onInputChange = event => {
     switch (event.target.name) {
@@ -118,20 +119,28 @@ export const ModalFormTable = ({ closeModal }) => {
               <Hint>Столик на яку кількість осіб?</Hint>
             </InputWrapper>
             <InputWrapper>
-              <Input
+              <DatePickerComponent
+                name="date"
+                date={date}
+                value={date}
+                placeholder="Сьогодні"
+                // maxDate={today}
+                handler={date => setDate(date)}
+              />
+              {/* <Input
                 onChange={onInputChange}
                 value={date}
                 type="date"
                 name="date"
                 placeholder="Сьогодні"
                 // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              />
+              /> */}
               <Hint>На яку дату бронювати?</Hint>
             </InputWrapper>
           </InputsWrapper>
         </InputBlocksWrapper>
         <BtnsWrapper>
-          <ButtonModal type="submit" status="update" text="Update contact" />
+          <ButtonModal type="submit" text="ОФОРМИТИ БРОНЮВАННЯ" />
         </BtnsWrapper>
       </ModalForm>
     </ModalWrapper>

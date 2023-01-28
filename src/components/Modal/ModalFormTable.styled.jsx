@@ -27,23 +27,23 @@ export const ModalWrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media screen and (min-width: 1280px) {
-  }
+  /* @media screen and (min-width: 1280px) {
+  } */
 `;
 
 export const ModalForm = styled.form`
   width: 100%;
-  color: #010101;
+  color: ${p => p.theme.colors.mainDark};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* gap: 16px; */
 
- 
+  /*  
 
   @media screen and (min-width: 1280px) {
-  } */
+  }  */
 `;
 
 export const InputsWrapper = styled.div`
@@ -61,7 +61,7 @@ export const InputWrapper = styled.div`
 
 export const Input = styled.input`
   max-height: 64px;
-  border: 1px solid #c79002;
+  border: 1px solid ${p => p.theme.colors.mainAccent};
   background-color: transparent;
   border-radius: ${p => p.theme.radii.btnModal};
   font-size: ${p => p.theme.fontSizes.xxs};
@@ -69,9 +69,13 @@ export const Input = styled.input`
   font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.subheader};
   letter-spacing: ${p => p.theme.letterSpacings.subheader};
-  placeholder: ${p => p.theme.colors.modalPlaceholder};
+
   padding: 17px 12px;
   margin-bottom: 8px;
+
+  &::placeholder {
+    color: ${p => p.theme.colors.modalPlaceholder};
+  }
 
   @media screen and (min-width: 1024px) {
     padding: 18px 12px;
@@ -81,7 +85,7 @@ export const Input = styled.input`
 
 export const InputSelect = styled.select`
   max-height: 64px;
-  border: 1px solid #c79002;
+  border: 1px solid ${p => p.theme.colors.mainAccent};
   background-color: transparent;
   border-radius: ${p => p.theme.radii.btnModal};
   font-size: ${p => p.theme.fontSizes.xxs};
@@ -89,9 +93,13 @@ export const InputSelect = styled.select`
   font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.subheader};
   letter-spacing: ${p => p.theme.letterSpacings.subheader};
-  placeholder: ${p => p.theme.colors.modalPlaceholder};
+
   padding: 17px 12px;
   margin-bottom: 8px;
+
+  &::placeholder {
+    color: ${p => p.theme.colors.modalPlaceholder};
+  }
 
   @media screen and (min-width: 1024px) {
     padding: 18px 12px;

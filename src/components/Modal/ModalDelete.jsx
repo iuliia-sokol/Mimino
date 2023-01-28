@@ -20,8 +20,7 @@ export const ModalDeleteConfirmation = ({ id, closeModal, name }) => {
       <ContentWrapper>
         <TextWrapper>
           <ConfirmationText>
-            Are you sure you want to delete <span>{name}</span> from your
-            phonebook ?
+            Ви підтверджуєте <span>{name}</span> ?
           </ConfirmationText>
           <Hint>This action cannot be reversed</Hint>
           <button
