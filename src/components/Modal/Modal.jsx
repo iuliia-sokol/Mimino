@@ -4,7 +4,6 @@ import propTypes from 'prop-types';
 import { TfiClose } from 'react-icons/tfi';
 
 import { ModalOverlay, ModalWindow, CloseBtn } from './Modal.styled';
-
 import { ModalFormTable } from './ModalFormTable';
 import { ModalDeleteConfirmation } from './ModalDelete';
 

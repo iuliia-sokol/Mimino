@@ -25,18 +25,21 @@ export const Wrapper = styled.div`
   }
 
   & .react-datepicker {
-    border: 1px solid ${p => p.theme.colors.mainAccent};
-    color: ${p => p.theme.colors.textContent};
-    border-radius: ${p => p.theme.radii.btnStandart};
     position: absolute;
-    /* top: 0; */
+    border: 2px solid ${p => p.theme.colors.mainAccent};
+    color: ${p => p.theme.colors.textContent};
+    background-color: transparent;
+    bottom: 0;
     left: 0;
-    /* transform: translateX(-35%); */
+    transform: translate(1%, -78px);
 
-    @media screen and (min-width: 768px) {
-      /* left: -30px; */
-      transform: translateX(0);
+    @media screen and (min-width: 1024px) {
+      transform: translate(-108%, 10%);
     }
+
+    /* @media screen and (min-width: 1280px) {
+      transform: translate(2%, 10%);
+    } */
   }
 
   & .react-datepicker__day-name {
@@ -50,23 +53,23 @@ export const Wrapper = styled.div`
 
   &
     .react-datepicker-popper[data-placement^='bottom']
-    .react-datepicker__triangle::after {
-    border-bottom-color: ${p => p.theme.colors.textContent};
+    .react-datepicker__triangle::after,
+  &
+    .react-datepicker-popper[data-placement^='bottom']
+    .react-datepicker__triangle::before,
+  & .react-datepicker__triangle {
+    /* transform: translate3d(16px, 0px, 0px) !important;
+    border-bottom-color: ${p => p.theme.colors.mainAccent};
+     */
+    display: none;
   }
 
   & .react-datepicker__navigation-icon::before {
     border-color: ${p => p.theme.colors.mainDark};
   }
 
-  & .react-datepicker__triangle {
-    position: absolute;
-    left: 0px;
-
-    @media screen and (min-width: 1024px) {
-      position: absolute;
-      /* margin-top: 15px; */
-      left: 0px;
-    }
+  .react-datepicker__navigation:hover *::before {
+    border-color: ${p => p.theme.colors.mainDark};
   }
 
   & .react-datepicker__month-container {
@@ -81,6 +84,7 @@ export const Wrapper = styled.div`
     font-family: ${p => p.theme.fonts.main};
     font-weight: ${p => p.theme.fontWeights[3]};
     color: ${p => p.theme.colors.mainDark};
+    margin: 0.2rem;
 
     &--weekend {
       background-color: ${p => p.theme.colors.sectionBg2};
@@ -88,6 +92,10 @@ export const Wrapper = styled.div`
 
     &--disabled {
       color: ${p => p.theme.colors.supheader};
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0.2rem;
     }
   }
 

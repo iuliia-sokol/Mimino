@@ -22,6 +22,13 @@ export const Hero = () => {
   const toggleModal = status => {
     setShowModal(!showModal);
     setStatusModal(status);
+
+    if (showModal) {
+      document.body.style.overflow = 'auto';
+    }
+    if (!showModal) {
+      document.body.style.overflow = 'hidden';
+    }
   };
 
   return (

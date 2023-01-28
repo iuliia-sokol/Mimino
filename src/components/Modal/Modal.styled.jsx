@@ -10,7 +10,7 @@ export const ModalOverlay = styled.div`
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 100000000000000;
 `;
 
 export const ModalWindow = styled.div`
@@ -20,6 +20,19 @@ export const ModalWindow = styled.div`
   background-color: ${p => p.theme.colors.sectionBg1};
   padding: 60px 16px;
   opacity: 1;
+  z-index: 2000000;
+  overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: ${p => p.theme.colors.mainAccent};
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: ${p => p.theme.colors.sectionBg2};
+  }
 
   @media screen and (min-width: 1024px) {
     padding: 60px;

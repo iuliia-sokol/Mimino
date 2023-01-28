@@ -28,6 +28,7 @@ export const LocationIconWrapper = styled.span`
     width: 24px;
     height: 24px;
     margin-right: 8px;
+    z-index: -1;
   }
 `;
 
