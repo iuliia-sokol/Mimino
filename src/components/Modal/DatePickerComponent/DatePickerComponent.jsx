@@ -6,7 +6,7 @@ import { uk } from 'date-fns/locale';
 
 registerLocale('uk', uk);
 
-export function DatePickerComponent({ date, maxDate, handler }) {
+export function DatePickerComponent({ date, handler }) {
   return (
     <>
       <Label>
@@ -15,11 +15,16 @@ export function DatePickerComponent({ date, maxDate, handler }) {
             className="date"
             name="date"
             dateFormat="dd.MM.yyyy"
-            selected={date}
-            // minDate={date}
+            selected={date ? date : null}
+            minDate={new Date()}
             onChange={handler}
             shouldCloseOnSelect={true}
             locale={'uk'}
+            placeholderText="Сьогодні"
+            popperPlacement="auto"
+            fixedHeight
+            todayButton="Сьогодні"
+            closeOnScroll={true}
           />
         </Wrapper>
       </Label>

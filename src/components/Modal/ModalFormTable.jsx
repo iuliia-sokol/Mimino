@@ -31,7 +31,7 @@ export const ModalFormTable = ({ closeModal }) => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [persons, setPersons] = useState('');
-  const [date, setDate] = useState(new Date());
+  const [date, setDate] = useState(null);
 
   const onInputChange = event => {
     switch (event.target.name) {

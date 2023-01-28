@@ -2,9 +2,27 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
 
+  & .react-datepicker__today-button {
+    background-color: ${p => p.theme.colors.mainAccent};
+    border: none;
+    padding: 12px;
+    font-size: ${p => p.theme.fontSizes.xxxxs};
+    font-family: ${p => p.theme.fonts.main};
+    font-weight: ${p => p.theme.fontWeights[4]};
+    color: ${p => p.theme.colors.mainDark};
+    border-radius: ${p => p.theme.radii.btnModal};
+  }
+
+  & .react-datepicker__day-names {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
   & .react-datepicker__day--selected {
     background-color: ${p => p.theme.colors.mainAccent};
   }
@@ -21,20 +39,22 @@ export const Wrapper = styled.div`
     letter-spacing: ${p => p.theme.letterSpacings.subheader};
     background-color: ${p => p.theme.colors.mainAccent};
     color: ${p => p.theme.colors.mainDark};
+    border-radius: ${p => p.theme.radii.btnModal};
     border: none;
   }
 
   & .react-datepicker {
-    position: absolute;
+    /* position: absolute; */
     border: 2px solid ${p => p.theme.colors.mainAccent};
     color: ${p => p.theme.colors.textContent};
     background-color: transparent;
-    bottom: 0;
-    left: 0;
-    transform: translate(1%, -78px);
+    border-radius: ${p => p.theme.radii.btnModal};
+    /* bottom: 0;
+    left: 0; */
+    /* transform: translate(1%, -78px); */
 
     @media screen and (min-width: 1024px) {
-      transform: translate(-108%, 10%);
+      /* transform: translate(-108%, 10%); */
     }
 
     /* @media screen and (min-width: 1280px) {
@@ -120,12 +140,16 @@ export const Wrapper = styled.div`
   }
 
   & .date {
+    box-sizing: border-box;
+    height: 64px;
     background-color: transparent;
-    border: none;
     cursor: pointer;
     outline: none;
+    border: 1px solid ${p => p.theme.colors.mainAccent};
 
     padding: 17px 12px;
+    padding-right: 0;
+
     font-size: ${p => p.theme.fontSizes.xxs};
     font-family: ${p => p.theme.fonts.main};
     font-weight: ${p => p.theme.fontWeights[4]};
@@ -133,10 +157,12 @@ export const Wrapper = styled.div`
     letter-spacing: ${p => p.theme.letterSpacings.subheader};
     display: flex;
     align-items: center;
+    justify-content: center;
     text-transform: uppercase;
 
     @media screen and (min-width: 1024px) {
       padding: 18px 12px;
+      padding-right: 0;
       font-size: ${p => p.theme.fontSizes.xs};
     }
   }
@@ -148,7 +174,7 @@ export const Label = styled.label`
   justify-content: center;
   position: relative;
   max-height: 64px;
-  border: 1px solid #c79002;
+
   background-color: transparent;
   border-radius: ${p => p.theme.radii.btnModal};
   font-size: ${p => p.theme.fontSizes.xxs};

@@ -60,7 +60,8 @@ export const InputWrapper = styled.div`
 `;
 
 export const Input = styled.input`
-  max-height: 64px;
+  box-sizing: border-box;
+  height: 64px;
   border: 1px solid ${p => p.theme.colors.mainAccent};
   background-color: transparent;
   border-radius: ${p => p.theme.radii.btnModal};
