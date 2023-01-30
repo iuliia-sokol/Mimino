@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
+  width: 100%;
 
   & .react-datepicker__today-button {
     background-color: ${p => p.theme.colors.mainAccent};
@@ -15,7 +16,7 @@ export const Wrapper = styled.div`
     font-family: ${p => p.theme.fonts.main};
     font-weight: ${p => p.theme.fontWeights[4]};
     color: ${p => p.theme.colors.mainDark};
-    border-radius: ${p => p.theme.radii.btnModal};
+    /* border-radius: ${p => p.theme.radii.btnModal}; */
   }
 
   & .react-datepicker__day-names {
@@ -39,8 +40,14 @@ export const Wrapper = styled.div`
     letter-spacing: ${p => p.theme.letterSpacings.subheader};
     background-color: ${p => p.theme.colors.mainAccent};
     color: ${p => p.theme.colors.mainDark};
-    border-radius: ${p => p.theme.radii.btnModal};
+    /* border-radius: ${p => p.theme.radii.btnModal}; */
     border: none;
+    border-radius: none;
+    border-top-left-radius: 0;
+  }
+
+  & .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+    border-top-right-radius: 0;
   }
 
   & .react-datepicker {
@@ -95,7 +102,7 @@ export const Wrapper = styled.div`
   & .react-datepicker__month-container {
     color: ${p => p.theme.colors.mainDark};
     background-color: ${p => p.theme.colors.sectionBg1};
-    border-radius: ${p => p.theme.radii.btnModal};
+    /* border-radius: ${p => p.theme.radii.btnModal}; */
   }
 
   & .react-datepicker__day {
@@ -146,7 +153,7 @@ export const Wrapper = styled.div`
     cursor: pointer;
     outline: none;
     border: 2px solid ${p => p.theme.colors.mainAccent};
-
+    width: 100%;
     padding: 17px 12px;
     padding-right: 0;
 
@@ -174,7 +181,7 @@ export const Label = styled.label`
   justify-content: center;
   position: relative;
   max-height: 64px;
-
+  width: 100%;
   background-color: transparent;
   border-radius: ${p => p.theme.radii.btnModal};
   font-size: ${p => p.theme.fontSizes.xxs};
