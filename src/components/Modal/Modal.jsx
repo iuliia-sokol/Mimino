@@ -5,11 +5,10 @@ import { TfiClose } from 'react-icons/tfi';
 
 import { ModalOverlay, ModalWindow, CloseBtn } from './Modal.styled';
 import { ModalFormTable } from './ModalFormTable';
-import { ModalDeleteConfirmation } from './ModalDelete';
 
 const modalRoot = document.querySelector('#modal-root');
 
-export const Modal = ({ id, closeModal, status, name }) => {
+export const Modal = ({ closeModal, status, name, number, date, persons }) => {
   useEffect(() => {
     const onEscPress = event => {
       if (event.code === 'Escape') {
@@ -36,15 +35,16 @@ export const Modal = ({ id, closeModal, status, name }) => {
         <CloseBtn type="button" onClick={closeModal}>
           <TfiClose />
         </CloseBtn>
-        {status === 'table' ? (
-          <ModalFormTable id={id} closeModal={closeModal} />
-        ) : (
-          <ModalDeleteConfirmation
-            id={id}
-            name={name}
+        {status === 'table' && <ModalFormTable closeModal={closeModal} />}
+        {/* {status === 'confirmTable' && (
+          <ModalConfirmation
             closeModal={closeModal}
+            name={name}
+            number={number}
+            date={date}
+            persons={persons}
           />
-        )}
+        )} */}
       </ModalWindow>
     </ModalOverlay>,
     modalRoot

@@ -20,12 +20,11 @@ export const BtnElement = styled.button`
     return p.disabled ? p.theme.colors.btnDisabledBg : p.theme.colors.mainDark;
   }};
   color: ${p => p.theme.colors.mainLight};
-  transform: scale(1);
+
   cursor: pointer;
 
   &:hover:not(:disabled),
   &:focus:not(:disabled) {
-    transform: scale(1.1);
     color: ${p => p.theme.colors.mainDark};
     background-color: ${p => p.theme.colors.mainAccent};
     border: ${p => p.theme.borders.btnLargeActive};

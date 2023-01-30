@@ -10,6 +10,8 @@ export const CustomSelect = ({ options, placeholder, onChange, value }) => {
       closeMenuOnSelect={true}
       onChange={onChange}
       value={value}
+      autoFocus={false}
+      required={true}
     />
   );
 };

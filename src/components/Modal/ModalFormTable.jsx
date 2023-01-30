@@ -1,11 +1,8 @@
 import { ButtonModal } from 'components/Buttons/ButtonModal/ButtonModal';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { PatternFormat } from 'react-number-format';
 import { DatePickerComponent } from './DatePickerComponent/DatePickerComponent';
-
-// import Notiflix from 'notiflix';
-// import PropTypes from 'prop-types';
 
 import {
   FormTitle,
@@ -21,20 +18,27 @@ import {
 import { CustomSelect } from 'components/Select/CustomSelect';
 import { options } from 'utils/personsOptions';
 
+import { ModalConfirmation } from './ModalConfirmation';
+
 // import { useDispatch, useSelector } from 'react-redux';
-// import { updateContact } from 'redux/contactsOperations';
-// import { getContactsItems } from 'redux/contactsSelectors';
 
 export const ModalFormTable = ({ closeModal }) => {
-  // const contacts = useSelector(getContactsItems);
-  // const currentContact = contacts.find(contact => contact.id === id);
-
   // const dispatch = useDispatch();
 
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [persons, setPersons] = useState('');
   const [date, setDate] = useState(null);
+  const [isValid, setIsValid] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleConfirmModal = () => {
+    setShowModal(true);
+    setTimeout(() => {
+      setShowModal(false);
+      closeModal();
+    }, 7000);
+  };
 
   const onInputChange = event => {
     switch (event.target.name) {
@@ -57,18 +61,10 @@ export const ModalFormTable = ({ closeModal }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
-
-    // const includesName = contacts.find(
-    //   contact => contact.name === name && contact.number === number
-    // );
-
-    // if (includesName) {
-    //   return Notiflix.Notify.warning('No data changed', notifySettings);
-    // }
-    // dispatch(updateContact({ id, name, number }));
-    console.log({ name, number, date, persons });
-    closeModal();
-    resetForm();
+    // console.log({ name, number, date, persons });
+    // closeModal();
+    // resetForm();
+    toggleConfirmModal();
   };
 
   const resetForm = () => {
@@ -78,64 +74,81 @@ export const ModalFormTable = ({ closeModal }) => {
     setPersons('');
   };
 
-  return (
-    <ModalWrapper>
-      <FormTitle>ЗАБРОНЮВАТИ СТОЛИК</FormTitle>
-      <ModalForm onSubmit={handleSubmit}>
-        <InputBlocksWrapper>
-          <InputsWrapper>
-            <InputWrapper>
-              <Input
-                required
-                onChange={onInputChange}
-                value={name}
-                name="name"
-                placeholder="Ваше ім’я"
-                pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-              />
-              <Hint>На кого забронювати столик?</Hint>
-            </InputWrapper>
-            <InputWrapper>
-              <PatternFormat
-                name="number"
-                customInput={Input}
-                type="tel"
-                placeholder="+38 (___) ___-__-__"
-                format="+38 (###) ###-####"
-                mask="_"
-                value={number}
-                onValueChange={value => setNumber(value.formattedValue)}
-                required
-              />
-              <Hint>Номер телефону</Hint>
-            </InputWrapper>
-          </InputsWrapper>
-          <InputsWrapper>
-            <InputWrapper>
-              <CustomSelect
-                value={persons}
-                options={options}
-                placeholder="Кількість гостей"
-                onChange={selectedOption => setPersons(selectedOption)}
-              />
+  useEffect(() => {
+    setIsValid(name && number && date && persons ? true : false);
+  }, [date, name, number, persons]);
 
-              <Hint>Столик на яку кількість осіб?</Hint>
-            </InputWrapper>
-            <InputWrapper>
-              <DatePickerComponent
-                name="date"
-                date={date}
-                handler={date => setDate(date)}
+  return (
+    <>
+      {!showModal ? (
+        <ModalWrapper>
+          <FormTitle>ЗАБРОНЮВАТИ СТОЛИК</FormTitle>
+          <ModalForm onSubmit={handleSubmit}>
+            <InputBlocksWrapper>
+              <InputsWrapper>
+                <InputWrapper>
+                  <Input
+                    onChange={onInputChange}
+                    value={name}
+                    name="name"
+                    placeholder="Ваше ім’я"
+                    pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                  />
+                  <Hint>На кого забронювати столик?</Hint>
+                </InputWrapper>
+                <InputWrapper>
+                  <PatternFormat
+                    name="number"
+                    customInput={Input}
+                    type="tel"
+                    placeholder="+38 (___) ___-__-__"
+                    format="+38 (###) ###-####"
+                    mask="_"
+                    value={number}
+                    onValueChange={value => setNumber(value.formattedValue)}
+                  />
+                  <Hint>Номер телефону</Hint>
+                </InputWrapper>
+              </InputsWrapper>
+              <InputsWrapper>
+                <InputWrapper>
+                  <CustomSelect
+                    value={persons}
+                    options={options}
+                    placeholder="Кількість гостей"
+                    onChange={selectedOption => setPersons(selectedOption)}
+                  />
+                  <Hint>Столик на яку кількість осіб?</Hint>
+                </InputWrapper>
+                <InputWrapper>
+                  <DatePickerComponent
+                    name="date"
+                    date={date}
+                    handler={date => setDate(date)}
+                  />
+                  <Hint>На яку дату бронювати?</Hint>
+                </InputWrapper>
+              </InputsWrapper>
+            </InputBlocksWrapper>
+            <BtnsWrapper>
+              <ButtonModal
+                disabled={!isValid}
+                type="submit"
+                text="ОФОРМИТИ БРОНЮВАННЯ"
               />
-              <Hint>На яку дату бронювати?</Hint>
-            </InputWrapper>
-          </InputsWrapper>
-        </InputBlocksWrapper>
-        <BtnsWrapper>
-          <ButtonModal type="submit" text="ОФОРМИТИ БРОНЮВАННЯ" />
-        </BtnsWrapper>
-      </ModalForm>
-    </ModalWrapper>
+            </BtnsWrapper>
+          </ModalForm>
+        </ModalWrapper>
+      ) : (
+        <ModalConfirmation
+          closeModal={closeModal}
+          name={name}
+          number={number}
+          date={date}
+          persons={persons}
+        />
+      )}
+    </>
   );
 };
 

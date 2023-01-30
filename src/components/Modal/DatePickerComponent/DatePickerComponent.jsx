@@ -20,6 +20,7 @@ export function DatePickerComponent({ date, handler }) {
       <Label>
         <Wrapper>
           <ReactDatePicker
+            required
             className="date"
             name="date"
             dateFormat="dd.MM.yyyy"
