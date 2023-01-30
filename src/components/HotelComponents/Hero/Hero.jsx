@@ -53,7 +53,10 @@ export const Hero = () => {
               text="Забронювати номер"
               onClick={() => toggleModal('room')}
             />
-            <ButtonStandart text="Переглянути ціни" />
+            <ButtonStandart
+              text="Переглянути ціни"
+              onClick={() => toggleModal('price')}
+            />
           </HeroBtnsWrapper>
         </HeroContentWrapper>
 

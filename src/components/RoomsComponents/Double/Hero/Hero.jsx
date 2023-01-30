@@ -1,4 +1,4 @@
-import { useCallback, useRef } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Box } from 'components/Box';
 import { ReactSVG } from 'react-svg';
 
@@ -22,8 +22,17 @@ import {
 } from './Hero.styled';
 import { HeroSlider } from 'components/Swiper/HeroSwiper';
 import { double } from '../../../../utils/roomsImages';
+import { Modal } from 'components/Modal/Modal';
 
 export const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
+
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
+
   const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -37,47 +46,53 @@ export const Hero = () => {
   }, []);
 
   return (
-    <HeroWrapper>
-      <HeaderLayout />
-      <SliderWrapper>
-        <HeroSlider images={double} refLink={sliderRef} />
-      </SliderWrapper>
+    <>
+      <HeroWrapper>
+        <HeaderLayout />
+        <SliderWrapper>
+          <HeroSlider images={double} refLink={sliderRef} />
+        </SliderWrapper>
 
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        zIndex="-1"
-      >
-        <DataBlock>
-          <TextWrapper>
-            <RoomName>ДВОМІСНИЙ НОМЕР</RoomName>
-            <DescriptionText>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </DescriptionText>
-            <HeroLocationBanner>
-              <LocationBanner />
-            </HeroLocationBanner>
-          </TextWrapper>
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          zIndex="-1"
+        >
+          <DataBlock>
+            <TextWrapper>
+              <RoomName>ДВОМІСНИЙ НОМЕР</RoomName>
+              <DescriptionText>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </DescriptionText>
+              <HeroLocationBanner>
+                <LocationBanner />
+              </HeroLocationBanner>
+            </TextWrapper>
 
-          <HeroSocialMediaLinksWrapper>
-            <SocialMediaLinks location="header" />
-          </HeroSocialMediaLinksWrapper>
+            <HeroSocialMediaLinksWrapper>
+              <SocialMediaLinks location="header" />
+            </HeroSocialMediaLinksWrapper>
 
-          <HeroBtnsWrapper>
-            <ButtonStandart text="Переглянути ціни"></ButtonStandart>
-          </HeroBtnsWrapper>
-        </DataBlock>
-      </Box>
-      <CustomSliderBtn type="button" position="right" onClick={handlePrev}>
-        <ReactSVG src={ArrowLeft} />
-      </CustomSliderBtn>
-      <CustomSliderBtn type="button" position="left" onClick={handleNext}>
-        <ReactSVG src={ArrowRight} />
-      </CustomSliderBtn>
-    </HeroWrapper>
+            <HeroBtnsWrapper>
+              <ButtonStandart
+                text="Переглянути ціни"
+                onClick={() => toggleModal('price')}
+              />
+            </HeroBtnsWrapper>
+          </DataBlock>
+        </Box>
+        <CustomSliderBtn type="button" position="right" onClick={handlePrev}>
+          <ReactSVG src={ArrowLeft} />
+        </CustomSliderBtn>
+        <CustomSliderBtn type="button" position="left" onClick={handleNext}>
+          <ReactSVG src={ArrowRight} />
+        </CustomSliderBtn>
+      </HeroWrapper>
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
+    </>
   );
 };

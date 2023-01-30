@@ -21,8 +21,17 @@ import { sectionSlider1 } from '../../../utils/hotelImages';
 import { Slider } from 'components/Swiper/Swiper';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 import { ButtonStandartNavLink } from 'components/Buttons/ButtonStandart/ButtonStandartNavLink';
+import { Modal } from 'components/Modal/Modal';
+import { useState } from 'react';
 
 export const Section1 = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
+
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
   return (
     <Section1Wrapper>
       <Box
@@ -63,10 +72,14 @@ export const Section1 = () => {
           </SliderWrapper>
           <BtnsWrapper>
             <ButtonStandartNavLink to="double-lux" text="Детальніше" />
-            <ButtonStandart text="Переглянути ціни" />
+            <ButtonStandart
+              text="Переглянути ціни"
+              onClick={() => toggleModal('price')}
+            />
           </BtnsWrapper>
         </SliderBtnsWrapper>
       </Box>
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
     </Section1Wrapper>
   );
 };
