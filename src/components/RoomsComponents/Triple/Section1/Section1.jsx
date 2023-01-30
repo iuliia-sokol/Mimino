@@ -1,8 +1,8 @@
 import { ReactSVG } from 'react-svg';
 import ArrowRight from '../../../../images/icons/arrow-right.svg';
 import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';
-// import { useState } from 'react';
-// import { Modal } from 'components/Modal/Modal';
+import { useState } from 'react';
+import { Modal } from 'components/Modal/Modal';
 import {
   Section1Wrapper,
   ButtonWrapper,
@@ -18,13 +18,13 @@ import {
 } from './Section1.styled';
 
 export const Section1 = () => {
-  // const [showModal, setShowModal] = useState(false);
-  // const [statusModal, setStatusModal] = useState('');
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
 
-  // const toggleModal = status => {
-  //   setShowModal(!showModal);
-  //   setStatusModal(status);
-  // };
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
   return (
     <Section1Wrapper>
       <Container>
@@ -102,7 +102,7 @@ export const Section1 = () => {
         <ButtonWrapper>
           <ButtonLarge
             text="ОФОРМИТИ БРОНЮВАННЯ"
-            // onClick={() => toggleModal('room')}
+            onClick={() => toggleModal('room')}
           />
           <GoBackLink to="/hotel">
             <span>Повернутися до перегляду номерів</span>
@@ -110,7 +110,7 @@ export const Section1 = () => {
           </GoBackLink>
         </ButtonWrapper>
       </Container>
-      {/* {showModal && <Modal closeModal={toggleModal} status={statusModal} />} */}
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
     </Section1Wrapper>
   );
 };
