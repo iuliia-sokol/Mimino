@@ -68,7 +68,7 @@ export const Input = styled.input`
   padding: 17px 12px;
   margin-bottom: 8px;
 
-  &::placeholder {
+  ::placeholder {
     color: ${p => p.theme.colors.modalPlaceholder};
   }
 

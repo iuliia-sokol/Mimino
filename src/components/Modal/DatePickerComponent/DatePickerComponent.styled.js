@@ -56,17 +56,6 @@ export const Wrapper = styled.div`
     color: ${p => p.theme.colors.textContent};
     background-color: transparent;
     border-radius: ${p => p.theme.radii.btnModal};
-    /* bottom: 0;
-    left: 0; */
-    /* transform: translate(1%, -78px); */
-
-    @media screen and (min-width: 1024px) {
-      /* transform: translate(-108%, 10%); */
-    }
-
-    /* @media screen and (min-width: 1280px) {
-      transform: translate(2%, 10%);
-    } */
   }
 
   & .react-datepicker__day-name {
@@ -167,6 +156,11 @@ export const Wrapper = styled.div`
     justify-content: center;
     text-transform: uppercase;
 
+    &::placeholder {
+      color: ${p => p.theme.colors.modalPlaceholder};
+      opacity: 0.6;
+    }
+
     @media screen and (min-width: 1024px) {
       padding: 18px 12px;
       padding-right: 0;
@@ -190,8 +184,4 @@ export const Label = styled.label`
   line-height: ${p => p.theme.lineHeights.subheader};
   letter-spacing: ${p => p.theme.letterSpacings.subheader};
   margin-bottom: 8px;
-
-  &::placeholder {
-    color: ${p => p.theme.colors.modalPlaceholder};
-  }
 `;

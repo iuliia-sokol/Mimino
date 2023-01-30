@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 export const CustomSelectStyled = styled(Select)`
   & .react-select__control {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     height: 64px;
     border: 2px solid ${p => p.theme.colors.mainAccent};
@@ -15,12 +17,13 @@ export const CustomSelectStyled = styled(Select)`
     line-height: ${p => p.theme.lineHeights.subheader};
     letter-spacing: ${p => p.theme.letterSpacings.subheader};
     outline: none;
-    padding: 17px 12px;
+    /* padding: 17px 12px; */
+    padding-left: 12px;
     margin-bottom: 8px;
     border-color: ${p => p.theme.colors.mainAccent};
 
     @media screen and (min-width: 1024px) {
-      padding: 18px 12px;
+      /* padding: 18px 12px; */
       font-size: ${p => p.theme.fontSizes.xs};
     }
 
@@ -42,6 +45,7 @@ export const CustomSelectStyled = styled(Select)`
 
   & .react-select__placeholder {
     color: ${p => p.theme.colors.modalPlaceholder};
+    opacity: 0.6;
   }
 
   & .react-select__menu {
