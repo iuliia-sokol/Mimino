@@ -52,12 +52,12 @@ export const InputsWrapper = styled.div`
     gap: 16px;
   }
 
-  &:nth-child(2) {
+  /* &:nth-child(2) {
     @media screen and (min-width: 1024px) {
       width: calc(50% - 8px);
       align-self: flex-end;
     }
-  }
+  } */
 `;
 
 export const InputWrapper = styled.div`

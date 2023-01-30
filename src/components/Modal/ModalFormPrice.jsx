@@ -16,7 +16,7 @@ import {
 import { CustomSelect } from 'components/Select/CustomSelect';
 
 import { ModalConfirmation } from './ModalConfirmation';
-import { optionsRooms } from 'utils/optionsRooms';
+import { options } from 'utils/personsOptions';
 
 // import { useDispatch, useSelector } from 'react-redux';
 
@@ -96,11 +96,11 @@ export const ModalFormPrice = ({ closeModal }) => {
                   <CustomSelect
                     name="category"
                     value={category}
-                    options={optionsRooms}
-                    placeholder="Категорія номеру"
+                    options={options}
+                    placeholder="Кількість ночей"
                     onChange={selectedOption => setCategory(selectedOption)}
                   />
-                  <Hint>Категорія номеру</Hint>
+                  <Hint>Кількість ночей</Hint>
                 </InputWrapper>
               </InputsWrapper>
 
