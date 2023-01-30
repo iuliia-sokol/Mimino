@@ -11,7 +11,6 @@ import {
   FormTitle,
   InputsWrapper,
   Input,
-  InputSelect,
   InputWrapper,
   ModalWrapper,
   ModalForm,
@@ -114,27 +113,12 @@ export const ModalFormTable = ({ closeModal }) => {
           <InputsWrapper>
             <InputWrapper>
               <CustomSelect
-                // keyName={type}
                 value={persons}
                 options={options}
-                // placeholder={
-                //   TRANSACTION_FORM_DATA[type].selectCategoryPlaceholder
-                // }
+                placeholder="Оберіть кількість гостей"
                 onChange={selectedOption => setPersons(selectedOption)}
               />
-              {/* <InputSelect
-                required
-                onChange={onInputChange}
-                value={persons}
-                name="persons"
-                placeholder="+38 (___) ___-__-__"
-                // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              >
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="3">4</option>
-              </InputSelect> */}
+
               <Hint>Столик на яку кількість осіб?</Hint>
             </InputWrapper>
             <InputWrapper>
