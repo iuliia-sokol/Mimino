@@ -26,6 +26,7 @@ export const ModalWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
 
   /* @media screen and (min-width: 1280px) {
   } */
@@ -46,8 +47,16 @@ export const InputsWrapper = styled.div`
   align-items: center;
   gap: 20px;
 
-  &:first-child {
-    justify-content: space-between;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  &:nth-child(2) {
+    @media screen and (min-width: 1024px) {
+      width: calc(50% - 8px);
+      align-self: flex-end;
+    }
   }
 `;
 
@@ -98,9 +107,5 @@ export const Hint = styled.p`
 export const InputBlocksWrapper = styled.div`
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 1024px) {
-    flex-direction: row;
-    gap: 16px;
-  }
+  gap: 28px;
 `;

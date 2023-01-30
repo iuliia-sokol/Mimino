@@ -101,17 +101,6 @@ export const ModalFormRoom = ({ closeModal }) => {
                   <Hint>На кого забронювати номер?</Hint>
                 </InputWrapper>
                 <InputWrapper>
-                  <DatePickerComponent
-                    name="inDate"
-                    date={inDate}
-                    handler={date => setInDate(date)}
-                  />
-                  <Hint>Дата заїзду</Hint>
-                </InputWrapper>
-              </InputsWrapper>
-
-              <InputsWrapper>
-                <InputWrapper>
                   <PatternFormat
                     name="number"
                     customInput={Input}
@@ -124,6 +113,9 @@ export const ModalFormRoom = ({ closeModal }) => {
                   />
                   <Hint>Номер телефону</Hint>
                 </InputWrapper>
+              </InputsWrapper>
+
+              <InputsWrapper>
                 <InputWrapper>
                   <CustomSelect
                     name="category"
@@ -134,7 +126,17 @@ export const ModalFormRoom = ({ closeModal }) => {
                   />
                   <Hint>Категорія номеру</Hint>
                 </InputWrapper>
+              </InputsWrapper>
 
+              <InputsWrapper>
+                <InputWrapper>
+                  <DatePickerComponent
+                    name="inDate"
+                    date={inDate}
+                    handler={date => setInDate(date)}
+                  />
+                  <Hint>Дата заїзду</Hint>
+                </InputWrapper>
                 <InputWrapper>
                   <DatePickerComponent
                     name="outDate"

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const CustomSelectStyled = styled(Select)`
   & .react-select__control {
+    width: 100%;
     display: flex;
     align-items: center;
     box-sizing: border-box;
