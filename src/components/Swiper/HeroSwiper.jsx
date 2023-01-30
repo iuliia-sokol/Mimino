@@ -2,7 +2,7 @@ import SwiperCore, { Navigation, Autoplay, EffectFade } from 'swiper';
 
 import 'swiper/css/effect-fade';
 import 'swiper/swiper-bundle.min.css';
-import 'swiper/css/autoplay';
+
 
 import { SwiperStyled, SlideStyled } from './HeroSwiper.styled';
 

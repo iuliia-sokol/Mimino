@@ -1,4 +1,5 @@
 import React from 'react';
+import 'swiper/css/autoplay';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from 'components/App';
