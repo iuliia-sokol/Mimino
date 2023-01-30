@@ -115,7 +115,7 @@ export const ModalFormTable = ({ closeModal }) => {
               <CustomSelect
                 value={persons}
                 options={options}
-                placeholder="Оберіть кількість гостей"
+                placeholder="Кількість гостей"
                 onChange={selectedOption => setPersons(selectedOption)}
               />
 

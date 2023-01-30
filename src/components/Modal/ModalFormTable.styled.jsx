@@ -38,12 +38,6 @@ export const ModalForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 16px; */
-
-  /*  
-
-  @media screen and (min-width: 1280px) {
-  }  */
 `;
 
 export const InputsWrapper = styled.div`
@@ -62,7 +56,7 @@ export const InputWrapper = styled.div`
 export const Input = styled.input`
   box-sizing: border-box;
   height: 64px;
-  border: 1px solid ${p => p.theme.colors.mainAccent};
+  border: 2px solid ${p => p.theme.colors.mainAccent};
   background-color: transparent;
   border-radius: ${p => p.theme.radii.btnModal};
   font-size: ${p => p.theme.fontSizes.xxs};
@@ -70,7 +64,7 @@ export const Input = styled.input`
   font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.subheader};
   letter-spacing: ${p => p.theme.letterSpacings.subheader};
-  outline: 1px solid ${p => p.theme.colors.mainAccent};
+  outline: none;
   padding: 17px 12px;
   margin-bottom: 8px;
 

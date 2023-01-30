@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 export const CustomSelectStyled = styled(Select)`
   & .react-select__control {
+    box-sizing: border-box;
     height: 64px;
     border: 2px solid ${p => p.theme.colors.mainAccent};
     background-color: transparent;
+    box-shadow: none;
     border-radius: ${p => p.theme.radii.btnModal};
     font-size: ${p => p.theme.fontSizes.xxs};
     font-family: ${p => p.theme.fonts.main};
@@ -24,12 +26,12 @@ export const CustomSelectStyled = styled(Select)`
 
     &:hover {
       outline: none;
-      border: 1px solid ${p => p.theme.colors.mainAccent};
+      border: 2px solid ${p => p.theme.colors.mainAccent};
     }
 
     &--is-focused {
       outline: none;
-      border: 1px solid ${p => p.theme.colors.mainAccent};
+      border: 2px solid ${p => p.theme.colors.mainAccent};
     }
   }
 
@@ -49,10 +51,31 @@ export const CustomSelectStyled = styled(Select)`
     background-color: ${p => p.theme.colors.sectionBg1};
     z-index: 200;
     border: 2px solid ${p => p.theme.colors.mainAccent};
+
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${p => p.theme.colors.mainAccent};
+      border-radius: 2px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: ${p => p.theme.colors.sectionBg2};
+    }
   }
 
   & .react-select__value-container {
     padding: 0;
+    ::-webkit-scrollbar {
+      width: 7px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: ${p => p.theme.colors.mainAccent};
+      border-radius: 2px;
+    }
+    ::-webkit-scrollbar-track {
+      background-color: ${p => p.theme.colors.sectionBg2};
+    }
   }
 
   & .react-select__single-value {
