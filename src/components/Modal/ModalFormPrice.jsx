@@ -11,13 +11,13 @@ import {
   InputBlocksWrapper,
   Hint,
   BtnsWrapper,
-} from './ModalFormRoom.styled';
+  Input,
+} from './ModalFormPrice.styled';
 import { CustomSelect } from 'components/Select/CustomSelect';
 
 import { ModalConfirmation } from './ModalConfirmation';
 import { options } from 'utils/personsOptions';
 import { optionsRooms } from 'utils/optionsRooms';
-import { Input } from './ModalFormPrice.styled';
 
 // import { useDispatch, useSelector } from 'react-redux';
 
@@ -26,16 +26,13 @@ export const ModalFormPrice = ({ closeModal }) => {
   const [price, setPrice] = useState('');
   const [nights, setNights] = useState('');
   const [category, setCategory] = useState('');
-
+  const [categoryPrice, setCategoryPrice] = useState(0);
+  const [nightsNumber, setNightsNumber] = useState(0);
   const [isValid, setIsValid] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
   const toggleConfirmModal = () => {
     setShowModal(true);
-    setTimeout(() => {
-      setShowModal(false);
-      closeModal();
-    }, 7000);
   };
 
   const onInputChange = event => {
@@ -53,6 +50,21 @@ export const ModalFormPrice = ({ closeModal }) => {
         return;
     }
   };
+
+  useEffect(() => {
+    if (categoryPrice === 1) {
+      setPrice(nightsNumber * 1000);
+    }
+    if (categoryPrice === 2) {
+      setPrice(nightsNumber * 1500);
+    }
+    if (categoryPrice === 3) {
+      setPrice(nightsNumber * 800);
+    }
+    if (isNaN(categoryPrice) || isNaN(nightsNumber)) {
+      setPrice('Необхідне уточнення');
+    }
+  }, [price, nights, category, categoryPrice, nightsNumber]);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -86,7 +98,10 @@ export const ModalFormPrice = ({ closeModal }) => {
                     value={category}
                     options={optionsRooms}
                     placeholder="Категорія номеру"
-                    onChange={selectedOption => setCategory(selectedOption)}
+                    onChange={selectedOption => {
+                      setCategory(selectedOption);
+                      setCategoryPrice(+selectedOption.value);
+                    }}
                   />
                   <Hint>Категорія номеру</Hint>
                 </InputWrapper>
@@ -99,7 +114,10 @@ export const ModalFormPrice = ({ closeModal }) => {
                     value={nights}
                     options={options}
                     placeholder="Кількість ночей"
-                    onChange={selectedOption => setNights(selectedOption)}
+                    onChange={selectedOption => {
+                      setNightsNumber(+selectedOption.value);
+                      setNights(selectedOption);
+                    }}
                   />
                   <Hint>Кількість ночей</Hint>
                 </InputWrapper>
@@ -108,10 +126,9 @@ export const ModalFormPrice = ({ closeModal }) => {
                     onChange={onInputChange}
                     value={price}
                     name="price"
-                    // placeholder="Ваше ім’я"
-                    // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                    placeholder="Загальна вартість"
                   />
-                  <Hint>На кого забронювати номер?</Hint>
+                  <Hint>грн</Hint>
                 </InputWrapper>
               </InputsWrapper>
             </InputBlocksWrapper>
@@ -119,7 +136,7 @@ export const ModalFormPrice = ({ closeModal }) => {
               <ButtonModal
                 disabled={!isValid}
                 type="submit"
-                text="ОФОРМИТИ БРОНЮВАННЯ"
+                text="ЗАБРОНЮВАТИ НОМЕР"
               />
             </BtnsWrapper>
           </ModalForm>

@@ -52,18 +52,25 @@ export const InputsWrapper = styled.div`
     gap: 16px;
   }
 
-  /* &:nth-child(2) {
+  &:first-child {
     @media screen and (min-width: 1024px) {
-      width: calc(50% - 8px);
-      align-self: flex-end;
+      /* width: calc(50% - 8px); */
+      align-self: flex-start;
     }
-  } */
+  }
 `;
 
 export const InputWrapper = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+  min-width: 288px;
+
+  @media screen and (min-width: 1024px) {
+    &:not(:first-child) {
+      width: calc(50% - 16px);
+    }
+  }
 `;
 
 export const Input = styled.input`
