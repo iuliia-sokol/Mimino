@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useRef } from 'react';
 import { Box } from 'components/Box';
 import { ReactSVG } from 'react-svg';
 
@@ -20,18 +20,19 @@ import {
   TextWrapper,
   CustomSliderBtn,
 } from './Hero.styled';
+
 import { HeroSlider } from 'components/Swiper/HeroSwiper';
 import { triple } from '../../../../utils/roomsImages';
-import { Modal } from 'components/Modal/Modal';
+// import { Modal } from 'components/Modal/Modal';
 
 export const Hero = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [statusModal, setStatusModal] = useState('');
+  // const [showModal, setShowModal] = useState(false);
+  // const [statusModal, setStatusModal] = useState('');
 
-  const toggleModal = status => {
-    setShowModal(!showModal);
-    setStatusModal(status);
-  };
+  // const toggleModal = status => {
+  //   setShowModal(!showModal);
+  //   setStatusModal(status);
+  // };
 
   const sliderRef = useRef(null);
 
@@ -80,7 +81,7 @@ export const Hero = () => {
             <HeroBtnsWrapper>
               <ButtonStandart
                 text="Переглянути ціни"
-                onClick={() => toggleModal('price')}
+                // onClick={() => toggleModal('price')}
               />
             </HeroBtnsWrapper>
           </DataBlock>
@@ -92,7 +93,8 @@ export const Hero = () => {
           <ReactSVG src={ArrowRight} />
         </CustomSliderBtn>
       </HeroWrapper>
-      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
+
+      {/* {showModal && <Modal closeModal={toggleModal} status={statusModal} />} */}
     </>
   );
 };
