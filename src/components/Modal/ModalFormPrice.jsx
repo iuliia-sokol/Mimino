@@ -1,8 +1,6 @@
 import { ButtonModal } from 'components/Buttons/ButtonModal/ButtonModal';
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import { PatternFormat } from 'react-number-format';
-import { DatePickerComponent } from '../DatePickerComponent/DatePickerComponent';
 
 import {
   FormTitle,

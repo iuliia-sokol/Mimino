@@ -6,6 +6,7 @@ import { TfiClose } from 'react-icons/tfi';
 import { ModalOverlay, ModalWindow, CloseBtn } from './Modal.styled';
 import { ModalFormTable } from './ModalFormTable';
 import { ModalFormRoom } from './ModalFormRoom';
+import { ModalFormPrice } from './ModalFormPrice';
 
 const modalRoot = document.querySelector('#modal-root');
 
@@ -38,6 +39,7 @@ export const Modal = ({ closeModal, status, name, number, date, persons }) => {
         </CloseBtn>
         {status === 'table' && <ModalFormTable closeModal={closeModal} />}
         {status === 'room' && <ModalFormRoom closeModal={closeModal} />}
+        {status === 'price' && <ModalFormPrice closeModal={closeModal} />}
       </ModalWindow>
     </ModalOverlay>,
     modalRoot
