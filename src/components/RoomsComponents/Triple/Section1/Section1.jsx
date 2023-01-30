@@ -1,7 +1,7 @@
 import { ReactSVG } from 'react-svg';
 import ArrowRight from '../../../../images/icons/arrow-right.svg';
 import { ButtonLarge } from 'components/Buttons/ButtonLarge/ButtonLarge';
-
+import { useState } from 'react';
 import {
   Section1Wrapper,
   ButtonWrapper,
@@ -15,7 +15,7 @@ import {
   GoBackLink,
   Container,
 } from './Section1.styled';
-import { useState } from 'react';
+
 import { Modal } from 'components/Modal/Modal';
 
 export const Section1 = () => {

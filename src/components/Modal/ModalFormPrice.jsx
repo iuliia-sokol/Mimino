@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import {
   FormTitle,
   InputsWrapper,
-  Input,
   InputWrapper,
   ModalWrapper,
   ModalForm,
@@ -17,13 +16,15 @@ import { CustomSelect } from 'components/Select/CustomSelect';
 
 import { ModalConfirmation } from './ModalConfirmation';
 import { options } from 'utils/personsOptions';
+import { optionsRooms } from 'utils/optionsRooms';
+import { Input } from './ModalFormPrice.styled';
 
 // import { useDispatch, useSelector } from 'react-redux';
 
 export const ModalFormPrice = ({ closeModal }) => {
   // const dispatch = useDispatch();
   const [price, setPrice] = useState('');
-  const [number, setNumber] = useState('');
+  const [nights, setNights] = useState('');
   const [category, setCategory] = useState('');
 
   const [isValid, setIsValid] = useState(false);
@@ -42,8 +43,8 @@ export const ModalFormPrice = ({ closeModal }) => {
       case 'price':
         setPrice(event.target.value);
         break;
-      case 'number':
-        setNumber(event.target.value);
+      case 'nights':
+        setNights(event.target.value);
         break;
       case 'category':
         setCategory(event.target.value);
@@ -68,8 +69,8 @@ export const ModalFormPrice = ({ closeModal }) => {
   // };
 
   useEffect(() => {
-    setIsValid(price && number && category ? true : false);
-  }, [price, number, category]);
+    setIsValid(price && nights && category ? true : false);
+  }, [price, nights, category]);
 
   return (
     <>
@@ -80,31 +81,39 @@ export const ModalFormPrice = ({ closeModal }) => {
             <InputBlocksWrapper>
               <InputsWrapper>
                 <InputWrapper>
-                  <Input
-                    onChange={onInputChange}
-                    value={price}
-                    name="price"
-                    placeholder="Ваше ім’я"
-                    pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                  <CustomSelect
+                    name="category"
+                    value={category}
+                    options={optionsRooms}
+                    placeholder="Категорія номеру"
+                    onChange={selectedOption => setCategory(selectedOption)}
                   />
-                  <Hint>На кого забронювати номер?</Hint>
+                  <Hint>Категорія номеру</Hint>
                 </InputWrapper>
               </InputsWrapper>
 
               <InputsWrapper>
                 <InputWrapper>
                   <CustomSelect
-                    name="category"
-                    value={category}
+                    name="nights"
+                    value={nights}
                     options={options}
                     placeholder="Кількість ночей"
-                    onChange={selectedOption => setCategory(selectedOption)}
+                    onChange={selectedOption => setNights(selectedOption)}
                   />
                   <Hint>Кількість ночей</Hint>
                 </InputWrapper>
+                <InputWrapper>
+                  <Input
+                    onChange={onInputChange}
+                    value={price}
+                    name="price"
+                    // placeholder="Ваше ім’я"
+                    // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+                  />
+                  <Hint>На кого забронювати номер?</Hint>
+                </InputWrapper>
               </InputsWrapper>
-
-              <InputsWrapper></InputsWrapper>
             </InputBlocksWrapper>
             <BtnsWrapper>
               <ButtonModal
@@ -120,7 +129,7 @@ export const ModalFormPrice = ({ closeModal }) => {
           closeModal={closeModal}
           status="price"
           price={price}
-          number={number}
+          nights={nights}
           category={category}
         />
       )}
