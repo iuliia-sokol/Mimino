@@ -14,20 +14,21 @@ import {
   InputBlocksWrapper,
   Hint,
   BtnsWrapper,
-} from './ModalFormTable.styled';
+} from './ModalFormRoom.styled';
 import { CustomSelect } from 'components/Select/CustomSelect';
-import { options } from 'utils/personsOptions';
 
 import { ModalConfirmation } from './ModalConfirmation';
+import { optionsRooms } from 'utils/optionsRooms';
 
 // import { useDispatch, useSelector } from 'react-redux';
 
-export const ModalFormTable = ({ closeModal }) => {
+export const ModalFormRoom = ({ closeModal }) => {
   // const dispatch = useDispatch();
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
-  const [persons, setPersons] = useState('');
-  const [date, setDate] = useState(null);
+  const [category, setCategory] = useState('');
+  const [inDate, setInDate] = useState(null);
+  const [outDate, setOutDate] = useState(null);
   const [isValid, setIsValid] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -47,11 +48,14 @@ export const ModalFormTable = ({ closeModal }) => {
       case 'number':
         setNumber(event.target.value);
         break;
-      case 'persons':
-        setPersons(event.target.value);
+      case 'category':
+        setCategory(event.target.value);
         break;
-      case 'date':
-        setDate(event.target.value);
+      case 'inDate':
+        setInDate(event.target.value);
+        break;
+      case 'outDate':
+        setOutDate(event.target.value);
         break;
       default:
         return;
@@ -69,19 +73,20 @@ export const ModalFormTable = ({ closeModal }) => {
   // const resetForm = () => {
   //   setName('');
   //   setNumber('');
-  //   setDate('');
-  //   setPersons('');
+  //   setInDate('');
+  //   setOutDate('');
+  //   setCategory('');
   // };
 
   useEffect(() => {
-    setIsValid(name && number && date && persons ? true : false);
-  }, [date, name, number, persons]);
+    setIsValid(name && number && inDate && outDate && category ? true : false);
+  }, [inDate, outDate, name, number, category]);
 
   return (
     <>
       {!showModal ? (
         <ModalWrapper>
-          <FormTitle>ЗАБРОНЮВАТИ СТОЛИК</FormTitle>
+          <FormTitle>ЗАБРОНЮВАТИ НОМЕР</FormTitle>
           <ModalForm onSubmit={handleSubmit}>
             <InputBlocksWrapper>
               <InputsWrapper>
@@ -93,8 +98,19 @@ export const ModalFormTable = ({ closeModal }) => {
                     placeholder="Ваше ім’я"
                     pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
                   />
-                  <Hint>На кого забронювати столик?</Hint>
+                  <Hint>На кого забронювати номер?</Hint>
                 </InputWrapper>
+                <InputWrapper>
+                  <DatePickerComponent
+                    name="inDate"
+                    date={inDate}
+                    handler={date => setInDate(date)}
+                  />
+                  <Hint>Дата заїзду</Hint>
+                </InputWrapper>
+              </InputsWrapper>
+
+              <InputsWrapper>
                 <InputWrapper>
                   <PatternFormat
                     name="number"
@@ -108,24 +124,24 @@ export const ModalFormTable = ({ closeModal }) => {
                   />
                   <Hint>Номер телефону</Hint>
                 </InputWrapper>
-              </InputsWrapper>
-              <InputsWrapper>
                 <InputWrapper>
                   <CustomSelect
-                    value={persons}
-                    options={options}
-                    placeholder="Кількість гостей"
-                    onChange={selectedOption => setPersons(selectedOption)}
+                    name="category"
+                    value={category}
+                    options={optionsRooms}
+                    placeholder="Категорія номеру"
+                    onChange={selectedOption => setCategory(selectedOption)}
                   />
-                  <Hint>Столик на яку кількість осіб?</Hint>
+                  <Hint>Категорія номеру</Hint>
                 </InputWrapper>
+
                 <InputWrapper>
                   <DatePickerComponent
-                    name="date"
-                    date={date}
-                    handler={date => setDate(date)}
+                    name="outDate"
+                    date={outDate}
+                    handler={date => setOutDate(date)}
                   />
-                  <Hint>На яку дату бронювати?</Hint>
+                  <Hint>Дата виїзду</Hint>
                 </InputWrapper>
               </InputsWrapper>
             </InputBlocksWrapper>
@@ -143,14 +159,15 @@ export const ModalFormTable = ({ closeModal }) => {
           closeModal={closeModal}
           name={name}
           number={number}
-          date={date}
-          persons={persons}
+          inDate={inDate}
+          outDate={outDate}
+          category={category}
         />
       )}
     </>
   );
 };
 
-ModalFormTable.propTypes = {
+ModalFormRoom.propTypes = {
   closeModal: PropTypes.func.isRequired,
 };
