@@ -54,6 +54,7 @@ export const ModalFormTable = ({ closeModal }) => {
 
   const handleSubmit = event => {
     event.preventDefault();
+
     // const includesName = contacts.find(
     //   contact => contact.name === name && contact.number === number
     // );
@@ -82,6 +83,7 @@ export const ModalFormTable = ({ closeModal }) => {
           <InputsWrapper>
             <InputWrapper>
               <Input
+                required
                 onChange={onInputChange}
                 value={name}
                 name="name"
@@ -92,6 +94,7 @@ export const ModalFormTable = ({ closeModal }) => {
             </InputWrapper>
             <InputWrapper>
               <Input
+                required
                 onChange={onInputChange}
                 value={number}
                 type="tel"
@@ -105,6 +108,7 @@ export const ModalFormTable = ({ closeModal }) => {
           <InputsWrapper>
             <InputWrapper>
               <InputSelect
+                required
                 onChange={onInputChange}
                 value={persons}
                 name="persons"
@@ -122,9 +126,6 @@ export const ModalFormTable = ({ closeModal }) => {
               <DatePickerComponent
                 name="date"
                 date={date}
-                value={date}
-                placeholder="Сьогодні"
-                // maxDate={today}
                 handler={date => setDate(date)}
               />
               {/* <Input

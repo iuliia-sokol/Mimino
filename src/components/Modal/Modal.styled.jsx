@@ -22,6 +22,7 @@ export const ModalWindow = styled.div`
   opacity: 1;
   z-index: 2000000;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   ::-webkit-scrollbar {
     width: 7px;
