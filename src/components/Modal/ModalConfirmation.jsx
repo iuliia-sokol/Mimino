@@ -3,7 +3,6 @@
 
 import { ButtonModal } from 'components/Buttons/ButtonModal/ButtonModal';
 import {
-  ListItem,
   ContentWrapper,
   ConfirmationText,
   TextWrapper,

@@ -1,5 +1,7 @@
 import { Box } from 'components/Box';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
+import { Modal } from 'components/Modal/Modal';
+import { useState } from 'react';
 
 import { hotDishes, mainDishes, salads, desserts, drinks } from 'utils/menu';
 
@@ -17,6 +19,13 @@ import {
 } from './Section2.styled';
 
 export const Section2 = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
+
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
   return (
     <Section2Wrapper id="menu">
       <Box
@@ -106,9 +115,13 @@ export const Section2 = () => {
           </Table>
         </TableWrapper>
         <ButtonWrapper>
-          <ButtonStandart text="Забронювати столик" />
+          <ButtonStandart
+            text="Забронювати столик"
+            onClick={() => toggleModal('table')}
+          />
         </ButtonWrapper>
       </Box>
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
     </Section2Wrapper>
   );
 };

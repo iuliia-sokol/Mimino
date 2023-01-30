@@ -36,15 +36,7 @@ export const Modal = ({ closeModal, status, name, number, date, persons }) => {
           <TfiClose />
         </CloseBtn>
         {status === 'table' && <ModalFormTable closeModal={closeModal} />}
-        {/* {status === 'confirmTable' && (
-          <ModalConfirmation
-            closeModal={closeModal}
-            name={name}
-            number={number}
-            date={date}
-            persons={persons}
-          />
-        )} */}
+        {status === 'room' && <ModalFormTable closeModal={closeModal} />}
       </ModalWindow>
     </ModalOverlay>,
     modalRoot

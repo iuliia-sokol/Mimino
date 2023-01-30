@@ -24,7 +24,6 @@ import { ModalConfirmation } from './ModalConfirmation';
 
 export const ModalFormTable = ({ closeModal }) => {
   // const dispatch = useDispatch();
-
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [persons, setPersons] = useState('');
@@ -67,12 +66,12 @@ export const ModalFormTable = ({ closeModal }) => {
     toggleConfirmModal();
   };
 
-  const resetForm = () => {
-    setName('');
-    setNumber('');
-    setDate('');
-    setPersons('');
-  };
+  // const resetForm = () => {
+  //   setName('');
+  //   setNumber('');
+  //   setDate('');
+  //   setPersons('');
+  // };
 
   useEffect(() => {
     setIsValid(name && number && date && persons ? true : false);
@@ -153,6 +152,5 @@ export const ModalFormTable = ({ closeModal }) => {
 };
 
 ModalFormTable.propTypes = {
-  // id: PropTypes.string.isRequired,
   closeModal: PropTypes.func.isRequired,
 };

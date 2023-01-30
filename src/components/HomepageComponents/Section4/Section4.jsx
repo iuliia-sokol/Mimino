@@ -1,7 +1,9 @@
 import { Box } from 'components/Box';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
 import { ButtonStandartNavLink } from 'components/Buttons/ButtonStandart/ButtonStandartNavLink';
+import { Modal } from 'components/Modal/Modal';
 import { Slider } from 'components/Swiper/Swiper';
+import { useState } from 'react';
 import { sectionSlider4 } from '../../../utils/homepageImages';
 import {
   Section4Wrapper,
@@ -15,6 +17,13 @@ import {
 } from './Section4.styled';
 
 export const Section4 = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
+
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
   return (
     <Section4Wrapper>
       <Box
@@ -33,7 +42,10 @@ export const Section4 = () => {
         </DataWrapper>
         <SliderButtonWrapper>
           <BtnsWrapper>
-            <ButtonStandart text="Забронювати столик" />
+            <ButtonStandart
+              text="Забронювати столик"
+              onClick={() => toggleModal('table')}
+            />
             <ButtonStandartNavLink
               to="/restaurant#menu"
               text="Переглянути меню"
@@ -51,6 +63,7 @@ export const Section4 = () => {
           </SliderWrapper>
         </SliderButtonWrapper>
       </Box>
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
     </Section4Wrapper>
   );
 };

@@ -13,8 +13,17 @@ import {
   HeroSocialMediaLinksWrapper,
 } from './Hero.styled';
 import { ButtonStandartLink } from 'components/Buttons/ButtonStandart/ButtonStandartLink';
+import { useState } from 'react';
+import { Modal } from 'components/Modal/Modal';
 
 export const Hero = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
+
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
   return (
     <HeroWrapper>
       <Box
@@ -43,11 +52,11 @@ export const Hero = () => {
           </HeroLocationBanner>
 
           <HeroBtnsWrapper>
-            <ButtonStandart text="Забронювати столик"></ButtonStandart>
-            <ButtonStandartLink
-              href="#menu"
-              text="Переглянути меню"
-            ></ButtonStandartLink>
+            <ButtonStandart
+              text="Забронювати столик"
+              onClick={() => toggleModal('table')}
+            />
+            <ButtonStandartLink href="#menu" text="Переглянути меню" />
           </HeroBtnsWrapper>
         </HeroContentWrapper>
 
@@ -55,6 +64,7 @@ export const Hero = () => {
           <SocialMediaLinks location="header" />
         </HeroSocialMediaLinksWrapper>
       </Box>
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
     </HeroWrapper>
   );
 };
