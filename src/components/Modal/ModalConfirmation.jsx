@@ -18,6 +18,10 @@ export const ModalConfirmation = ({
   number,
   date,
   persons,
+  category,
+  inDate,
+  outDate,
+  status,
 }) => {
   // const dispatch = useDispatch();
   function convert(str) {
@@ -28,32 +32,66 @@ export const ModalConfirmation = ({
   }
 
   return (
-    <ContentWrapper>
-      <TextWrapper>
-        <ConfirmationText>
-          <span>
-            Дякуємо, <span>{name}</span> !
-          </span>
-        </ConfirmationText>
-        <ConfirmationText>
-          Деталі бронювання: <br />
-          Кількість осіб: <span>{persons.value} </span>
-          <br />
-          Бажана дата: <span>{convert(date.toString())}</span>
-        </ConfirmationText>
-        <Hint>
-          Незабаром з Вами зв'яжеться менеджер для підтвердження бронювання!
-        </Hint>
-        <ButtonModal
-          type="button"
-          text="Ок"
-          onClick={() => {
-            // dispatch(deleteContact(id));
-            closeModal();
-          }}
-        />
-      </TextWrapper>
-    </ContentWrapper>
+    <>
+      {status === 'table' && (
+        <ContentWrapper>
+          <TextWrapper>
+            <ConfirmationText>
+              <span>
+                Дякуємо, <span>{name}</span> !
+              </span>
+            </ConfirmationText>
+            <ConfirmationText>
+              Деталі бронювання: <br />
+              Кількість осіб: <span>{persons.value} </span>
+              <br />
+              Бажана дата: <span>{convert(date.toString())}</span>
+            </ConfirmationText>
+            <Hint>
+              Незабаром з Вами зв'яжеться менеджер для підтвердження бронювання!
+            </Hint>
+            <ButtonModal
+              type="button"
+              text="Ок"
+              onClick={() => {
+                // dispatch(deleteContact(id));
+                closeModal();
+              }}
+            />
+          </TextWrapper>
+        </ContentWrapper>
+      )}
+      {status === 'room' && (
+        <ContentWrapper>
+          <TextWrapper>
+            <ConfirmationText>
+              <span>
+                Дякуємо, <span>{name}</span> !
+              </span>
+            </ConfirmationText>
+            <ConfirmationText>
+              Деталі бронювання: <br />
+              Категорія номеру: <span>{category.label} </span>
+              <br />
+              Дата заїзду: <span>{convert(inDate.toString())}</span>
+              <br />
+              Дата виїзду: <span>{convert(outDate.toString())}</span>
+            </ConfirmationText>
+            <Hint>
+              Незабаром з Вами зв'яжеться менеджер для підтвердження бронювання!
+            </Hint>
+            <ButtonModal
+              type="button"
+              text="Добре"
+              onClick={() => {
+                // dispatch(deleteContact(id));
+                closeModal();
+              }}
+            />
+          </TextWrapper>
+        </ContentWrapper>
+      )}
+    </>
   );
 };
 

@@ -141,6 +141,7 @@ export const ModalFormTable = ({ closeModal }) => {
       ) : (
         <ModalConfirmation
           closeModal={closeModal}
+          status="table"
           name={name}
           number={number}
           date={date}

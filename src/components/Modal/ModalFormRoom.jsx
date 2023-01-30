@@ -159,6 +159,7 @@ export const ModalFormRoom = ({ closeModal }) => {
       ) : (
         <ModalConfirmation
           closeModal={closeModal}
+          status="room"
           name={name}
           number={number}
           inDate={inDate}

@@ -15,10 +15,19 @@ import {
   GoBackLink,
   Container,
 } from './Section1.styled';
+import { Modal } from 'components/Modal/Modal';
+import { useState } from 'react';
 
 export const Section1 = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [statusModal, setStatusModal] = useState('');
+
+  const toggleModal = status => {
+    setShowModal(!showModal);
+    setStatusModal(status);
+  };
   return (
-    <Section1Wrapper id="menu">
+    <Section1Wrapper>
       <Container>
         <HeaderWrapper>
           <Header>ЗРУЧНОСТІ У НОМЕРІ</Header>
@@ -92,13 +101,17 @@ export const Section1 = () => {
           </ContentWrapper>
         </ContentBlockWrapper>
         <ButtonWrapper>
-          <ButtonLarge text="ОФОРМИТИ БРОНЮВАННЯ" />
+          <ButtonLarge
+            text="ОФОРМИТИ БРОНЮВАННЯ"
+            onClick={() => toggleModal('room')}
+          />
           <GoBackLink to="/hotel">
             <span>Повернутися до перегляду номерів</span>
             <ReactSVG src={ArrowRight} />
           </GoBackLink>
         </ButtonWrapper>
       </Container>
+      {showModal && <Modal closeModal={toggleModal} status={statusModal} />}
     </Section1Wrapper>
   );
 };

@@ -1,6 +1,5 @@
 import { Box } from 'components/Box';
 import { ButtonStandart } from 'components/Buttons/ButtonStandart/ButtonStandart';
-import { ButtonStandartNavLink } from 'components/Buttons/ButtonStandart/ButtonStandartNavLink';
 import { Modal } from 'components/Modal/Modal';
 import { Slider } from 'components/Swiper/Swiper';
 import { useState } from 'react';
@@ -43,13 +42,10 @@ export const Section4 = () => {
         <SliderButtonWrapper>
           <BtnsWrapper>
             <ButtonStandart
-              text="Забронювати столик"
-              onClick={() => toggleModal('table')}
+              text="Забронювати номер"
+              onClick={() => toggleModal('room')}
             />
-            <ButtonStandartNavLink
-              to="/restaurant#menu"
-              text="Переглянути меню"
-            />
+            <ButtonStandart text="Переглянути ціни" />
           </BtnsWrapper>
           <SliderWrapper>
             <Slider
