@@ -70,31 +70,7 @@ export const Input = styled.input`
   font-weight: ${p => p.theme.fontWeights[4]};
   line-height: ${p => p.theme.lineHeights.subheader};
   letter-spacing: ${p => p.theme.letterSpacings.subheader};
-
-  padding: 17px 12px;
-  margin-bottom: 8px;
-
-  &::placeholder {
-    color: ${p => p.theme.colors.modalPlaceholder};
-  }
-
-  @media screen and (min-width: 1024px) {
-    padding: 18px 12px;
-    font-size: ${p => p.theme.fontSizes.xs};
-  }
-`;
-
-export const InputSelect = styled.select`
-  max-height: 64px;
-  border: 1px solid ${p => p.theme.colors.mainAccent};
-  background-color: transparent;
-  border-radius: ${p => p.theme.radii.btnModal};
-  font-size: ${p => p.theme.fontSizes.xxs};
-  font-family: ${p => p.theme.fonts.main};
-  font-weight: ${p => p.theme.fontWeights[4]};
-  line-height: ${p => p.theme.lineHeights.subheader};
-  letter-spacing: ${p => p.theme.letterSpacings.subheader};
-
+  outline: 1px solid ${p => p.theme.colors.mainAccent};
   padding: 17px 12px;
   margin-bottom: 8px;
 

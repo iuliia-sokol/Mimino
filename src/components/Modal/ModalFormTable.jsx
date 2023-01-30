@@ -1,5 +1,7 @@
 import { ButtonModal } from 'components/Buttons/ButtonModal/ButtonModal';
 import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { PatternFormat } from 'react-number-format';
 import { DatePickerComponent } from './DatePickerComponent/DatePickerComponent';
 
 // import Notiflix from 'notiflix';
@@ -17,6 +19,8 @@ import {
   Hint,
   BtnsWrapper,
 } from './ModalFormTable.styled';
+import { CustomSelect } from 'components/Select/CustomSelect';
+import { options } from 'utils/personsOptions';
 
 // import { useDispatch, useSelector } from 'react-redux';
 // import { updateContact } from 'redux/contactsOperations';
@@ -93,21 +97,32 @@ export const ModalFormTable = ({ closeModal }) => {
               <Hint>На кого забронювати столик?</Hint>
             </InputWrapper>
             <InputWrapper>
-              <Input
-                required
-                onChange={onInputChange}
-                value={number}
-                type="tel"
+              <PatternFormat
                 name="number"
+                customInput={Input}
+                type="tel"
                 placeholder="+38 (___) ___-__-__"
-                pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+                format="+38 (###) ###-####"
+                mask="_"
+                value={number}
+                onValueChange={value => setNumber(value.formattedValue)}
+                required
               />
               <Hint>Номер телефону</Hint>
             </InputWrapper>
           </InputsWrapper>
           <InputsWrapper>
             <InputWrapper>
-              <InputSelect
+              <CustomSelect
+                // keyName={type}
+                value={persons}
+                options={options}
+                // placeholder={
+                //   TRANSACTION_FORM_DATA[type].selectCategoryPlaceholder
+                // }
+                onChange={selectedOption => setPersons(selectedOption)}
+              />
+              {/* <InputSelect
                 required
                 onChange={onInputChange}
                 value={persons}
@@ -119,7 +134,7 @@ export const ModalFormTable = ({ closeModal }) => {
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="3">4</option>
-              </InputSelect>
+              </InputSelect> */}
               <Hint>Столик на яку кількість осіб?</Hint>
             </InputWrapper>
             <InputWrapper>
@@ -128,14 +143,6 @@ export const ModalFormTable = ({ closeModal }) => {
                 date={date}
                 handler={date => setDate(date)}
               />
-              {/* <Input
-                onChange={onInputChange}
-                value={date}
-                type="date"
-                name="date"
-                placeholder="Сьогодні"
-                // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-              /> */}
               <Hint>На яку дату бронювати?</Hint>
             </InputWrapper>
           </InputsWrapper>
@@ -148,7 +155,7 @@ export const ModalFormTable = ({ closeModal }) => {
   );
 };
 
-// ModalForm.propTypes = {
-//   id: PropTypes.string.isRequired,
-//   closeModal: PropTypes.func.isRequired,
-// };
+ModalFormTable.propTypes = {
+  // id: PropTypes.string.isRequired,
+  closeModal: PropTypes.func.isRequired,
+};

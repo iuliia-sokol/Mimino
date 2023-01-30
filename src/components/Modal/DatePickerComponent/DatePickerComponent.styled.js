@@ -144,7 +144,7 @@ export const Wrapper = styled.div`
     height: 64px;
     background-color: transparent;
     cursor: pointer;
-    outline: none;
+    outline: 1px solid ${p => p.theme.colors.mainAccent};
     border: 1px solid ${p => p.theme.colors.mainAccent};
 
     padding: 17px 12px;
