@@ -61,4 +61,4 @@ REACT_APP_MAP_API_KEY=""
 
 
 
-**Access token can be get here:** https://docs.mapbox.com/help/getting-started/access-tokens/
+**Access token can be got here:** https://docs.mapbox.com/help/getting-started/access-tokens/
