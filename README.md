@@ -53,3 +53,12 @@ Start the server
   npm run start
 ```
 
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+REACT_APP_MAP_API_KEY=""
+
+
+
+**Access token can be get here:** https://docs.mapbox.com/help/getting-started/access-tokens/
