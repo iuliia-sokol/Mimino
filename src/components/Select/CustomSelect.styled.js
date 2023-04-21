@@ -49,16 +49,11 @@ export const CustomSelectStyled = styled(Select)`
     opacity: 0.6;
   }
 
-  & .react-select__menu {
-    outline: none;
-    box-sizing: border-box;
-    position: absolute;
-    background-color: ${p => p.theme.colors.sectionBg1};
-    z-index: 200;
-    border: 2px solid ${p => p.theme.colors.mainAccent};
-
+  & .react-select__menu-list {
+    max-height:150px;
+    
     ::-webkit-scrollbar {
-      width: 7px;
+      width: 17px;
     }
     ::-webkit-scrollbar-thumb {
       background-color: ${p => p.theme.colors.mainAccent};
@@ -69,8 +64,19 @@ export const CustomSelectStyled = styled(Select)`
     }
   }
 
+  & .react-select__menu {
+    outline: none;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: ${p => p.theme.colors.sectionBg1};
+    z-index: 200;
+    border: 2px solid ${p => p.theme.colors.mainAccent};
+  }
+
   & .react-select__value-container {
     padding: 0;
+    max-height:50%;
+
     ::-webkit-scrollbar {
       width: 7px;
     }
