@@ -12,7 +12,7 @@ export const CustomSelect = ({ options, placeholder, onChange, value }) => {
       value={value}
       autoFocus={false}
       required={true}
-      menuPlacement="auto"
+      // menuPlacement="auto"
     />
   );
 };
