@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mimino/static/css/main.c6844b96.css",
-    "main.js": "/mimino/static/js/main.a0b723e7.js",
+    "main.js": "/mimino/static/js/main.1bf075c4.js",
     "static/js/530.ff23c1d7.chunk.js": "/mimino/static/js/530.ff23c1d7.chunk.js",
     "static/css/609.0b6f85ad.chunk.css": "/mimino/static/css/609.0b6f85ad.chunk.css",
     "static/js/609.cc677a12.chunk.js": "/mimino/static/js/609.cc677a12.chunk.js",
@@ -18,7 +18,7 @@
     "static/js/965.da45992a.chunk.js": "/mimino/static/js/965.da45992a.chunk.js",
     "static/css/150.6b9079ca.chunk.css": "/mimino/static/css/150.6b9079ca.chunk.css",
     "static/js/150.a1a6fa1a.chunk.js": "/mimino/static/js/150.a1a6fa1a.chunk.js",
-    "static/js/993.44f3b74d.chunk.js": "/mimino/static/js/993.44f3b74d.chunk.js",
+    "static/js/993.ec3e1935.chunk.js": "/mimino/static/js/993.ec3e1935.chunk.js",
     "static/media/slide2-2x.jpg": "/mimino/static/media/slide2-2x.fddc60e4434da956c2cf.jpg",
     "static/media/slide2-2x-tab.jpg": "/mimino/static/media/slide2-2x-tab.b12641123f533711ce94.jpg",
     "static/media/slide3-2x.jpg": "/mimino/static/media/slide3-2x.c2d2569c08bdb2f3f856.jpg",
@@ -160,7 +160,7 @@
     "static/media/arrow-left.svg": "/mimino/static/media/arrow-left.fc7f5d5bbf187ebb302ee58cf3d349c6.svg",
     "static/media/arrow-right.svg": "/mimino/static/media/arrow-right.842f434f57e4fe87223903cf9374132c.svg",
     "main.c6844b96.css.map": "/mimino/static/css/main.c6844b96.css.map",
-    "main.a0b723e7.js.map": "/mimino/static/js/main.a0b723e7.js.map",
+    "main.1bf075c4.js.map": "/mimino/static/js/main.1bf075c4.js.map",
     "530.ff23c1d7.chunk.js.map": "/mimino/static/js/530.ff23c1d7.chunk.js.map",
     "609.0b6f85ad.chunk.css.map": "/mimino/static/css/609.0b6f85ad.chunk.css.map",
     "609.cc677a12.chunk.js.map": "/mimino/static/js/609.cc677a12.chunk.js.map",
@@ -177,10 +177,10 @@
     "965.da45992a.chunk.js.map": "/mimino/static/js/965.da45992a.chunk.js.map",
     "150.6b9079ca.chunk.css.map": "/mimino/static/css/150.6b9079ca.chunk.css.map",
     "150.a1a6fa1a.chunk.js.map": "/mimino/static/js/150.a1a6fa1a.chunk.js.map",
-    "993.44f3b74d.chunk.js.map": "/mimino/static/js/993.44f3b74d.chunk.js.map"
+    "993.ec3e1935.chunk.js.map": "/mimino/static/js/993.ec3e1935.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6844b96.css",
-    "static/js/main.a0b723e7.js"
+    "static/js/main.1bf075c4.js"
   ]
 }
